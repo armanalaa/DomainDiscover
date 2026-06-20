@@ -1,0 +1,64 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Sales Representative, IT Administrator
+
+Activity:
+- Sales representatives register new customers by recording their contact details and creating a user account (cust_df).
+- IT administrators assign unique identifiers (SRIMVH) to each customer for internal tracking.
+
+## 2. Customer Profile Management
+
+Performed By: Customer, IT Administrator
+
+Activity:
+- Customers update their personal information (SLZCISTEWL@dell.com, password) through the user portal.
+- IT administrators verify and maintain accurate customer data in the system (cust_df).
+
+## 3. Customer History Tracking
+
+Performed By: Sales Representative, Customer Service Agent
+
+Activity:
+- Sales representatives log interactions with customers (CUST_HIST) to provide context for future sales opportunities.
+- Customer service agents access customer history (CUST_HIST) to resolve issues and improve customer satisfaction.
+
+## 4. Product Catalog Management
+
+Performed By: Product Manager, IT Administrator
+
+Activity:
+- Product managers add new items to the catalog by recording product details (product code, name, category, list price).
+- IT administrators ensure the accuracy and completeness of product data in the system (cust_df).
+
+## 5. Order Processing
+
+Performed By: Sales Representative, Warehouse Staff
+
+Activity:
+- Sales representatives process orders by confirming availability and scheduling delivery (custhist_df).
+- Warehouse staff pick, pack, and ship ordered items to customers.
+
+## 6. Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- Finance department generates invoices based on order details (custhist_df) and sends them to customers.
+
+## 7. Payment Processing
+
+Performed By: Customer, Finance Department
+
+Activity:
+- Customers make payments through various methods (80000, UK, 2, SLZCISTEWL@dell.com).
+- Finance department records and verifies customer payments in the system (cust_df).
+
+## 8. Support Ticketing System Management
+
+Performed By: Customer Service Agent, IT Administrator
+
+Activity:
+- Customer service agents create support tickets for customers with issues or questions (custhist_df).
+- IT administrators resolve technical issues and update the status of support tickets in the system (custhist_df).

@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers, IT Support
+
+Activity:
+- Sales representatives register new customers by recording their details (SRIMVH, SLZCISTEWL, email addresses, phone numbers, job titles, company names, URLs, locations, public social media profiles).
+- HR managers update customer information when employees change roles or leave the company.
+- IT support maintains customer data integrity and security.
+
+## 2. Customer Support Ticketing
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives log support tickets from customers regarding product issues, billing inquiries, or account management requests.
+- They assign tickets to relevant teams for resolution and update ticket statuses as needed.
+- They communicate with customers about the progress of their tickets.
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, Marketing Team
+
+Activity:
+- Product managers add new items to the catalog by recording product codes, names, categories, and list prices.
+- The marketing team updates product descriptions, images, and promotional offers.
+
+## 4. Order Placement and Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Customers place orders through the website or by contacting sales representatives.
+- Sales representatives confirm order details and process them in the system.
+- Warehouse staff pick, pack, and ship ordered items to customers.
+
+## 5. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels and update them when items are received or shipped.
+- Purchasing teams order new stock based on sales data and inventory levels.
+
+## 6. Invoice Generation and Payment Processing
+
+Performed By: Finance, Sales Representatives
+
+Activity:
+- Sales representatives generate invoices for customers based on their orders.
+- Finance records invoice details (invoices numbers, dates, amounts, payment terms) and tracks payments.
+
+## 7. Financial Reporting and Analysis
+
+Performed By: Finance, Management
+
+Activity:
+- Finance generates financial reports (revenue, expenses, profit margins, etc.) for management review.
+- Management analyzes these reports to make informed decisions about business strategy and operations.

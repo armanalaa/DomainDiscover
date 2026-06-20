@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers, IT Support
+
+Activity:
+- Sales representatives register new customers by recording their contact details (SRIMVH, SLZCISTEWL, email, phone number, address).
+- HR managers assign unique usernames and passwords to each customer.
+- IT support maintains the security of customer data in the database.
+
+## 2. Customer Interaction Tracking
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives track customer interactions related to product inquiries or orders (cust_df).
+- Customer service agents record details of customer complaints or feedback (custhist_df).
+
+## 3. Website Behavior Analysis
+
+Performed By: IT Analysts, Marketing Managers
+
+Activity:
+- IT analysts monitor and analyze visitor behavior on the website using cookies such as gscs, orionV3#identity, rxvisitid, rxVisitor, userleap.ids, sentryReplaySession, vuid (SOURCE MATERIALS).
+- Marketing managers use this data to optimize website content and display targeted ads.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the inventory levels when items are received or shipped (cust_df).
+- Purchasing teams order new stock based on current inventory levels and sales forecasts.
+
+## 5. Order Processing
+
+Performed By: Sales Representatives, Customer Service Agents, Warehouse Staff
+
+Activity:
+- Sales representatives confirm customer orders and provide estimated delivery times (cust_df).
+- Customer service agents handle any order-related inquiries or issues.
+- Warehouse staff prepare the ordered items for shipment.
+
+## 6. Invoice Generation and Payment Processing
+
+Performed By: Finance Department, Accounts Receivable Team
+
+Activity:
+- Finance department generates invoices based on customer orders (cust_df).
+- Accounts receivable team records payments received from customers.
+
+## 7. Customer Support
+
+Performed By: Customer Service Agents, IT Support
+
+Activity:
+- Customer service agents handle customer inquiries or complaints regarding products or services.
+- IT support assists customers with technical issues related to the website or software.

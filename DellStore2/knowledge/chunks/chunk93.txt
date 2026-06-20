@@ -1,0 +1,52 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Portal Administrators, Subject Matter Experts, Subscription Owners and Admins
+
+Activity:
+- Portal Administrators configure and manage the Dataedo Portal to ensure smooth access for users.
+- Subject Matter Experts share their knowledge and enrich the organization's data documentation.
+- Subscription Owners and Admins manage the subscription, users, and licenses through the Account Portal.
+
+## 2. Customer Registration
+
+Performed By: Customers
+
+Activity:
+- Customers create new accounts by providing personal details such as name, email, password, and address.
+
+## 3. Customer Authentication
+
+Performed By: Customers
+
+Activity:
+- Customers log in to their accounts using their email and password.
+
+## 4. Customer Profile Management
+
+Performed By: Customers
+
+Activity:
+- Customers update their personal details, such as address or contact information, within their profiles.
+
+## 5. Customer Support
+
+Performed By: Integration Engineers
+
+Activity:
+- Integration Engineers provide technical support to help customers set up and maintain Dataedo in their environment.
+
+## 6. Customer Data Tracking
+
+Performed By: Cust_df, custhist_df, CUSTOMER tables
+
+Activity:
+- The system records customer data, including user ID, username, email, password, address, and other relevant details.
+
+## 7. Customer History Management
+
+Performed By: Cust_HIST table
+
+Activity:
+- The system tracks customers' historical interactions, such as purchases or account changes, for future reference.

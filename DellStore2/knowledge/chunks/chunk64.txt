@@ -1,0 +1,53 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives register new customers by recording their contact details and user credentials. (CUSTOMER)
+- HR managers assign unique identifiers to each customer upon successful registration. (CUST_DF)
+- Customers update their personal information as needed through the customer portal. (CUSTOMER)
+
+## 2. Customer History Tracking
+
+Performed By: Sales Representatives, Customer Support Agents
+
+Activity:
+- Sales representatives log interactions with customers, including sales transactions and follow-ups. (CUST_HIST)
+- Customer support agents document customer inquiries and resolutions for future reference. (CUST_HIST)
+
+## 3. Account Management
+
+Performed By: Finance Team
+
+Activity:
+- The finance team manages customer accounts, including billing and payment details. (CUSTOMER)
+
+## 4. Data Governance and Compliance
+
+Performed By: Data Governance Team
+
+Activity:
+- The data governance team ensures regulatory compliance by documenting data sources, lineage, and quality. (056_solutions.pdf p.6, 057_solutions__ai-governance.pdf p.1)
+
+## 5. AI Model Governance
+
+Performed By: Data Governance Team
+
+Activity:
+- The data governance team tracks the training and scoring data of AI models for compliance purposes. (057_solutions__ai-governance.pdf p.1)
+
+## 6. Data Catalog Management
+
+Performed By: Data Governance Team
+
+Activity:
+- The data governance team maintains a centralized catalog of data assets for easier discovery and knowledge sharing. (056_solutions.pdf p.8)
+
+## 7. Support and Maintenance
+
+Performed By: IT Support Team
+
+Activity:
+- The IT support team addresses technical issues related to the DellStore2 database and associated systems. (Not specified in source materials)

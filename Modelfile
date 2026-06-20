@@ -1,0 +1,4 @@
+FROM mistral
+PARAMETER num_ctx 4096
+PARAMETER num_predict 1024
+PARAMETER temperature 0

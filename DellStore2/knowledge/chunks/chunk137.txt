@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. User Account Management
+
+Performed By: System Administrators, IT Support
+
+Activity:
+- System administrators create and manage user accounts by inputting details such as username, password, role, and contact information into the CUSTOMER table.
+- IT support staff reset user passwords when requested, updating the password column in the CUSTOMER table.
+
+## 2. Customer Registration
+
+Performed By: Sales Representatives, Customer Service
+
+Activity:
+- Sales representatives register new customers by entering their personal and contact details into the CUST_DF table.
+- Customer service agents update customer information when necessary, modifying relevant columns in the CUST_DF table.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Department
+
+Activity:
+- Sales representatives create new orders by recording order details like product code, quantity, and shipping address in the ORDER_ITEMS table.
+- Warehouse staff track inventory levels and prepare orders for shipment based on information from the ORDER_ITEMS and INVENTORY tables.
+- Finance department records invoices and payments related to each order, updating the appropriate columns in the INVOICE and PAYMENT tables.
+
+## 4. Maintenance Task Execution
+
+Performed By: Database Administrators
+
+Activity:
+- Database administrators execute maintenance tasks to update statistics on all tables in the DellStore2 database using the "ds2" task created through SQL Server Management Studio.
+
+## 5. Web Tier Configuration
+
+Performed By: System Administrators, Developers
+
+Activity:
+- System administrators set environment variables and install required software (JDK, Ant, Tomcat, SpringSource Framework) to ensure the web tier is correctly configured on the web server.
+- Developers copy necessary files from the SpringSource Framework into the ds2web folder within the Tomcat installation directory.
+
+## 6. Database Schema Updates
+
+Performed By: Database Administrators, Developers
+
+Activity:
+- Database administrators use SQL Server Management Studio to create and modify database schemas, including adding new tables or modifying existing ones in the DellStore2 database.
+- Developers update the application code to reflect changes in the database schema.
+
+## 7. Data Analysis and Reporting
+
+Performed By: Business Analysts, Management
+
+Activity:
+- Business analysts generate reports by querying relevant tables (e.g., ORDER_ITEMS, INVOICE, PAYMENT) to analyze sales trends, customer behavior, and inventory levels.
+- Management uses these reports to make informed decisions about business strategy and operations.

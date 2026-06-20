@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details and contact information (cust_df).
+- HR managers update customer records with employment history and relevant documents (CUSTOMER).
+
+## 2. Customer History Management
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives log customer interactions, including sales transactions and feedback (custhist_df).
+- Customer service representatives update the customer history with support tickets and resolution details (CUST_HIST).
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cust_df).
+- Warehouse staff update product availability and location details based on inventory levels (not specified in provided schema).
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by selecting products, calculating totals, and confirming shipping details (cust_df, custhist_df).
+- Warehouse staff pick, pack, and ship ordered items to the customer's specified address.
+
+## 5. Invoice Generation
+
+Performed By: Finance Team
+
+Activity:
+- Finance team generates invoices based on order details and shipping costs (custhist_df).
+- Invoices are sent to customers via email for payment processing (cust_df).
+
+## 6. Payment Processing
+
+Performed By: Customers, Finance Team
+
+Activity:
+- Customers make payments through various methods such as credit card or bank transfer.
+- Finance team records and verifies customer payments (not specified in provided schema).
+
+## 7. Support Ticketing
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives create support tickets for customers experiencing issues with products or services (CUST_HIST).
+- They track ticket status, assign to relevant teams, and communicate updates to the customer.

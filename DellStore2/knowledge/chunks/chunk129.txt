@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Sales Representative, IT Administrator
+
+Activity:
+- Sales representatives register new customers by recording their contact details and user credentials. (cust_df)
+- IT administrators assign unique customer IDs and set up email accounts for the newly registered customers. (cust_df, user10001, password)
+
+## 2. Customer Information Management
+
+Performed By: Customer Service Representative, IT Administrator
+
+Activity:
+- Customer service representatives update customer information as needed, such as address changes or contact preferences. (CUSTOMER)
+- IT administrators maintain the integrity and security of customer data in the database. (CUSTOMER)
+
+## 3. Product Catalog Management
+
+Performed By: Product Manager, IT Administrator
+
+Activity:
+- Product managers add new items to the product catalog with their respective codes, names, categories, and list prices. (cust_df)
+- IT administrators ensure that the updated product information is accurately reflected in the database. (cust_df)
+
+## 4. Warranty Claim Processing
+
+Performed By: Customer Service Representative, Quality Assurance Engineer
+
+Activity:
+- Customer service representatives receive and log warranty claims from customers. (CUSTOMER)
+- Quality assurance engineers investigate the nonconforming products and determine whether to repair, replace, or terminate the affected license. (092_license.pdf p.22)
+
+## 5. Invoice Generation and Payment Processing
+
+Performed By: Finance Team, Customer Service Representative
+
+Activity:
+- Finance team generates invoices based on customer orders and sends them to customers. (not specified in the provided materials)
+- Customer service representatives handle any payment-related issues or queries from customers. (not specified in the provided materials)
+
+## 6. Order Fulfillment and Delivery Management
+
+Performed By: Warehouse Staff, Shipping Team, Customer Service Representative
+
+Activity:
+- Warehouse staff pick, pack, and prepare orders for shipment. (not specified in the provided materials)
+- Shipping team arranges for the delivery of orders to customers. (not specified in the provided materials)
+- Customer service representatives track order status and address any delivery-related issues or queries from customers. (not specified in the provided materials)
+
+## 7. Customer Support and Complaint Resolution
+
+Performed By: Customer Service Representative, Technical Support Specialist
+
+Activity:
+- Customer service representatives handle customer inquiries and complaints, escalating them to technical support specialists when necessary. (CUSTOMER)
+- Technical support specialists troubleshoot and resolve any technical issues reported by customers. (not specified in the provided materials)

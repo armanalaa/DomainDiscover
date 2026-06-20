@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers, IT Support
+
+Activity:
+- Sales representatives register new customers by recording their contact details and preferences (cust_df).
+- HR managers create employee accounts for new hires with login credentials (cust_df).
+- IT support troubleshoots any issues related to customer account access or functionality (cust_df).
+
+## 2. Customer Data Maintenance
+
+Performed By: Customers, Customer Support
+
+Activity:
+- Customers update their personal and contact information as needed (cust_df).
+- Customer support assists customers with any changes to their account details (cust_df).
+
+## 3. Customer History Tracking
+
+Performed By: Sales Representatives, Customer Support
+
+Activity:
+- Sales representatives log customer interactions and purchase history (CUST_HIST).
+- Customer support reviews customer histories to address inquiries or resolve issues (CUST_HIST).
+
+## 4. Privacy Policy Compliance
+
+Performed By: Data Protection Officers, IT Support
+
+Activity:
+- Data Protection Officers ensure compliance with privacy policies and data protection regulations (034_privacy.pdf).
+- IT support implements measures to protect customer data according to established policies (034_privacy.pdf).
+
+## 5. Marketing and Advertising
+
+Performed By: Marketing Team, Sales Representatives
+
+Activity:
+- Marketing team develops targeted marketing campaigns based on customer behavior and preferences (not directly related to database content).
+- Sales representatives utilize customer data for personalized outreach and follow-ups (not directly related to database content).
+
+## 6. Data Sharing with Resellers
+
+Performed By: Sales Representatives, Reseller Partners
+
+Activity:
+- Sales representatives share customer data with reseller partners as needed for streamlined customer interactions (034_privacy.pdf).
+- Reseller partners use shared data to tailor their offerings to the local language, culture, and laws (034_privacy.pdf).
+
+## 7. California Consumer Privacy Act Compliance
+
+Performed By: Data Protection Officers, IT Support
+
+Activity:
+- Data Protection Officers ensure compliance with the California Consumer Privacy Act for customers residing in California (CCPA).
+- IT support implements measures to protect customer data according to CCPA regulations.

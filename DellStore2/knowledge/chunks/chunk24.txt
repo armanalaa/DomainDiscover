@@ -1,0 +1,63 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their contact information and creating a customer profile.
+- HR managers update customer profiles with employment details when a customer is hired as an employee.
+
+## 2. Account Maintenance
+
+Performed By: Customers, Finance Department
+
+Activity:
+- Customers manage their account details, such as password changes and address updates.
+- The finance department reviews and approves any requested changes to ensure accuracy.
+
+## 3. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives respond to customer inquiries and provide assistance with product information or technical issues.
+
+## 4. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers add new items to the catalog by recording the product code, name, category, and list price.
+- Warehouse staff update inventory levels when products are received or sold.
+
+## 5. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by selecting items from the catalog and confirming availability.
+- Warehouse staff prepare orders for shipment once they are ready to be dispatched.
+
+## 6. Invoice Generation
+
+Performed By: Finance Department, Sales Representatives
+
+Activity:
+- The finance department generates invoices based on customer orders and sends them to the customers.
+- Sales representatives review and confirm the accuracy of the invoice before it is sent.
+
+## 7. Payment Processing
+
+Performed By: Customers, Finance Department
+
+Activity:
+- Customers make payments towards their outstanding invoices through various payment methods.
+- The finance department records the payments and updates customer accounts accordingly.
+
+## 8. Data Governance
+
+Performed By: Data Management Team
+
+Activity:
+- The data management team ensures data quality, consistency, and accuracy by monitoring data lineage, detecting anomalies, and maintaining compliance with regulations.

@@ -1,0 +1,52 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers, IT Support
+
+Activity:
+- Sales representatives register new customers by recording their contact details and preferences. (cust_df)
+- HR managers assign unique usernames and passwords to each customer account. (cust_df)
+- IT support ensures secure storage of customer data and maintains system integrity.
+- Customer service representatives assist customers with account inquiries or issues.
+
+## 2. Customer Interaction Tracking
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives document interactions with customers, including sales calls and emails. (cust_df)
+- Customer service representatives log customer support requests and responses. (custhist_df)
+- Both roles update the customer's interaction history accordingly.
+
+## 3. Marketing Campaign Management
+
+Performed By: Marketing Team, IT Support
+
+Activity:
+- Marketing team designs and implements targeted marketing campaigns for specific customer segments.
+- IT support ensures proper tracking of campaign performance through cookies and other digital tools. (033_cookie-declaration.pdf)
+
+## 4. Customer Segmentation and Analysis
+
+Performed By: Data Analysts, Marketing Team
+
+Activity:
+- Data analysts collect and analyze customer data to identify patterns and trends. (033_cookie-declaration.pdf, custhist_df)
+- Marketing team uses these insights to segment customers and tailor marketing strategies accordingly.
+
+## 5. Customer Support and Troubleshooting
+
+Performed By: Customer Service Representatives, IT Support
+
+Activity:
+- Customer service representatives address customer concerns and provide solutions or escalate issues as needed.
+- IT support troubleshoots technical problems related to the customer's account or website experience.
+
+## 6. Account Maintenance and Security
+
+Performed By: HR Managers, IT Support
+
+Activity:
+- HR managers manage user account changes, such as password resets or role modifications. (cust_df)
+- IT support ensures the security of customer accounts by implementing security measures and monitoring for suspicious activity.

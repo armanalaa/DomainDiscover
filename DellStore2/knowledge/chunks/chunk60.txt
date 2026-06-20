@@ -1,0 +1,63 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details and contact information (SRIMVH, SLZCISTEWL@dell.com, DXPGGAE, Unnamed: 6, SLZCISTEWL@dell.com, 1467048332, UK).
+- HR managers update customer details when necessary (UK, 2, SLZCISTEWL@dell.com, 1467048332).
+- Customer service representatives assign unique usernames and passwords to new customers (user10001, password).
+
+## 2. Account Maintenance
+
+Performed By: Customers, Finance Department
+
+Activity:
+- Customers update their account information as needed (SLZCISTEWL@dell.com, UK, 2).
+- The finance department records changes in customer accounts (44, 80000).
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process orders by entering product details and shipping information (ProductID, SRIMVH, SLZCISTEWL, 1467048332 Dell Way, Unnamed: 4).
+- Warehouse staff track order status and update it accordingly (SLZCISTEWL@dell.com, 1467048332).
+
+## 4. Inventory Management
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams issue purchase orders for new inventory items (RNPOJG, FQIVBKWIZC).
+- Warehouse staff receive and record incoming shipments (1287944454 Dell Way, XCXNWIS, ND, 42572, US).
+
+## 5. Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- The finance department generates invoices based on order details and customer account information (80000, FQIVBKWIZC@dell.com).
+
+## 6. Payment Processing
+
+Performed By: Customers, Finance Department
+
+Activity:
+- Customers make payments towards their outstanding invoices (49, M).
+- The finance department records payment details and updates customer accounts accordingly (1890860486775636, 2012/06).
+
+## 7. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries and complaints (cust_df, custhist_df).
+
+## 8. Data Analysis
+
+Performed By: Analytics Team
+
+Activity:
+- The analytics team analyzes customer data to identify trends and opportunities for improvement (column distribution, min, max values).

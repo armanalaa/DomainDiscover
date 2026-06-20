@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, Sales Representatives, HR Managers
+
+Activity:
+- Customer service representatives handle customer inquiries and complaints by accessing the customer's contact information and interaction history.
+- Sales representatives register new customers by recording their personal details, contact information, and account creation date.
+- HR managers process employee data updates, such as changes to addresses or job titles, within the customer database.
+
+## 2. Account Maintenance
+
+Performed By: Customer Service Representatives, Finance Department
+
+Activity:
+- Customer service representatives update customer account details, including billing and shipping addresses, contact information, and passwords upon request.
+- The finance department records payment transactions and updates the corresponding customer accounts accordingly.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Shipping Department
+
+Activity:
+- Sales representatives process orders by confirming product availability, calculating prices, and generating invoices.
+- Warehouse staff retrieve ordered items from inventory and prepare them for shipping.
+- The shipping department packages the order and arranges for its delivery to the customer's specified address.
+
+## 4. Inventory Management
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams place orders for new inventory based on sales data and stock levels.
+- Warehouse staff receive and store incoming shipments, updating the inventory database accordingly.
+
+## 5. Invoice Processing
+
+Performed By: Finance Department, Customer Service Representatives
+
+Activity:
+- The finance department generates invoices for customers based on their orders and updates the customer accounts with payment due dates.
+- Customer service representatives follow up on overdue payments and assist customers with any billing inquiries or disputes.
+
+## 6. Support Services
+
+Performed By: Technical Support Team, Customer Service Representatives
+
+Activity:
+- The technical support team troubleshoots customer issues related to Dell products and provides solutions or escalates them as necessary.
+- Customer service representatives assist customers with non-technical inquiries, such as returns, warranties, and general product information.
+
+## 7. Data Governance
+
+Performed By: Data Stewards, Approvers, Editors
+
+Activity:
+- Data stewards create, curate, and manage high-quality data documentation within the DellStore2 database.
+- Approvers review and approve changes to data documentation to ensure accuracy and accountability in the data governance process.
+- Editors manage and enrich metadata repositories for consistent and up-to-date documentation across the data ecosystem.

@@ -1,0 +1,63 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Customer Service Representatives, IT Administrators
+
+Activity:
+- Customer service representatives register new customers by recording their personal information (SRIMVH, SLZCISTEWL, email, address, phone number, country, password).
+- IT administrators assign unique customer IDs (10001) and create user accounts.
+- Customer service representatives update customer details as needed.
+
+## 2. Customer History Tracking
+
+Performed By: Customer Service Representatives, Data Analysts
+
+Activity:
+- Customer service representatives log interactions with customers (cust_df columns).
+- Data analysts analyze customer history data to identify trends and patterns.
+
+## 3. Privacy Request Handling
+
+Performed By: Customer Service Representatives, Data Analysts, Legal Team
+
+Activity:
+- Customers can request their personal information, categories of sources, purposes for use, disclosure categories, and sales or sharing details (cust_df and custhist_df columns).
+- Customer service representatives verify the requests and provide the required information.
+- Legal team ensures compliance with data privacy regulations during the process.
+
+## 4. Consent Management
+
+Performed By: Customer Service Representatives, IT Administrators, Legal Team
+
+Activity:
+- Customer service representatives obtain consent for data collection, use, and sharing (cust_df columns).
+- IT administrators implement user-enabled global privacy controls to opt-out of sale or sharing.
+- Legal team ensures compliance with data privacy regulations during the process.
+
+## 5. Data Correction
+
+Performed By: Customer Service Representatives, Data Analysts, IT Administrators
+
+Activity:
+- Customers can request corrections for inaccurate personal information (cust_df columns).
+- Customer service representatives verify and update the information.
+- IT administrators implement the changes in the database.
+
+## 6. Sensitive Data Management
+
+Performed By: Customer Service Representatives, Data Analysts, Legal Team, IT Administrators
+
+Activity:
+- Customer service representatives limit use and disclosure of sensitive personal information (cust_df columns).
+- Data analysts analyze the data while respecting the limitations.
+- Legal team ensures compliance with data privacy regulations during the process.
+
+## 7. Data Portability Request Handling
+
+Performed By: Customer Service Representatives, Data Analysts, IT Administrators
+
+Activity:
+- Customers can request their personal data in a usable format (cust_df columns).
+- Data analysts prepare the data in the requested format.
+- IT administrators provide the data to the customer.

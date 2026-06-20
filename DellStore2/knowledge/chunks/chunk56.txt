@@ -1,0 +1,73 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Sales Representatives, IT Support
+
+Activity:
+- Sales representatives register new customers by recording their contact details and account information (SRIMVH, SLZCISTEWL, 1467048332 Dell Way, Unnamed: 4, DXPGGAE, Unnamed: 6, 00000, UK, 2, SLZCISTEWL@dell.com, 1467048332, 5, 1281093623023480, 2012/09, user10001, password).
+- IT support assigns a unique customer ID (10001) and sets up the customer's account in the system.
+- IT support creates an initial profile for the customer, including their preferences and access permissions.
+
+## 2. Customer Account Maintenance
+
+Performed By: Customers, IT Support
+
+Activity:
+- Customers update their personal information (name, email, address) as needed through the self-service portal.
+- IT support handles more complex changes to customer accounts, such as password resets or access level adjustments.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products (ProductID), specifying quantities, and providing shipping details.
+- Sales representatives review the order for accuracy before confirming it in the system.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels (SLZCISTEWL) and manage stock movements (1287944454 Dell Way).
+- Purchasing teams order new products when inventory reaches a predefined threshold.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff pick and pack orders for shipment (XCXNWIS).
+- Shipping teams prepare shipping labels and arrange for delivery of the order.
+
+## 6. Invoice Processing
+
+Performed By: Finance, Sales Representatives
+
+Activity:
+- Sales representatives generate invoices based on confirmed orders (SLZCISTEWL@dell.com).
+- Finance records the invoice details (80000, F) and sends it to the customer.
+
+## 7. Payment Processing
+
+Performed By: Customers, Finance
+
+Activity:
+- Customers make payments through various methods (44, 80000).
+- Finance records the payment details (UK, 2) and updates the customer's account accordingly.
+
+## 8. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries and complaints, providing assistance with product issues or account management.
+
+## 9. Data Analysis
+
+Performed By: Business Analysts, Management
+
+Activity:
+- Business analysts extract data from the system (CUST_HIST, custhist_df) for analysis and reporting purposes.
+- Management reviews the reports to identify trends, make decisions, and set strategic goals.

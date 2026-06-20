@@ -1,0 +1,56 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Sales Representatives, IT Support
+
+Activity:
+- Sales representatives register new customers by recording their contact details and account information (cust_df).
+- IT support assigns unique usernames and passwords to each customer for secure access (cust_df).
+
+## 2. Customer Profile Management
+
+Performed By: Customers, IT Support
+
+Activity:
+- Customers update their personal and contact details in their profiles (CUSTOMER).
+- IT support verifies and approves changes to customer profiles (CUSTOMER).
+
+## 3. Order Placement
+
+Performed By: Customers
+
+Activity:
+- Customers place orders by selecting products, specifying quantities, and providing shipping information (cust_df).
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, IT Support
+
+Activity:
+- Warehouse staff update inventory levels when new items are received or shipped out (cust_df).
+- IT support ensures accurate and up-to-date inventory data (cust_df).
+
+## 5. Invoice Generation
+
+Performed By: Finance, Sales Representatives
+
+Activity:
+- Sales representatives generate invoices based on customer orders and pricing information (cust_df).
+- Finance records the invoice details and sends it to the customer (not specified in provided schema).
+
+## 6. Payment Processing
+
+Performed By: Customers, Finance
+
+Activity:
+- Customers make payments by choosing a payment method and providing necessary payment information (not specified in provided schema).
+- Finance records the payment details and updates the customer's account status (CUSTOMER).
+
+## 7. Customer Support
+
+Performed By: Customer Service Representatives, IT Support
+
+Activity:
+- Customer service representatives handle customer queries and issues related to orders, products, or accounts (not specified in provided schema).
+- IT support troubleshoots technical issues reported by customers (not specified in provided schema).

@@ -1,0 +1,89 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 12
+Edges in G_T         : 33
+θ_T applied in Step 4: 0.65
+Domains discovered   : 9
+Modularity Q         : -0.0061
+
+──────────────────────────────────────────────────────────────────────
+D0  Inventory and Data Maintenance
+──────────────────────────────────────────────────────────────────────
+  Definition : Unifies the tables responsible for maintaining databases, analyzing sales trends, customer behavior, and inventory performance.
+  Tables     : INVENTORY
+  Phi top-3  : C19=0.377  C17=0.344  C29=0.335
+
+──────────────────────────────────────────────────────────────────────
+D1  Order and Financial Management
+──────────────────────────────────────────────────────────────────────
+  Definition : This domain unifies the tables related to order placement, processing, financial transactions, and reporting, encompassing the management of orders and their associated financial data.
+  Tables     : ORDERS
+  Phi top-3  : C6=0.303  C19=0.300  C12=0.289
+
+──────────────────────────────────────────────────────────────────────
+D2  Customer and Data Maintenance
+──────────────────────────────────────────────────────────────────────
+  Definition : Unifies the management of customer data and related maintenance operations across various tables.
+  Tables     : CUST_HIST
+  Phi top-3  : C10=0.339  C19=0.312  C26=0.281
+
+──────────────────────────────────────────────────────────────────────
+D3  Customer Data Management and Analysis
+──────────────────────────────────────────────────────────────────────
+  Definition : Unifying the management of customer data across various aspects such as registration, login, segmentation, support, and analysis.
+  Tables     : custhist_df
+  Phi top-3  : C10=0.346  C19=0.337  C26=0.303
+
+──────────────────────────────────────────────────────────────────────
+D4  Order Lifecycle Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing orders from placement to fulfillment, tracking, and shipment.
+  Tables     : ORDERLINES
+  Phi top-3  : C10=0.305  C19=0.305  C6=0.294
+
+──────────────────────────────────────────────────────────────────────
+D5  Order Data Management and Analysis
+──────────────────────────────────────────────────────────────────────
+  Definition : Unifying the management of order-related data across various stages, including placement, confirmation, fulfillment, tracking, and analysis.
+  Tables     : orderlines_df
+  Phi top-3  : C19=0.303  C10=0.278  C6=0.274
+
+──────────────────────────────────────────────────────────────────────
+D6  Order Management and Analysis
+──────────────────────────────────────────────────────────────────────
+  Definition : Centralized management and analysis of order-related data across the enterprise
+  Tables     : orders_df
+  Phi top-3  : C19=0.308  C12=0.274  C6=0.273
+
+──────────────────────────────────────────────────────────────────────
+D7  Customer Profile and Account Management
+──────────────────────────────────────────────────────────────────────
+  Definition : Unifies the management of customer profiles, account details, and password changes across multiple tables.
+  Tables     : CUSTOMER, cust_df, inv_df
+  Phi top-3  : C10=0.376  C14=0.315  C17=0.290
+
+──────────────────────────────────────────────────────────────────────
+D8  Product Information and Management
+──────────────────────────────────────────────────────────────────────
+  Definition : This domain unifies the tables related to managing product information, including registration, analytics, and maintenance.
+  Tables     : PRODUCTS, prod_df
+  Phi top-3  : C20=0.339  C19=0.322  C4=0.303
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  INVENTORY                            D       0  Inventory and Data Maintenance
+  ORDERS                               D       1  Order and Financial Management
+  CUST_HIST                            D       2  Customer and Data Maintenance
+  custhist_df                          D       3  Customer Data Management and Analysis
+  ORDERLINES                           D       4  Order Lifecycle Management
+  orderlines_df                        D       5  Order Data Management and Analysis
+  orders_df                            D       6  Order Management and Analysis
+  CUSTOMER                             D       7  Customer Profile and Account Management
+  cust_df                              D       7  Customer Profile and Account Management
+  inv_df                               D       7  Customer Profile and Account Management
+  PRODUCTS                             D       8  Product Information and Management
+  prod_df                              D       8  Product Information and Management
+======================================================================

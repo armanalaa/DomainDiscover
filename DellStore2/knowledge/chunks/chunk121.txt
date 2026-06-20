@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their personal details, contact information, and account credentials. (cust_df)
+- Customer service agents update customer profiles with changes to contact information or account settings. (CUSTOMER)
+- Sales representatives assign unique customer IDs to each new account. (cust_df)
+
+## 2. Customer History Tracking
+
+Performed By: Customer Service Agents, Sales Representatives
+
+Activity:
+- Customer service agents log interactions with customers, including support requests and sales inquiries. (CUST_HIST)
+- Sales representatives document customer purchases and update their purchase history accordingly. (custhist_df)
+- Customer service agents mark resolved cases in the customer history database. (CUST_HIST)
+
+## 3. User Authentication and Access Control
+
+Performed By: IT Administrators, Customer Service Agents
+
+Activity:
+- IT administrators manage user accounts, setting passwords and access levels for each account.
+- Customer service agents assist customers with password resets or account recovery.
+
+## 4. Data Governance and Compliance
+
+Performed By: IT Administrators, Data Governance Team
+
+Activity:
+- IT administrators implement data encryption practices to secure all user and system data.
+- Data governance team ensures compliance with GDPR regulations by managing data privacy policies.
+
+## 5. Metadata Collection and Management
+
+Performed By: Data Governance Team, IT Administrators
+
+Activity:
+- Data governance team collects metadata structure for database management.
+- IT administrators configure read-only connections to support encrypted connections.
+
+## 6. Security Testing and Vulnerability Response
+
+Performed By: IT Security Team
+
+Activity:
+- Independent third-party penetration tests are conducted to identify potential vulnerabilities.
+- Rapid vulnerability remediation and security patch deployment are performed as needed.
+
+## 7. Incident Response and Reporting
+
+Performed By: IT Security Team, Customer Service Agents
+
+Activity:
+- IT security team investigates and responds to security incidents, such as data breaches or unauthorized access attempts.
+- Customer service agents notify affected customers of any security incidents and provide updates on the incident response.

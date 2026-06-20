@@ -1,0 +1,13 @@
+table,domain_id,domain_name
+INVENTORY,0,Inventory and Product Data Management
+inv_df,0,Inventory and Product Data Management
+ORDERS,1,Order Lifecycle Management
+CUST_HIST,2,Customer and Order Data Management
+custhist_df,3,Customer and Data Management
+ORDERLINES,4,Order Data Management and Analysis
+orderlines_df,5,Order Data Management and Tracking
+orders_df,6,Order Data Management and Tracking System
+CUSTOMER,7,Customer Identity and Account Management
+cust_df,7,Customer Identity and Account Management
+PRODUCTS,8,Product Information and Management
+prod_df,8,Product Information and Management

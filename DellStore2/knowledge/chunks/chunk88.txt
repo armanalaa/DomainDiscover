@@ -1,0 +1,46 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers
+
+Activity:
+- Sales representatives register new customers by recording their contact details and account information. (CUSTOMER)
+- HR managers assign unique usernames and passwords to each customer for account access. (CUSTOMER)
+- HR managers update customer records with personal details and employment status changes. (CUSTOMER)
+
+## 2. Customer Support Ticketing System
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives create support tickets for customers to track their issues or inquiries. (cust_df)
+- Customer service representatives update ticket statuses as they resolve customer issues. (cust_df)
+- Customer service representatives escalate unresolved tickets to technical support teams when necessary. (cust_df)
+
+## 3. Order Processing and Fulfillment
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by confirming availability, pricing, and shipping details. (cust_df)
+- Warehouse staff pick and pack ordered items for shipment to the customer's specified address. (unspecified table)
+- Warehouse staff update order statuses as items are picked, packed, and shipped. (unspecified table)
+
+## 4. Invoice Generation and Payment Processing
+
+Performed By: Sales Representatives, Finance Department
+
+Activity:
+- Sales representatives generate invoices for customers based on their orders. (unspecified table)
+- Finance department records customer payments against outstanding invoices. (unspecified table)
+- Finance department updates customer accounts with payment history and balances. (unspecified table)
+
+## 5. Customer History Tracking
+
+Performed By: Sales Representatives, Data Analysts
+
+Activity:
+- Sales representatives record customer interactions, purchases, and support tickets in the customer history database. (CUST_HIST)
+- Data analysts analyze customer histories to identify trends, preferences, and opportunities for upselling or cross-selling. (CUST_HIST)
+- Data analysts generate reports on customer behavior and performance for sales and marketing purposes. (unspecified table)

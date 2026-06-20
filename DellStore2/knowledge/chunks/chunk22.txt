@@ -1,0 +1,54 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, Sales Representatives
+
+Activity:
+- Customer service representatives handle inquiries related to the privacy policy by responding to emails or phone calls.
+- Sales representatives process customer requests for product demonstrations and book appointments.
+
+## 2. New Customer Registration
+
+Performed By: Customers, Customer Service Representatives
+
+Activity:
+- Customers register new accounts by providing personal details such as name, email address, and password.
+- Customer service representatives verify the provided information and activate the account.
+
+## 3. Customer Data Maintenance
+
+Performed By: Customers, Customer Service Representatives
+
+Activity:
+- Customers update their personal data through the account settings.
+- Customer service representatives make changes to customer data when necessary.
+
+## 4. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives assist customers with technical issues or product-related questions.
+
+## 5. Customer Inquiry Response
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives respond to customer inquiries and provide solutions or relevant information.
+
+## 6. Data Governance
+
+Performed By: Dataedo Team
+
+Activity:
+- The Dataedo team manages the data governance project, including data cataloging, data quality checks, and continuous monitoring.
+
+## 7. Ticket Submission
+
+Performed By: Customers, Support Team
+
+Activity:
+- Customers submit support tickets to report issues or request assistance.
+- The support team processes the tickets and assigns them to the appropriate team member for resolution.

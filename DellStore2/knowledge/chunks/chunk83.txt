@@ -1,0 +1,42 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Customer Service Representative, IT Administrator
+
+Activity:
+- Customer service representatives register new customers by recording their personal details, contact information, and account credentials. (CUSTOMER table)
+- IT administrators assign unique usernames and passwords to each customer for secure access to the system. (CUSTOMER table)
+- Customer service representatives update customer profiles with changes in personal or contact information. (CUSTOMER table)
+
+## 2. Customer History Tracking
+
+Performed By: Customer Service Representative, Data Analyst
+
+Activity:
+- Customer service representatives document interactions and transactions for each customer in the customer history database (CUST_HIST table).
+- Data analysts analyze customer history data to identify trends, patterns, and opportunities for upselling or cross-selling. (CUST_HIST table)
+
+## 3. Account Management
+
+Performed By: Customer Service Representative, IT Administrator
+
+Activity:
+- Customer service representatives assist customers with account inquiries, such as password resets or account status updates. (CUSTOMER table)
+- IT administrators monitor and manage user accounts for security purposes, including account lockouts and access restrictions. (CUSTOMER table)
+
+## 4. Invoice Generation and Payment Processing
+
+Performed By: Sales Representative, Accounting Clerk
+
+Activity:
+- Sales representatives generate invoices for customers based on their purchase history. (Not directly related to DellStore2 database)
+- Accounting clerks process customer payments by updating the payment status in the respective customer records. (CUSTOMER table)
+
+## 5. Product Catalog Management
+
+Performed By: Product Manager, IT Administrator
+
+Activity:
+- Product managers add new items to the product catalog with their details such as product code, name, category, and list price. (Not directly related to DellStore2 database)
+- IT administrators ensure the product catalog is up-to-date and accessible to customers and sales representatives. (Not directly related to DellStore2 database)

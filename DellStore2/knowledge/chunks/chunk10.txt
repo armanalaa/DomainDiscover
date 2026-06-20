@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives register new customers by recording their contact details and account information (cust_df).
+- HR managers update customer records with employment-related data (cust_df).
+- Customers manage their accounts by modifying personal information (cust_df).
+
+## 2. Customer Support Requests
+
+Performed By: Customer Service Representatives, Experts
+
+Activity:
+- Customer service representatives log support requests from customers (custhist_df).
+- Experts connect with customers to discuss data governance projects or resolve active issues.
+
+## 3. Data Governance Project Management
+
+Performed By: Founder, Sales Representatives, Customers
+
+Activity:
+- The founder discusses data governance projects with potential clients (custhist_df).
+- Sales representatives book demos for interested customers to showcase Dataedo features and benefits (custhist_df).
+- Customers join Dataedo after evaluating its offerings through a free trial or demo.
+
+## 4. Data Catalog Management
+
+Performed By: Founder, Experts
+
+Activity:
+- The founder configures preconfigured data catalogs with sample data for demonstration purposes (custhist_df).
+- Experts help customers set up their own data catalogs using their own data during a 14-day free trial.
+
+## 5. SQL Analyzer & Parser Usage
+
+Performed By: Customers
+
+Activity:
+- Customers use the SQL Analyzer & Parser to understand and manipulate their data (not specified in provided schema).
+
+## 6. Contact Management
+
+Performed By: Sales Representatives, Experts
+
+Activity:
+- Sales representatives save contact information for potential and existing customers (cust_df).
+- Experts communicate with customers via email or phone to discuss data governance projects or resolve active issues (not specified in provided schema).
+
+## 7. Product Promotion and Marketing
+
+Performed By: Founder, Sales Representatives
+
+Activity:
+- The founder promotes Dataedo through various channels such as blog posts, social media, and advertising (not specified in provided schema).
+- Sales representatives reach out to potential customers to discuss the benefits of Dataedo and book demos.

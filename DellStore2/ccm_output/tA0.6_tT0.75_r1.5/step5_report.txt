@@ -1,0 +1,61 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 12
+Edges in G_T         : 13
+θ_T applied in Step 4: 0.75
+Domains discovered   : 5
+Modularity Q         : 0.3661
+
+──────────────────────────────────────────────────────────────────────
+D0  Inventory and Product Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : This domain unifies the capability for managing inventory levels and product data within the system.
+  Tables     : INVENTORY, inv_df
+  Phi top-3  : C19=0.371  C17=0.328  C20=0.321
+
+──────────────────────────────────────────────────────────────────────
+D1  Product Information Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of registering, maintaining, and analyzing product data for accurate analytics and reporting.
+  Tables     : PRODUCTS, prod_df
+  Phi top-3  : C20=0.339  C19=0.322  C4=0.303
+
+──────────────────────────────────────────────────────────────────────
+D2  Customer Order Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : Unifying the management of customer and order data, including historical transactions and current orders.
+  Tables     : CUST_HIST, ORDERS, custhist_df, orders_df
+  Phi top-3  : C19=0.311  C10=0.292  C26=0.274
+
+──────────────────────────────────────────────────────────────────────
+D3  Order Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing orders, including placement, confirmation, fulfillment, tracking, and shipment across the enterprise.
+  Tables     : ORDERLINES, orderlines_df
+  Phi top-3  : C19=0.304  C10=0.292  C6=0.284
+
+──────────────────────────────────────────────────────────────────────
+D4  Customer Identity and Access Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is managing customer accounts, including registration, login, account management, and password changes.
+  Tables     : CUSTOMER, cust_df
+  Phi top-3  : C10=0.380  C14=0.322  C17=0.289
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  INVENTORY                            D       0  Inventory and Product Data Management
+  inv_df                               D       0  Inventory and Product Data Management
+  PRODUCTS                             D       1  Product Information Management
+  prod_df                              D       1  Product Information Management
+  CUST_HIST                            D       2  Customer Order Data Management
+  ORDERS                               D       2  Customer Order Data Management
+  custhist_df                          D       2  Customer Order Data Management
+  orders_df                            D       2  Customer Order Data Management
+  ORDERLINES                           D       3  Order Data Management
+  orderlines_df                        D       3  Order Data Management
+  CUSTOMER                             D       4  Customer Identity and Access Management
+  cust_df                              D       4  Customer Identity and Access Management
+======================================================================

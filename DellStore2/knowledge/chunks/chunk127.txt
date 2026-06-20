@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Sales Representatives, IT Support
+
+Activity:
+- Sales representatives register new customers by recording their contact information and user credentials. (CUSTOMER)
+- IT support assigns unique customer IDs to each registered account. (CUST_DF)
+
+## 2. Customer Account Management
+
+Performed By: Customer Service, IT Support
+
+Activity:
+- Customer service team updates customer details as requested by the customers. (CUSTOMER)
+- IT support modifies user permissions and access levels based on role changes or account status updates. (CUST_DF)
+
+## 3. License Agreement Management
+
+Performed By: Legal Team, Sales Representatives
+
+Activity:
+- Legal team reviews and manages the license agreements with customers. (092_license.pdf)
+- Sales representatives provide customers with access to supported versions of the Products. (092_license.pdf)
+
+## 4. Product Purchase and Invoice Processing
+
+Performed By: Sales Representatives, Finance Team
+
+Activity:
+- Sales representatives process customer orders and generate invoices for products or services. (Not specified in source materials)
+- Finance team records the transactions, updates the customer's account balance, and sends invoices to customers. (Not specified in source materials)
+
+## 5. Payment Processing
+
+Performed By: Customers, Finance Team
+
+Activity:
+- Customers make payments towards their outstanding invoices using accepted payment methods. (092_license.pdf)
+- Finance team updates the customer's account balance and marks the invoice as paid. (Not specified in source materials)
+
+## 6. Technical Support Requests
+
+Performed By: Customers, IT Support
+
+Activity:
+- Customers submit technical support requests for assistance with the Products. (Not specified in source materials)
+- IT support addresses customer issues and provides solutions or workarounds as needed. (Not specified in source materials)
+
+## 7. Usage Data Collection and Analysis
+
+Performed By: Dataedo Team, Analytics Team
+
+Activity:
+- Dataedo team collects limited technical and usage information from customers interacting with the Products. (092_license.pdf)
+- Analytics team analyzes the collected data to improve the Products and provide insights for decision making. (092_license.pdf)

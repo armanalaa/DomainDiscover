@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details and contact information (cust_df).
+- HR managers assign unique usernames and passwords to each customer for account access (cust_df).
+
+## 2. Customer History Management
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives log customer interactions, including sales transactions and product inquiries (custhist_df).
+- Customer service representatives update customer histories with contact details changes or account status updates (custhist_df).
+
+## 3. Product Data Governance
+
+Performed By: Data Stewards, Business Analysts
+
+Activity:
+- Data stewards maintain a business glossary for product-related terms and KPIs (040_product__data-governance.pdf p.9).
+- Business analysts document relationships between products and their associated data assets (040_product__data-governance.pdf p.10).
+
+## 4. Data Catalog Management
+
+Performed By: Data Stewards, Business Analysts
+
+Activity:
+- Data stewards create a searchable catalog of product data assets for easy access across the organization (040_product__data-governance.pdf p.8).
+- Business analysts organize and document metadata related to products in the data catalog (040_product__data-governance.pdf p.8).
+
+## 5. Workflow Management
+
+Performed By: Data Stewards, Approval Managers
+
+Activity:
+- Data stewards create workflows for product data reviews and approvals to keep documentation up to date (040_product__data-governance.pdf p.10).
+- Approval managers review and approve changes to product data within the established workflows.
+
+## 6. Data Lineage Tracking
+
+Performed By: Data Analysts, Data Stewards
+
+Activity:
+- Data analysts visualize how product data flows across systems to understand its origin and downstream impacts (040_product__data-governance.pdf p.11).
+- Data stewards trace issues back to their source when analyzing product data lineage.
+
+## 7. Sensitive Data Discovery
+
+Performed By: Data Stewards, Compliance Officers
+
+Activity:
+- Data stewards automatically detect and classify sensitive or regulated product data (like PII or financial fields) to support compliance and reduce risk (040_product__data-governance.pdf p.11).
+- Compliance officers monitor and ensure adherence to data privacy regulations related to product data.

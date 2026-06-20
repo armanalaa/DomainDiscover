@@ -1,0 +1,54 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customer accounts by recording contact details and preferences (cust_df).
+- Customer service agents update customer information as needed (cust_df).
+- Sales representatives assign customers to appropriate sales territories based on location (cust_df).
+
+## 2. Customer History Tracking
+
+Performed By: Customer Service Agents, Sales Representatives
+
+Activity:
+- Customer service agents record interactions with customers and their outcomes (custhist_df).
+- Sales representatives access customer history to inform sales strategies (custhist_df).
+
+## 3. Data Governance Administration
+
+Performed By: Data Governance Administrators
+
+Activity:
+- Data governance administrators document data assets, including their definitions and lineage (040_product__data-governance.pdf).
+- Data governance administrators ensure data quality by implementing and monitoring validation rules (041_product__data-quality.pdf).
+
+## 4. Data Catalog Management
+
+Performed By: Data Governance Administrators
+
+Activity:
+- Data governance administrators maintain a centralized, easy-to-use data catalog that includes all data assets and their quality scores (040_product__data-governance.pdf).
+
+## 5. Data Quality Assessment
+
+Performed By: Data Governance Administrators
+
+Activity:
+- Data governance administrators perform automated data quality checks to ensure reliable and trustworthy data (041_product__data-quality.pdf).
+
+## 6. Customer Support
+
+Performed By: Customer Service Agents
+
+Activity:
+- Customer service agents respond to customer inquiries and provide assistance as needed (customer support tickets or emails).
+
+## 7. Dataedo Platform Usage
+
+Performed By: Data Governance Administrators, Sales Representatives, Customer Service Agents
+
+Activity:
+- Users access the Dataedo platform to manage data assets, implement data quality rules, and view data catalogs (Dataedo platform login).

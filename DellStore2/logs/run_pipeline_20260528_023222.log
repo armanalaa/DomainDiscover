@@ -1,0 +1,24 @@
+02:32:22  INFO      Log file: H:\Other computers\My PC\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\DellStore2\logs\run_pipeline_20260528_023222.log
+02:32:22  INFO      [clean] Removed dir  : H:\Other computers\My PC\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\DellStore2\ccm_output\tA0.65_tT0.7_r1.5
+02:32:22  INFO      [clean] run_pipeline run_dir=H:\Other computers\My PC\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\DellStore2\ccm_output\tA0.65_tT0.7_r1.5 — 1 item(s) removed.
+02:32:22  INFO      
+02:32:22  INFO      ======================================================================
+02:32:22  INFO        CCM Pipeline — TwoLevelDomainDiscovery
+02:32:22  INFO        Started    : 2026-05-28 02:32:22
+02:32:22  INFO        Dataset dir: H:\Other computers\My PC\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\DellStore2
+02:32:22  INFO        Script dir : H:\Other computers\My PC\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner
+02:32:22  INFO        Schema     : H:\Other computers\My PC\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\DellStore2\schema.json
+02:32:22  INFO        Shared dir : H:\Other computers\My PC\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\DellStore2\ccm_output   (Steps 1+2, 3a, 3b)
+02:32:22  INFO        Run dir    : H:\Other computers\My PC\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\DellStore2\ccm_output\tA0.65_tT0.7_r1.5   (Steps 3c, 4, 5)
+02:32:22  INFO        Run tag    : tA0.65_tT0.7_r1.5
+02:32:22  INFO        Log file   : H:\Other computers\My PC\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\DellStore2\logs\run_pipeline_20260528_023222.log
+02:32:22  INFO        Knowledge  : knowledge.docx
+02:32:22  INFO        theta_A    : 0.65  theta_T: 0.7
+02:32:22  INFO        LLM model  : mistral:latest  backend=ollama
+02:32:22  INFO        ollama_url : http://localhost:11434
+02:32:22  INFO        num_predict: 512  num_ctx=4096  temperature=0.0  timeout=1200s
+02:32:22  INFO        embed_model: sentence-transformers/all-mpnet-base-v2
+02:32:22  INFO        resolution : 1.5  random_state=0
+02:32:22  INFO        Clean run  : True
+02:32:22  INFO        Dry run    : False
+02:32:22  INFO      ======================================================================

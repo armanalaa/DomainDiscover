@@ -1,0 +1,54 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Dataedo Team, Customer Support
+
+Activity:
+- Dataedo team crafts custom connectors for database integration (Dataedo Team).
+- Customer support assists users with connector setup and troubleshooting (Customer Support).
+
+## 2. Metadata Import
+
+Performed By: Users, Dataedo Team
+
+Activity:
+- Users upload metadata extracted from their own sources into interface tables (Users).
+- Dataedo team imports the metadata safely into the repository using interface tables (Dataedo Team).
+
+## 3. Schema Import via DDL Scripts
+
+Performed By: Database Administrators, Dataedo Team
+
+Activity:
+- Database administrators dump database structure as SQL DDL scripts (Database Administrators).
+- Dataedo team imports schema from the provided DDL scripts in selected SQL dialects (Dataedo Team).
+
+## 4. Metadata Scanning
+
+Performed By: Dataedo Agent
+
+Activity:
+- Dataedo Agent scans data dictionary tables to identify tables, columns, and other structures (Dataedo Agent).
+
+## 5. Data Profiling
+
+Performed By: Dataedo Team
+
+Activity:
+- Dataedo team executes predefined data profiling SQL queries to extract information about column data profiles (Dataedo Team).
+
+## 6. Data Quality Testing
+
+Performed By: Data Quality Analysts, Users
+
+Activity:
+- Data quality analysts execute predefined data quality tests (Data Quality Analysts).
+- Users define their own data quality tests as needed (Users).
+
+## 7. Connector Configuration
+
+Performed By: Dataedo Portal Users
+
+Activity:
+- Users add connectors directly through the Dataedo Portal instead of Dataedo Desktop (Dataedo Portal Users).

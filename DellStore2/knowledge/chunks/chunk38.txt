@@ -1,0 +1,59 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details and contact information (SRIMVH, SLZCISTEWL@dell.com, DXPGGAE, Unnamed: 6, SLZCISTEWL@dell.com, 1467048332, UK).
+- HR managers assign unique usernames and passwords to each new customer (user10001, password).
+- Customer service representatives update customer details when necessary (SLZCISTEWL@dell.com, DXPGGAE, Unnamed: 6).
+
+## 2. Account Maintenance
+
+Performed By: Customers, Finance Department
+
+Activity:
+- Customers manage their account information, such as billing addresses and payment methods (1467048332 Dell Way, 00000, 44).
+- The finance department records transactions related to each customer's account (80000, F, 1).
+
+## 3. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives address customer inquiries and concerns regarding products or services (RNPOJG, FQIVBKWIZC).
+- Customer service representatives document the resolution of each support case (FQIVBKWIZC@dell.com).
+
+## 4. Product Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers add new items to the product catalog by recording their product code, name, category, and list price (ProductID, Name, Category, List Price).
+- Product managers update product information when necessary (ProductID, Name, Category, List Price).
+
+## 5. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by recording the required items and shipping details (SLZCISTEWL@dell.com, 1467048332 Dell Way).
+- Warehouse staff track inventory levels to ensure order fulfillment (Inventory Levels).
+- Warehouse staff package and ship ordered products (Shipping Details).
+
+## 6. Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- The finance department generates invoices for each customer based on their orders (Invoice Number, Total Amount).
+- The finance department records the payment status of each invoice (Payment Status).
+
+## 7. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff update inventory levels when products are received or shipped (Inventory Levels).
+- Warehouse staff track product availability to ensure timely order fulfillment (Product Availability).

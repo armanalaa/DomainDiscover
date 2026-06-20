@@ -1,0 +1,44 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers
+
+Activity:
+- Sales representatives register new customers by recording their contact details and account information. (CUSTOMER table)
+- HR managers assign unique usernames and passwords to each customer for secure access to their accounts. (CUSTOMER table)
+- Sales representatives update customer information as needed, such as address changes or contact preferences. (CUSTOMER table)
+- HR managers manage employee data related to customers, including personnel records and performance evaluations.
+
+## 2. Customer Interaction History Tracking
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives document interactions with customers, such as phone calls, emails, or meetings, for future reference. (CUST_HIST table)
+- Customer service agents record details of customer inquiries and support requests, including resolution steps taken. (CUST_HIST table)
+- Both sales representatives and customer service agents update the interaction history to reflect ongoing communication with customers. (CUST_HIST table)
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, Data Governance Team
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price. (not specified table)
+- The data governance team ensures that the product catalog is accurate, complete, and up-to-date by performing regular quality checks and addressing any errors or anomalies.
+
+## 4. Data Lineage Documentation
+
+Performed By: Data Governance Team
+
+Activity:
+- The data governance team tracks how data flows across systems to understand its transformations, dependencies, and impacts. (not specified table)
+- They document this information to ensure transparency, support compliance, and reduce errors in the data ecosystem.
+
+## 5. Data Access Control
+
+Performed By: Data Governance Team
+
+Activity:
+- The data governance team controls who can view or edit different parts of the catalog to maintain security and accountability across the organization. (not specified table)
+- They assign clear ownership, manage approvals, and ensure that everyone follows established data governance policies.

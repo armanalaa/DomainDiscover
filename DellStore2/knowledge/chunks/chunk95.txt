@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, Sales Managers
+
+Activity:
+- Customer service representatives handle customer inquiries and update customer details (cust_df).
+- Sales managers review customer profiles to identify potential leads for upselling or cross-selling opportunities (CUSTOMER).
+- Customer service representatives process returns and refunds based on the return reason provided by customers (cust_df).
+
+## 2. New Customer Registration
+
+Performed By: Customer Service Representatives, IT Administrators
+
+Activity:
+- Customer service representatives assist new customers in registering accounts by providing necessary information (cust_df).
+- IT administrators create user accounts and assign passwords for newly registered customers (cust_df).
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives confirm orders with customers and update order statuses in the system (custhist_df).
+- Warehouse staff pick, pack, and ship ordered items to customers based on their shipping addresses (custhist_df).
+
+## 4. Inventory Management
+
+Performed By: Inventory Managers, Purchasing Teams
+
+Activity:
+- Inventory managers monitor stock levels and reorder items when necessary (custhist_df).
+- Purchasing teams negotiate with suppliers to secure the best deals for product purchases (custhist_df).
+
+## 5. Financial Management
+
+Performed By: Finance Managers, Accounting Staff
+
+Activity:
+- Finance managers record and analyze financial transactions related to sales, expenses, and inventory costs (custhist_df).
+- Accounting staff prepare invoices for customers based on their order history (custhist_df).
+
+## 6. Customer Support
+
+Performed By: Customer Service Representatives, Technical Support Specialists
+
+Activity:
+- Customer service representatives assist customers with product-related inquiries and troubleshooting issues (custhist_df).
+- Technical support specialists provide technical assistance to customers experiencing hardware or software problems (custhist_df).
+
+## 7. Data Documentation
+
+Performed By: Data Governance Team, IT Administrators
+
+Activity:
+- The data governance team documents the database schema and data lineage for compliance purposes (all tables).
+- IT administrators ensure that all changes to the database are properly documented and tracked (all tables).

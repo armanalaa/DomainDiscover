@@ -1,0 +1,46 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their personal details, contact information, and account credentials. (CUSTOMER table)
+- Customer service agents update customer profiles with changes to contact information or account status. (CUSTOMER table)
+- Sales representatives assign unique customer IDs to each registered user. (cust_df table)
+
+## 2. Customer History Tracking
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives record details of customer interactions and transactions in the customer history database. (CUST_HIST table)
+- Customer service agents access and review a customer's history to address queries or issues. (CUST_HIST table)
+- Sales representatives use historical data for sales forecasting and trend analysis. (CUST_HIST table)
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price. (cust_df table)
+- Warehouse staff update product information when inventory levels change or products are discontinued. (cust_df table)
+- Warehouse staff track product locations within the warehouse for efficient picking and shipping. (Not specified in provided schema)
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Customer Service Agents
+
+Activity:
+- Sales representatives process customer orders by selecting products, calculating totals, and generating order numbers. (cust_df table, CUST_HIST table)
+- Warehouse staff pick and pack ordered items for shipping. (Not specified in provided schema)
+- Customer service agents confirm order status and provide tracking information to customers. (CUST_HIST table)
+
+## 5. Invoice Generation and Payment Processing
+
+Performed By: Finance Department, Sales Representatives, Customer Service Agents
+
+Activity:
+- Finance department generates invoices based on customer orders and sends them to the relevant parties. (Not specified in provided schema)
+- Sales representatives review and approve invoices before they are sent to customers. (Not specified in provided schema)
+- Customer service agents assist customers with payment queries or issues. (Not specified in provided schema)

@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details and contact information (cust_df).
+- HR managers assign unique usernames and passwords to each customer for account access (cust_df).
+
+## 2. Customer History Tracking
+
+Performed By: Customer Service Representatives, Data Analysts
+
+Activity:
+- Customer service representatives update the customer history table (CUST_HIST) with details of each interaction.
+- Data analysts analyze customer history data to identify trends and patterns (CUST_HIST).
+
+## 3. Account Maintenance
+
+Performed By: Customers, Customer Service Representatives
+
+Activity:
+- Customers update their account information as needed through the self-service portal (cust_df).
+- Customer service representatives verify and confirm changes made to customer accounts (cust_df).
+
+## 4. Sales Process Management
+
+Performed By: Sales Representatives, Purchasing Teams
+
+Activity:
+- Sales representatives enter product details and prices into the catalog for customers to view (not specified in provided schema).
+- Purchasing teams issue purchase orders based on customer requests and available inventory levels.
+
+## 5. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels and update the system when stock changes (not specified in provided schema).
+- Purchasing teams order new products to replenish depleted inventory (not specified in provided schema).
+
+## 6. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Teams
+
+Activity:
+- Warehouse staff pick and pack orders based on purchase orders and available stock (not specified in provided schema).
+- Shipping teams prepare and dispatch orders to customers (not specified in provided schema).
+
+## 7. Financial Processing
+
+Performed By: Finance Teams, Accounting Staff
+
+Activity:
+- Finance teams record transactions related to sales, purchases, and inventory movements (not specified in provided schema).
+- Accounting staff generate financial reports based on processed transactions (not specified in provided schema).

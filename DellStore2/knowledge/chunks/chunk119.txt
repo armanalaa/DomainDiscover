@@ -1,0 +1,64 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact details and preferences (cust_df).
+- Customer service agents update customer information as needed (cust_df).
+- Sales representatives assign customer accounts to specific account managers (CUSTOMER).
+
+## 2. Account Management
+
+Performed By: Account Managers, Customer Service Agents
+
+Activity:
+- Account managers maintain relationships with assigned customers, addressing their needs and concerns (CUSTOMER).
+- Account managers track customer purchase history (custhist_df).
+- Customer service agents handle customer inquiries related to account information (cust_df, CUSTOMER).
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Shipping Clerks
+
+Activity:
+- Sales representatives process orders from customers, including item selection and quantity (custhist_df).
+- Warehouse staff pick and pack ordered items for shipment (not specified).
+- Shipping clerks prepare and dispatch orders to the customer (not specified).
+
+## 4. Inventory Management
+
+Performed By: Inventory Managers, Warehouse Staff
+
+Activity:
+- Inventory managers monitor stock levels and reorder items as needed (not specified).
+- Warehouse staff receive and store incoming shipments (not specified).
+- Warehouse staff update inventory records for new arrivals (custhist_df).
+
+## 5. Billing and Payment
+
+Performed By: Finance Department, Customer Service Agents
+
+Activity:
+- Finance department generates invoices based on customer orders (not specified).
+- Customer service agents send invoices to customers via email (CUSTOMER).
+- Customers make payments towards their outstanding balances (not specified).
+
+## 6. Partner Management
+
+Performed By: Channel Partners, Sales Representatives
+
+Activity:
+- Sales representatives collaborate with channel partners to expand the customer base (090_resellers.pdf).
+- Channel partners promote DellStore2 products and services to their networks (090_resellers.pdf).
+- Sales representatives manage relationships with partner accounts (CUSTOMER).
+
+## 7. Data Governance and Compliance
+
+Performed By: Data Trust Associates, IT Department
+
+Activity:
+- Data Trust Associates ensure data governance and compliance within DellStore2 (Data Trust Associates).
+- IT department implements and maintains security measures to protect customer data (not specified).
+- IT department ensures adherence to data privacy regulations (not specified).

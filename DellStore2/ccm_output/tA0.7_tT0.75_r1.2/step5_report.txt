@@ -1,0 +1,54 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 12
+Edges in G_T         : 13
+θ_T applied in Step 4: 0.75
+Domains discovered   : 4
+Modularity Q         : 0.4157
+
+──────────────────────────────────────────────────────────────────────
+D0  Inventory and Product Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : This domain unifies the capability for managing inventory levels and product data within the system.
+  Tables     : INVENTORY, inv_df
+  Phi top-3  : C19=0.371  C17=0.328  C20=0.321
+
+──────────────────────────────────────────────────────────────────────
+D1  Order Data Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability that justifies grouping these tables together is the management of order-related data, including customer history and order lines.
+  Tables     : CUST_HIST, ORDERLINES, ORDERS, custhist_df, orderlines_df, orders_df
+  Phi top-3  : C19=0.309  C10=0.292  C26=0.275
+
+──────────────────────────────────────────────────────────────────────
+D2  Product Information Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The process of managing product details, including registration, analytics, and reporting.
+  Tables     : PRODUCTS, prod_df
+  Phi top-3  : C20=0.339  C19=0.322  C4=0.303
+
+──────────────────────────────────────────────────────────────────────
+D3  Customer Identity and Access Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The unifying capability across all tables is managing customer accounts, including registration, login, account management, and password changes.
+  Tables     : CUSTOMER, cust_df
+  Phi top-3  : C10=0.380  C14=0.322  C17=0.289
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  INVENTORY                            D       0  Inventory and Product Data Management
+  inv_df                               D       0  Inventory and Product Data Management
+  CUST_HIST                            D       1  Order Data Management
+  ORDERLINES                           D       1  Order Data Management
+  ORDERS                               D       1  Order Data Management
+  custhist_df                          D       1  Order Data Management
+  orderlines_df                        D       1  Order Data Management
+  orders_df                            D       1  Order Data Management
+  PRODUCTS                             D       2  Product Information Management
+  prod_df                              D       2  Product Information Management
+  CUSTOMER                             D       3  Customer Identity and Access Management
+  cust_df                              D       3  Customer Identity and Access Management
+======================================================================

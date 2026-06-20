@@ -1,0 +1,389 @@
+table,column,domain_id,domain_name
+INVENTORY,1,0,Inventory and Product Data Management
+INVENTORY,138,0,Inventory and Product Data Management
+INVENTORY,9,0,Inventory and Product Data Management
+inv_df,1,0,Inventory and Product Data Management
+inv_df,138,0,Inventory and Product Data Management
+inv_df,9,0,Inventory and Product Data Management
+PRODUCTS,0,1,Product Information Management
+PRODUCTS,1,1,Product Information Management
+PRODUCTS,14,1,Product Information Management
+PRODUCTS,1976,1,Product Information Management
+PRODUCTS,25.99,1,Product Information Management
+PRODUCTS,ACADEMY ACADEMY,1,Product Information Management
+PRODUCTS,PENELOPE GUINESS,1,Product Information Management
+prod_df,0,1,Product Information Management
+prod_df,1,1,Product Information Management
+prod_df,14,1,Product Information Management
+prod_df,1976,1,Product Information Management
+prod_df,25.99,1,Product Information Management
+prod_df,ACADEMY ACADEMY,1,Product Information Management
+prod_df,PENELOPE GUINESS,1,Product Information Management
+CUST_HIST,1,2,Customer Order Data Management
+CUST_HIST,10001,2,Customer Order Data Management
+CUST_HIST,1001,2,Customer Order Data Management
+CUST_HIST,11001,2,Customer Order Data Management
+CUST_HIST,12411,2,Customer Order Data Management
+CUST_HIST,12934,2,Customer Order Data Management
+CUST_HIST,1376,2,Customer Order Data Management
+CUST_HIST,14005,2,Customer Order Data Management
+CUST_HIST,1490,2,Customer Order Data Management
+CUST_HIST,15441,2,Customer Order Data Management
+CUST_HIST,1697,2,Customer Order Data Management
+CUST_HIST,16984,2,Customer Order Data Management
+CUST_HIST,19356,2,Customer Order Data Management
+CUST_HIST,2001,2,Customer Order Data Management
+CUST_HIST,3001,2,Customer Order Data Management
+CUST_HIST,306,2,Customer Order Data Management
+CUST_HIST,4001,2,Customer Order Data Management
+CUST_HIST,4380,2,Customer Order Data Management
+CUST_HIST,4497,2,Customer Order Data Management
+CUST_HIST,5001,2,Customer Order Data Management
+CUST_HIST,5549,2,Customer Order Data Management
+CUST_HIST,5853,2,Customer Order Data Management
+CUST_HIST,6001,2,Customer Order Data Management
+CUST_HIST,6079,2,Customer Order Data Management
+CUST_HIST,6941,2,Customer Order Data Management
+CUST_HIST,7001,2,Customer Order Data Management
+CUST_HIST,7259,2,Customer Order Data Management
+CUST_HIST,7888,2,Customer Order Data Management
+CUST_HIST,8001,2,Customer Order Data Management
+CUST_HIST,8391,2,Customer Order Data Management
+CUST_HIST,9001,2,Customer Order Data Management
+CUST_HIST,9117,2,Customer Order Data Management
+CUST_HIST,931,2,Customer Order Data Management
+CUST_HIST,9702,2,Customer Order Data Management
+CUST_HIST,9922,2,Customer Order Data Management
+CUST_HIST,9972,2,Customer Order Data Management
+ORDERS,0.69,2,Customer Order Data Management
+ORDERS,1,2,Customer Order Data Management
+ORDERS,10.23,2,Customer Order Data Management
+ORDERS,10001,2,Customer Order Data Management
+ORDERS,1001,2,Customer Order Data Management
+ORDERS,102.63,2,Customer Order Data Management
+ORDERS,11001,2,Customer Order Data Management
+ORDERS,111.10,2,Customer Order Data Management
+ORDERS,123.98,2,Customer Order Data Management
+ORDERS,12411,2,Customer Order Data Management
+ORDERS,12934,2,Customer Order Data Management
+ORDERS,134.21,2,Customer Order Data Management
+ORDERS,14.08,2,Customer Order Data Management
+ORDERS,14005,2,Customer Order Data Management
+ORDERS,1490,2,Customer Order Data Management
+ORDERS,15441,2,Customer Order Data Management
+ORDERS,16984,2,Customer Order Data Management
+ORDERS,170.63,2,Customer Order Data Management
+ORDERS,184.71,2,Customer Order Data Management
+ORDERS,19356,2,Customer Order Data Management
+ORDERS,2.63,2,Customer Order Data Management
+ORDERS,20.19,2,Customer Order Data Management
+ORDERS,2001,2,Customer Order Data Management
+ORDERS,2009/01/27,2,Customer Order Data Management
+ORDERS,2009/02/07,2,Customer Order Data Management
+ORDERS,2009/03/04,2,Customer Order Data Management
+ORDERS,2009/04/30,2,Customer Order Data Management
+ORDERS,2009/05/12,2,Customer Order Data Management
+ORDERS,2009/06/08,2,Customer Order Data Management
+ORDERS,2009/07/04,2,Customer Order Data Management
+ORDERS,2009/08/16,2,Customer Order Data Management
+ORDERS,2009/09/12,2,Customer Order Data Management
+ORDERS,2009/10/24,2,Customer Order Data Management
+ORDERS,2009/11/19,2,Customer Order Data Management
+ORDERS,2009/12/16,2,Customer Order Data Management
+ORDERS,23.89,2,Customer Order Data Management
+ORDERS,244.69,2,Customer Order Data Management
+ORDERS,25.84,2,Customer Order Data Management
+ORDERS,264.88,2,Customer Order Data Management
+ORDERS,28.92,2,Customer Order Data Management
+ORDERS,289.62,2,Customer Order Data Management
+ORDERS,29.93,2,Customer Order Data Management
+ORDERS,3001,2,Customer Order Data Management
+ORDERS,31.72,2,Customer Order Data Management
+ORDERS,31.84,2,Customer Order Data Management
+ORDERS,313.24,2,Customer Order Data Management
+ORDERS,313.51,2,Customer Order Data Management
+ORDERS,339.08,2,Customer Order Data Management
+ORDERS,34.47,2,Customer Order Data Management
+ORDERS,350.60,2,Customer Order Data Management
+ORDERS,362.76,2,Customer Order Data Management
+ORDERS,379.52,2,Customer Order Data Management
+ORDERS,384.52,2,Customer Order Data Management
+ORDERS,392.69,2,Customer Order Data Management
+ORDERS,4001,2,Customer Order Data Management
+ORDERS,416.24,2,Customer Order Data Management
+ORDERS,4497,2,Customer Order Data Management
+ORDERS,5.61,2,Customer Order Data Management
+ORDERS,5001,2,Customer Order Data Management
+ORDERS,6001,2,Customer Order Data Management
+ORDERS,67.99,2,Customer Order Data Management
+ORDERS,7001,2,Customer Order Data Management
+ORDERS,73.60,2,Customer Order Data Management
+ORDERS,7888,2,Customer Order Data Management
+ORDERS,8.36,2,Customer Order Data Management
+ORDERS,8.47,2,Customer Order Data Management
+ORDERS,8001,2,Customer Order Data Management
+ORDERS,8391,2,Customer Order Data Management
+ORDERS,9.05,2,Customer Order Data Management
+ORDERS,9001,2,Customer Order Data Management
+ORDERS,931,2,Customer Order Data Management
+ORDERS,9922,2,Customer Order Data Management
+custhist_df,1,2,Customer Order Data Management
+custhist_df,10001,2,Customer Order Data Management
+custhist_df,1001,2,Customer Order Data Management
+custhist_df,11001,2,Customer Order Data Management
+custhist_df,12411,2,Customer Order Data Management
+custhist_df,12934,2,Customer Order Data Management
+custhist_df,1376,2,Customer Order Data Management
+custhist_df,14005,2,Customer Order Data Management
+custhist_df,1490,2,Customer Order Data Management
+custhist_df,15441,2,Customer Order Data Management
+custhist_df,1697,2,Customer Order Data Management
+custhist_df,16984,2,Customer Order Data Management
+custhist_df,19356,2,Customer Order Data Management
+custhist_df,2001,2,Customer Order Data Management
+custhist_df,3001,2,Customer Order Data Management
+custhist_df,306,2,Customer Order Data Management
+custhist_df,4001,2,Customer Order Data Management
+custhist_df,4380,2,Customer Order Data Management
+custhist_df,4497,2,Customer Order Data Management
+custhist_df,5001,2,Customer Order Data Management
+custhist_df,5549,2,Customer Order Data Management
+custhist_df,5853,2,Customer Order Data Management
+custhist_df,6001,2,Customer Order Data Management
+custhist_df,6079,2,Customer Order Data Management
+custhist_df,6941,2,Customer Order Data Management
+custhist_df,7001,2,Customer Order Data Management
+custhist_df,7259,2,Customer Order Data Management
+custhist_df,7888,2,Customer Order Data Management
+custhist_df,8001,2,Customer Order Data Management
+custhist_df,8391,2,Customer Order Data Management
+custhist_df,9001,2,Customer Order Data Management
+custhist_df,9117,2,Customer Order Data Management
+custhist_df,931,2,Customer Order Data Management
+custhist_df,9702,2,Customer Order Data Management
+custhist_df,9922,2,Customer Order Data Management
+custhist_df,9972,2,Customer Order Data Management
+orders_df,0.69,2,Customer Order Data Management
+orders_df,1,2,Customer Order Data Management
+orders_df,10.23,2,Customer Order Data Management
+orders_df,10001,2,Customer Order Data Management
+orders_df,1001,2,Customer Order Data Management
+orders_df,102.63,2,Customer Order Data Management
+orders_df,11001,2,Customer Order Data Management
+orders_df,111.10,2,Customer Order Data Management
+orders_df,123.98,2,Customer Order Data Management
+orders_df,12411,2,Customer Order Data Management
+orders_df,12934,2,Customer Order Data Management
+orders_df,134.21,2,Customer Order Data Management
+orders_df,14.08,2,Customer Order Data Management
+orders_df,14005,2,Customer Order Data Management
+orders_df,1490,2,Customer Order Data Management
+orders_df,15441,2,Customer Order Data Management
+orders_df,16984,2,Customer Order Data Management
+orders_df,170.63,2,Customer Order Data Management
+orders_df,184.71,2,Customer Order Data Management
+orders_df,19356,2,Customer Order Data Management
+orders_df,2.63,2,Customer Order Data Management
+orders_df,20.19,2,Customer Order Data Management
+orders_df,2001,2,Customer Order Data Management
+orders_df,2009/01/27,2,Customer Order Data Management
+orders_df,2009/02/07,2,Customer Order Data Management
+orders_df,2009/03/04,2,Customer Order Data Management
+orders_df,2009/04/30,2,Customer Order Data Management
+orders_df,2009/05/12,2,Customer Order Data Management
+orders_df,2009/06/08,2,Customer Order Data Management
+orders_df,2009/07/04,2,Customer Order Data Management
+orders_df,2009/08/16,2,Customer Order Data Management
+orders_df,2009/09/12,2,Customer Order Data Management
+orders_df,2009/10/24,2,Customer Order Data Management
+orders_df,2009/11/19,2,Customer Order Data Management
+orders_df,2009/12/16,2,Customer Order Data Management
+orders_df,23.89,2,Customer Order Data Management
+orders_df,244.69,2,Customer Order Data Management
+orders_df,25.84,2,Customer Order Data Management
+orders_df,264.88,2,Customer Order Data Management
+orders_df,28.92,2,Customer Order Data Management
+orders_df,289.62,2,Customer Order Data Management
+orders_df,29.93,2,Customer Order Data Management
+orders_df,3001,2,Customer Order Data Management
+orders_df,31.72,2,Customer Order Data Management
+orders_df,31.84,2,Customer Order Data Management
+orders_df,313.24,2,Customer Order Data Management
+orders_df,313.51,2,Customer Order Data Management
+orders_df,339.08,2,Customer Order Data Management
+orders_df,34.47,2,Customer Order Data Management
+orders_df,350.60,2,Customer Order Data Management
+orders_df,362.76,2,Customer Order Data Management
+orders_df,379.52,2,Customer Order Data Management
+orders_df,384.52,2,Customer Order Data Management
+orders_df,392.69,2,Customer Order Data Management
+orders_df,4001,2,Customer Order Data Management
+orders_df,416.24,2,Customer Order Data Management
+orders_df,4497,2,Customer Order Data Management
+orders_df,5.61,2,Customer Order Data Management
+orders_df,5001,2,Customer Order Data Management
+orders_df,6001,2,Customer Order Data Management
+orders_df,67.99,2,Customer Order Data Management
+orders_df,7001,2,Customer Order Data Management
+orders_df,73.60,2,Customer Order Data Management
+orders_df,7888,2,Customer Order Data Management
+orders_df,8.36,2,Customer Order Data Management
+orders_df,8.47,2,Customer Order Data Management
+orders_df,8001,2,Customer Order Data Management
+orders_df,8391,2,Customer Order Data Management
+orders_df,9.05,2,Customer Order Data Management
+orders_df,9001,2,Customer Order Data Management
+orders_df,931,2,Customer Order Data Management
+orders_df,9922,2,Customer Order Data Management
+ORDERLINES,1,3,Order Data Management
+ORDERLINES,1.1,3,Order Data Management
+ORDERLINES,1.2,3,Order Data Management
+ORDERLINES,10001,3,Order Data Management
+ORDERLINES,1001,3,Order Data Management
+ORDERLINES,11001,3,Order Data Management
+ORDERLINES,1376,3,Order Data Management
+ORDERLINES,1697,3,Order Data Management
+ORDERLINES,2,3,Order Data Management
+ORDERLINES,2001,3,Order Data Management
+ORDERLINES,2009/01/27,3,Order Data Management
+ORDERLINES,2009/02/07,3,Order Data Management
+ORDERLINES,2009/03/04,3,Order Data Management
+ORDERLINES,2009/04/30,3,Order Data Management
+ORDERLINES,2009/05/12,3,Order Data Management
+ORDERLINES,2009/06/08,3,Order Data Management
+ORDERLINES,2009/07/04,3,Order Data Management
+ORDERLINES,2009/08/16,3,Order Data Management
+ORDERLINES,2009/09/12,3,Order Data Management
+ORDERLINES,2009/10/24,3,Order Data Management
+ORDERLINES,2009/11/19,3,Order Data Management
+ORDERLINES,2009/12/16,3,Order Data Management
+ORDERLINES,3,3,Order Data Management
+ORDERLINES,3001,3,Order Data Management
+ORDERLINES,306,3,Order Data Management
+ORDERLINES,4001,3,Order Data Management
+ORDERLINES,4380,3,Order Data Management
+ORDERLINES,5001,3,Order Data Management
+ORDERLINES,5549,3,Order Data Management
+ORDERLINES,5853,3,Order Data Management
+ORDERLINES,6001,3,Order Data Management
+ORDERLINES,6079,3,Order Data Management
+ORDERLINES,6941,3,Order Data Management
+ORDERLINES,7001,3,Order Data Management
+ORDERLINES,7259,3,Order Data Management
+ORDERLINES,8001,3,Order Data Management
+ORDERLINES,9001,3,Order Data Management
+ORDERLINES,9117,3,Order Data Management
+ORDERLINES,9702,3,Order Data Management
+ORDERLINES,9972,3,Order Data Management
+orderlines_df,1,3,Order Data Management
+orderlines_df,1.1,3,Order Data Management
+orderlines_df,1.2,3,Order Data Management
+orderlines_df,10001,3,Order Data Management
+orderlines_df,1001,3,Order Data Management
+orderlines_df,11001,3,Order Data Management
+orderlines_df,1376,3,Order Data Management
+orderlines_df,1697,3,Order Data Management
+orderlines_df,2,3,Order Data Management
+orderlines_df,2001,3,Order Data Management
+orderlines_df,2009/01/27,3,Order Data Management
+orderlines_df,2009/02/07,3,Order Data Management
+orderlines_df,2009/03/04,3,Order Data Management
+orderlines_df,2009/04/30,3,Order Data Management
+orderlines_df,2009/05/12,3,Order Data Management
+orderlines_df,2009/06/08,3,Order Data Management
+orderlines_df,2009/07/04,3,Order Data Management
+orderlines_df,2009/08/16,3,Order Data Management
+orderlines_df,2009/09/12,3,Order Data Management
+orderlines_df,2009/10/24,3,Order Data Management
+orderlines_df,2009/11/19,3,Order Data Management
+orderlines_df,2009/12/16,3,Order Data Management
+orderlines_df,3,3,Order Data Management
+orderlines_df,3001,3,Order Data Management
+orderlines_df,306,3,Order Data Management
+orderlines_df,4001,3,Order Data Management
+orderlines_df,4380,3,Order Data Management
+orderlines_df,5001,3,Order Data Management
+orderlines_df,5549,3,Order Data Management
+orderlines_df,5853,3,Order Data Management
+orderlines_df,6001,3,Order Data Management
+orderlines_df,6079,3,Order Data Management
+orderlines_df,6941,3,Order Data Management
+orderlines_df,7001,3,Order Data Management
+orderlines_df,7259,3,Order Data Management
+orderlines_df,8001,3,Order Data Management
+orderlines_df,9001,3,Order Data Management
+orderlines_df,9117,3,Order Data Management
+orderlines_df,9702,3,Order Data Management
+orderlines_df,9972,3,Order Data Management
+CUSTOMER,00000,4,Customer Identity and Access Management
+CUSTOMER,1,4,Customer Identity and Access Management
+CUSTOMER,1.1,4,Customer Identity and Access Management
+CUSTOMER,10001,4,Customer Identity and Access Management
+CUSTOMER,1281093623023480,4,Customer Identity and Access Management
+CUSTOMER,1287944454,4,Customer Identity and Access Management
+CUSTOMER,1287944454 Dell Way,4,Customer Identity and Access Management
+CUSTOMER,1467048332,4,Customer Identity and Access Management
+CUSTOMER,1467048332 Dell Way,4,Customer Identity and Access Management
+CUSTOMER,1890860486775636,4,Customer Identity and Access Management
+CUSTOMER,2,4,Customer Identity and Access Management
+CUSTOMER,2012/06,4,Customer Identity and Access Management
+CUSTOMER,2012/09,4,Customer Identity and Access Management
+CUSTOMER,42572,4,Customer Identity and Access Management
+CUSTOMER,44,4,Customer Identity and Access Management
+CUSTOMER,49,4,Customer Identity and Access Management
+CUSTOMER,5,4,Customer Identity and Access Management
+CUSTOMER,80000,4,Customer Identity and Access Management
+CUSTOMER,DXPGGAE,4,Customer Identity and Access Management
+CUSTOMER,F,4,Customer Identity and Access Management
+CUSTOMER,FQIVBKWIZC,4,Customer Identity and Access Management
+CUSTOMER,FQIVBKWIZC@dell.com,4,Customer Identity and Access Management
+CUSTOMER,M,4,Customer Identity and Access Management
+CUSTOMER,ND,4,Customer Identity and Access Management
+CUSTOMER,RNPOJG,4,Customer Identity and Access Management
+CUSTOMER,SLZCISTEWL,4,Customer Identity and Access Management
+CUSTOMER,SLZCISTEWL@dell.com,4,Customer Identity and Access Management
+CUSTOMER,SRIMVH,4,Customer Identity and Access Management
+CUSTOMER,UK,4,Customer Identity and Access Management
+CUSTOMER,US,4,Customer Identity and Access Management
+CUSTOMER,Unnamed: 4,4,Customer Identity and Access Management
+CUSTOMER,Unnamed: 6,4,Customer Identity and Access Management
+CUSTOMER,XCXNWIS,4,Customer Identity and Access Management
+CUSTOMER,password,4,Customer Identity and Access Management
+CUSTOMER,user1,4,Customer Identity and Access Management
+CUSTOMER,user10001,4,Customer Identity and Access Management
+cust_df,00000,4,Customer Identity and Access Management
+cust_df,1,4,Customer Identity and Access Management
+cust_df,1.1,4,Customer Identity and Access Management
+cust_df,10001,4,Customer Identity and Access Management
+cust_df,1281093623023480,4,Customer Identity and Access Management
+cust_df,1287944454,4,Customer Identity and Access Management
+cust_df,1287944454 Dell Way,4,Customer Identity and Access Management
+cust_df,1467048332,4,Customer Identity and Access Management
+cust_df,1467048332 Dell Way,4,Customer Identity and Access Management
+cust_df,1890860486775636,4,Customer Identity and Access Management
+cust_df,2,4,Customer Identity and Access Management
+cust_df,2012/06,4,Customer Identity and Access Management
+cust_df,2012/09,4,Customer Identity and Access Management
+cust_df,42572,4,Customer Identity and Access Management
+cust_df,44,4,Customer Identity and Access Management
+cust_df,49,4,Customer Identity and Access Management
+cust_df,5,4,Customer Identity and Access Management
+cust_df,80000,4,Customer Identity and Access Management
+cust_df,DXPGGAE,4,Customer Identity and Access Management
+cust_df,F,4,Customer Identity and Access Management
+cust_df,FQIVBKWIZC,4,Customer Identity and Access Management
+cust_df,FQIVBKWIZC@dell.com,4,Customer Identity and Access Management
+cust_df,M,4,Customer Identity and Access Management
+cust_df,ND,4,Customer Identity and Access Management
+cust_df,RNPOJG,4,Customer Identity and Access Management
+cust_df,SLZCISTEWL,4,Customer Identity and Access Management
+cust_df,SLZCISTEWL@dell.com,4,Customer Identity and Access Management
+cust_df,SRIMVH,4,Customer Identity and Access Management
+cust_df,UK,4,Customer Identity and Access Management
+cust_df,US,4,Customer Identity and Access Management
+cust_df,Unnamed: 4,4,Customer Identity and Access Management
+cust_df,Unnamed: 6,4,Customer Identity and Access Management
+cust_df,XCXNWIS,4,Customer Identity and Access Management
+cust_df,password,4,Customer Identity and Access Management
+cust_df,user1,4,Customer Identity and Access Management
+cust_df,user10001,4,Customer Identity and Access Management

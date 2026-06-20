@@ -1,0 +1,2846 @@
+{
+  "_meta": {
+    "domain_id": 2,
+    "domain_name": "Customer Order Data Management",
+    "definition": "Unifying the management of customer and order data, including historical transactions and current orders.",
+    "tables": [
+      "CUST_HIST",
+      "ORDERS",
+      "custhist_df",
+      "orders_df"
+    ],
+    "n_tables": 4,
+    "n_columns_total": 216,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "CUST_HIST": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "7888",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant numerical value of 7888.0 for each record in CUST_HIST table.",
+          "samples": [
+            7888.0,
+            4858.0,
+            15399.0,
+            17019.0,
+            14771.0
+          ]
+        },
+        {
+          "name": "1",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a series of identical numerical values, possibly representing a constant customer rating.",
+          "samples": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0
+          ]
+        },
+        {
+          "name": "9117",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts (in dollars) for customers.",
+          "samples": [
+            3353.0,
+            2778.0,
+            4774.0,
+            3648.0,
+            9523.0
+          ]
+        },
+        {
+          "name": "19356",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated purchase amount (as float) for individual customers.",
+          "samples": [
+            19356.0,
+            9043.0,
+            403.0,
+            16509.0,
+            10292.0
+          ]
+        },
+        {
+          "name": "1001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a repeated sequence of identical floating-point values (1001.0) for customer purchase history records.",
+          "samples": [
+            1001.0,
+            1002.0,
+            1003.0,
+            1004.0,
+            1005.0
+          ]
+        },
+        {
+          "name": "4380",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts as floating point numbers.",
+          "samples": [
+            3538.0,
+            2678.0,
+            4440.0,
+            1777.0,
+            5667.0
+          ]
+        },
+        {
+          "name": "931",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated purchase amounts for a single product, likely in USD, as each sample value is a float.",
+          "samples": [
+            931.0,
+            14397.0,
+            409.0,
+            14315.0,
+            14589.0
+          ]
+        },
+        {
+          "name": "2001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the year value (as float) for each customer transaction in CUST_HIST.",
+          "samples": [
+            2001.0,
+            2002.0,
+            2003.0,
+            2004.0,
+            2005.0
+          ]
+        },
+        {
+          "name": "9702",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical purchase amounts for customers as floating point numbers.",
+          "samples": [
+            3782.0,
+            2714.0,
+            4178.0,
+            4.0,
+            7109.0
+          ]
+        },
+        {
+          "name": "12411",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated purchase amounts (as floating point numbers) for individual customers.",
+          "samples": [
+            12411.0,
+            11537.0,
+            7620.0,
+            4492.0,
+            12752.0
+          ]
+        },
+        {
+          "name": "3001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores sequence numbers for customer transactions (3001.0, 3002.0) in CUST_HIST table.",
+          "samples": [
+            3001.0,
+            3002.0,
+            3003.0,
+            3004.0,
+            3005.0
+          ]
+        },
+        {
+          "name": "9972",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers in FLOAT format.",
+          "samples": [
+            3979.0,
+            8151.0,
+            8161.0,
+            5191.0,
+            4900.0
+          ]
+        },
+        {
+          "name": "14005",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant numerical value of 14005.0 for each record in CUST_HIST table.",
+          "samples": [
+            14005.0,
+            12910.0,
+            7707.0,
+            2489.0,
+            7577.0
+          ]
+        },
+        {
+          "name": "4001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant numerical value of 4001.0 for each record in CUST_HIST table.",
+          "samples": [
+            4001.0,
+            4002.0,
+            4003.0,
+            4004.0,
+            4005.0
+          ]
+        },
+        {
+          "name": "306",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers.",
+          "samples": [
+            4226.0,
+            7657.0,
+            3611.0,
+            1378.0,
+            4489.0
+          ]
+        },
+        {
+          "name": "15441",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated purchase amounts (in thousands) for customers.",
+          "samples": [
+            15441.0,
+            8400.0,
+            8959.0,
+            11278.0,
+            9859.0
+          ]
+        },
+        {
+          "name": "5001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer IDs associated with a specific product version (e.g., 5001).",
+          "samples": [
+            5001.0,
+            5002.0,
+            5003.0,
+            5004.0,
+            5005.0
+          ]
+        },
+        {
+          "name": "5549",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers.",
+          "samples": [
+            4398.0,
+            7568.0,
+            3244.0,
+            2745.0,
+            582.0
+          ]
+        },
+        {
+          "name": "16984",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant float value of 16984.0 across multiple customer history records.",
+          "samples": [
+            16984.0,
+            5465.0,
+            5650.0,
+            3023.0,
+            9521.0
+          ]
+        },
+        {
+          "name": "6001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated instances of a numerical value possibly representing a constant for customer history records.",
+          "samples": [
+            6001.0,
+            6002.0,
+            6003.0,
+            6004.0,
+            6005.0
+          ]
+        },
+        {
+          "name": "5853",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers.",
+          "samples": [
+            4609.0,
+            7550.0,
+            2959.0,
+            7669.0,
+            6906.0
+          ]
+        },
+        {
+          "name": "8391",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers.",
+          "samples": [
+            18655.0,
+            15040.0,
+            9001.0,
+            2795.0,
+            4050.0
+          ]
+        },
+        {
+          "name": "7001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer IDs associated with product 7002, repeated thrice, and product 7003 twice.",
+          "samples": [
+            7002.0,
+            7003.0,
+            7004.0,
+            7005.0,
+            7006.0
+          ]
+        },
+        {
+          "name": "6079",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers.",
+          "samples": [
+            7571.0,
+            730.0,
+            2982.0,
+            2602.0,
+            7955.0
+          ]
+        },
+        {
+          "name": "9922",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant numerical value of 9922 for each customer history record.",
+          "samples": [
+            9922.0,
+            1039.0,
+            7980.0,
+            1026.0,
+            4389.0
+          ]
+        },
+        {
+          "name": "8001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated instances of a numerical value possibly representing a constant for customer history records.",
+          "samples": [
+            8001.0,
+            8002.0,
+            8003.0,
+            8004.0,
+            8005.0
+          ]
+        },
+        {
+          "name": "1376",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts as floating point numbers.",
+          "samples": [
+            9981.0,
+            7410.0,
+            2277.0,
+            8945.0,
+            4272.0
+          ]
+        },
+        {
+          "name": "1490",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a consistent value of 1490.0 for each customer history record.",
+          "samples": [
+            1490.0,
+            10911.0,
+            4550.0,
+            378.0,
+            12926.0
+          ]
+        },
+        {
+          "name": "9001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated instances of customer ID 9001 as floating point numbers.",
+          "samples": [
+            9001.0,
+            9002.0,
+            9003.0,
+            9004.0,
+            9005.0
+          ]
+        },
+        {
+          "name": "1697",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical purchase amounts (in dollars) for customers.",
+          "samples": [
+            5227.0,
+            2409.0,
+            7020.0,
+            2166.0,
+            5555.0
+          ]
+        },
+        {
+          "name": "12934",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated instances of a specific monetary value (e.g., price) for customer history records.",
+          "samples": [
+            12934.0,
+            2761.0,
+            16077.0,
+            16213.0,
+            10403.0
+          ]
+        },
+        {
+          "name": "10001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant float value of 10001.0 for each record in CUST_HIST table.",
+          "samples": [
+            10001.0,
+            10002.0,
+            10003.0,
+            10004.0,
+            10005.0
+          ]
+        },
+        {
+          "name": "6941",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers.",
+          "samples": [
+            5365.0,
+            7332.0,
+            6645.0,
+            240.0,
+            6731.0
+          ]
+        },
+        {
+          "name": "4497",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a consistent value of 4497 as floating point numbers.",
+          "samples": [
+            4497.0,
+            11426.0,
+            11638.0,
+            14033.0,
+            206.0
+          ]
+        },
+        {
+          "name": "11001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated instances of customer ID 11001 as floating point numbers.",
+          "samples": [
+            11001.0,
+            11002.0,
+            11003.0,
+            11004.0,
+            11005.0
+          ]
+        },
+        {
+          "name": "7259",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical transaction amounts for customers (as float values) in DellStore2 database.",
+          "samples": [
+            618.0,
+            7328.0,
+            1387.0,
+            3472.0,
+            8008.0
+          ]
+        }
+      ]
+    },
+    "ORDERS": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "1",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores total order amounts in decimal format.",
+          "samples": [
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0
+          ]
+        },
+        {
+          "name": "2009/01/27",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as formatted strings (YYYY/MM/DD) in 2009 January.",
+          "samples": [
+            "2009/01/01",
+            "2009/01/17",
+            "2009/01/28",
+            "2009/01/09",
+            "2009/01/11"
+          ]
+        },
+        {
+          "name": "7888",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores total order amounts as floating point numbers.",
+          "samples": [
+            4858.0,
+            15399.0,
+            17019.0,
+            14771.0,
+            13734.0
+          ]
+        },
+        {
+          "name": "313.24",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as decimal numbers.",
+          "samples": [
+            54.9,
+            160.1,
+            106.67,
+            256.0,
+            382.59
+          ]
+        },
+        {
+          "name": "25.84",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            4.53,
+            13.21,
+            8.8,
+            21.12,
+            31.56
+          ]
+        },
+        {
+          "name": "339.08",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            59.43,
+            173.31,
+            115.47,
+            277.12,
+            414.15
+          ]
+        },
+        {
+          "name": "1001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order IDs as floating point numbers, incremented by 2.",
+          "samples": [
+            1002.0,
+            1003.0,
+            1004.0,
+            1005.0,
+            1006.0
+          ]
+        },
+        {
+          "name": "2009/02/07",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates in a YYYY/MM/DD format for February 2009.",
+          "samples": [
+            "2009/02/15",
+            "2009/02/28",
+            "2009/02/17",
+            "2009/02/23",
+            "2009/02/13"
+          ]
+        },
+        {
+          "name": "19356",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            9043.0,
+            403.0,
+            16509.0,
+            10292.0,
+            8489.0
+          ]
+        },
+        {
+          "name": "170.63",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            158.21,
+            9.05,
+            302.72,
+            326.14,
+            212.16
+          ]
+        },
+        {
+          "name": "14.08",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            13.05,
+            0.75,
+            24.97,
+            26.91,
+            17.5
+          ]
+        },
+        {
+          "name": "184.71",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as decimal numbers (e.g., 184.71) in the ORDERS table.",
+          "samples": [
+            171.26,
+            9.8,
+            327.69,
+            353.05,
+            229.66
+          ]
+        },
+        {
+          "name": "2001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the year corresponding to the order date, incremented by 2000.",
+          "samples": [
+            2002.0,
+            2003.0,
+            2004.0,
+            2005.0,
+            2006.0
+          ]
+        },
+        {
+          "name": "2009/03/04",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as formatted strings (YYYY/MM/DD) in March 2009.",
+          "samples": [
+            "2009/03/22",
+            "2009/03/13",
+            "2009/03/19",
+            "2009/03/14",
+            "2009/03/08"
+          ]
+        },
+        {
+          "name": "931",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores total order amounts as floating point numbers.",
+          "samples": [
+            14397.0,
+            409.0,
+            14315.0,
+            14589.0,
+            18473.0
+          ]
+        },
+        {
+          "name": "31.84",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores monetary values (in dollars) of individual orders.",
+          "samples": [
+            357.33,
+            172.38,
+            284.06,
+            245.5,
+            33.0
+          ]
+        },
+        {
+          "name": "2.63",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            29.48,
+            14.22,
+            23.43,
+            20.25,
+            2.72
+          ]
+        },
+        {
+          "name": "34.47",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as decimal numbers (e.g., 386.81, 186.6, etc.).",
+          "samples": [
+            386.81,
+            186.6,
+            307.49,
+            265.75,
+            35.72
+          ]
+        },
+        {
+          "name": "3001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            3002.0,
+            3003.0,
+            3004.0,
+            3005.0,
+            3006.0
+          ]
+        },
+        {
+          "name": "2009/04/30",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates in YYYY/MM/DD format for April 2009.",
+          "samples": [
+            "2009/04/08",
+            "2009/04/14",
+            "2009/04/16",
+            "2009/04/07",
+            "2009/04/02"
+          ]
+        },
+        {
+          "name": "12411",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores total order amounts as floating point numbers.",
+          "samples": [
+            11537.0,
+            7620.0,
+            4492.0,
+            12752.0,
+            13061.0
+          ]
+        },
+        {
+          "name": "289.62",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars (float format).",
+          "samples": [
+            154.16,
+            293.76,
+            95.39,
+            247.97,
+            224.54
+          ]
+        },
+        {
+          "name": "23.89",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as decimal floating point numbers.",
+          "samples": [
+            12.72,
+            24.24,
+            7.87,
+            20.46,
+            18.52
+          ]
+        },
+        {
+          "name": "313.51",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as decimal numbers in U.S. dollars.",
+          "samples": [
+            166.88,
+            318.0,
+            103.26,
+            268.43,
+            243.06
+          ]
+        },
+        {
+          "name": "4001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores sequential order IDs as floating point numbers.",
+          "samples": [
+            4002.0,
+            4003.0,
+            4004.0,
+            4005.0,
+            4006.0
+          ]
+        },
+        {
+          "name": "2009/05/12",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as formatted strings (YYYY/MM/DD) in May 2009.",
+          "samples": [
+            "2009/05/25",
+            "2009/05/28",
+            "2009/05/30",
+            "2009/05/16",
+            "2009/05/21"
+          ]
+        },
+        {
+          "name": "14005",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as decimal numbers in dollars.",
+          "samples": [
+            12910.0,
+            7707.0,
+            2489.0,
+            7577.0,
+            35.0
+          ]
+        },
+        {
+          "name": "350.60",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order total amounts as floating point numbers.",
+          "samples": [
+            241.16,
+            242.29,
+            358.32,
+            123.71,
+            198.77
+          ]
+        },
+        {
+          "name": "28.92",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order total amounts as decimal numbers.",
+          "samples": [
+            19.9,
+            19.99,
+            29.56,
+            10.21,
+            16.4
+          ]
+        },
+        {
+          "name": "379.52",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as decimal numbers in U.S. dollars.",
+          "samples": [
+            261.06,
+            262.28,
+            387.88,
+            133.92,
+            215.17
+          ]
+        },
+        {
+          "name": "5001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            5002.0,
+            5003.0,
+            5004.0,
+            5005.0,
+            5006.0
+          ]
+        },
+        {
+          "name": "2009/06/08",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates in a YYYY/MM/DD format for June 2009.",
+          "samples": [
+            "2009/06/14",
+            "2009/06/30",
+            "2009/06/21",
+            "2009/06/10",
+            "2009/06/25"
+          ]
+        },
+        {
+          "name": "15441",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            8400.0,
+            8959.0,
+            11278.0,
+            9859.0,
+            19285.0
+          ]
+        },
+        {
+          "name": "8.36",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            25.72,
+            218.22,
+            295.03,
+            225.79,
+            130.26
+          ]
+        },
+        {
+          "name": "0.69",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unit prices for items in orders, as indicated by sample values.",
+          "samples": [
+            2.12,
+            18.0,
+            24.34,
+            18.63,
+            10.75
+          ]
+        },
+        {
+          "name": "9.05",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            27.84,
+            236.22,
+            319.37,
+            244.42,
+            141.01
+          ]
+        },
+        {
+          "name": "6001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores sequential order IDs represented as floating point numbers.",
+          "samples": [
+            6002.0,
+            6003.0,
+            6004.0,
+            6005.0,
+            6006.0
+          ]
+        },
+        {
+          "name": "2009/07/04",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates in YYYY/MM/DD format for July 2009.",
+          "samples": [
+            "2009/07/14",
+            "2009/07/20",
+            "2009/07/08",
+            "2009/07/01",
+            "2009/07/15"
+          ]
+        },
+        {
+          "name": "16984",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            5465.0,
+            5650.0,
+            3023.0,
+            9521.0,
+            8131.0
+          ]
+        },
+        {
+          "name": "67.99",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as decimal numbers.",
+          "samples": [
+            262.95,
+            365.8,
+            378.63,
+            208.61,
+            190.72
+          ]
+        },
+        {
+          "name": "5.61",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            21.69,
+            30.18,
+            31.24,
+            17.21,
+            15.73
+          ]
+        },
+        {
+          "name": "73.60",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as decimal numbers in U.S. dollars.",
+          "samples": [
+            284.64,
+            395.98,
+            409.87,
+            225.82,
+            206.45
+          ]
+        },
+        {
+          "name": "7001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores sequential order IDs as floating point numbers.",
+          "samples": [
+            7002.0,
+            7003.0,
+            7004.0,
+            7005.0,
+            7006.0
+          ]
+        },
+        {
+          "name": "2009/08/16",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as formatted strings (YYYY/MM/DD) in August 2009.",
+          "samples": [
+            "2009/08/15",
+            "2009/08/01",
+            "2009/08/18",
+            "2009/08/10",
+            "2009/08/02"
+          ]
+        },
+        {
+          "name": "8391",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            18655.0,
+            15040.0,
+            9001.0,
+            2795.0,
+            4050.0
+          ]
+        },
+        {
+          "name": "123.98",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as decimal numbers.",
+          "samples": [
+            96.03,
+            43.7,
+            178.95,
+            264.47,
+            152.56
+          ]
+        },
+        {
+          "name": "10.23",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            7.92,
+            3.61,
+            14.76,
+            21.82,
+            12.59
+          ]
+        },
+        {
+          "name": "134.21",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            103.95,
+            47.31,
+            193.71,
+            286.29,
+            165.15
+          ]
+        },
+        {
+          "name": "8001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            8002.0,
+            8003.0,
+            8004.0,
+            8005.0,
+            8006.0
+          ]
+        },
+        {
+          "name": "2009/09/12",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as formatted strings (YYYY/MM/DD) in 2009 September.",
+          "samples": [
+            "2009/09/05",
+            "2009/09/10",
+            "2009/09/15",
+            "2009/09/29",
+            "2009/09/26"
+          ]
+        },
+        {
+          "name": "9922",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            1039.0,
+            7980.0,
+            1026.0,
+            4389.0,
+            19408.0
+          ]
+        },
+        {
+          "name": "384.52",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as decimal numbers in U.S. dollars.",
+          "samples": [
+            160.02,
+            279.98,
+            117.96,
+            273.66,
+            218.21
+          ]
+        },
+        {
+          "name": "31.72",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order subtotal amounts as floating point numbers.",
+          "samples": [
+            13.2,
+            23.1,
+            9.73,
+            22.58,
+            18.0
+          ]
+        },
+        {
+          "name": "416.24",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as decimal numbers in U.S. dollars.",
+          "samples": [
+            173.22,
+            303.08,
+            127.69,
+            296.24,
+            236.21
+          ]
+        },
+        {
+          "name": "9001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores sequential order IDs as floating point numbers.",
+          "samples": [
+            9002.0,
+            9003.0,
+            9004.0,
+            9005.0,
+            9006.0
+          ]
+        },
+        {
+          "name": "2009/10/24",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores date of order in YYYY/MM/DD format (e.g., 2009/10/24).",
+          "samples": [
+            "2009/10/22",
+            "2009/10/26",
+            "2009/10/04",
+            "2009/10/24",
+            "2009/10/17"
+          ]
+        },
+        {
+          "name": "1490",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            10911.0,
+            4550.0,
+            378.0,
+            12926.0,
+            15463.0
+          ]
+        },
+        {
+          "name": "244.69",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as decimal numbers (e.g., 244.69) in the ORDERS table.",
+          "samples": [
+            226.02,
+            77.89,
+            195.62,
+            301.85,
+            388.59
+          ]
+        },
+        {
+          "name": "20.19",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            18.65,
+            6.43,
+            16.14,
+            24.9,
+            32.06
+          ]
+        },
+        {
+          "name": "264.88",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as decimal floating point numbers.",
+          "samples": [
+            244.67,
+            84.32,
+            211.76,
+            326.75,
+            420.65
+          ]
+        },
+        {
+          "name": "10001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            10002.0,
+            10003.0,
+            10004.0,
+            10005.0,
+            10006.0
+          ]
+        },
+        {
+          "name": "2009/11/19",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates in YYYY/MM/DD format for November 2009.",
+          "samples": [
+            "2009/11/29",
+            "2009/11/17",
+            "2009/11/23",
+            "2009/11/14",
+            "2009/11/15"
+          ]
+        },
+        {
+          "name": "12934",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores total order amounts (in dollars) for various orders.",
+          "samples": [
+            2761.0,
+            16077.0,
+            16213.0,
+            10403.0,
+            16547.0
+          ]
+        },
+        {
+          "name": "102.63",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as decimal numbers.",
+          "samples": [
+            174.51,
+            372.85,
+            126.2,
+            223.54,
+            127.28
+          ]
+        },
+        {
+          "name": "8.47",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order subtotals as decimal float values.",
+          "samples": [
+            14.4,
+            30.76,
+            10.41,
+            18.44,
+            10.5
+          ]
+        },
+        {
+          "name": "111.10",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as decimal numbers in U.S. dollars.",
+          "samples": [
+            188.91,
+            403.61,
+            136.61,
+            241.98,
+            137.78
+          ]
+        },
+        {
+          "name": "11001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            11002.0,
+            11003.0,
+            11004.0,
+            11005.0,
+            11006.0
+          ]
+        },
+        {
+          "name": "2009/12/16",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as formatted strings (YYYY/MM/DD) in December 2009.",
+          "samples": [
+            "2009/12/26",
+            "2009/12/08",
+            "2009/12/27",
+            "2009/12/20",
+            "2009/12/16"
+          ]
+        },
+        {
+          "name": "4497",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            11426.0,
+            11638.0,
+            14033.0,
+            206.0,
+            765.0
+          ]
+        },
+        {
+          "name": "362.76",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            359.72,
+            45.03,
+            281.37,
+            292.09,
+            288.57
+          ]
+        },
+        {
+          "name": "29.93",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order total amounts as floating point numbers.",
+          "samples": [
+            29.68,
+            3.71,
+            23.21,
+            24.1,
+            23.81
+          ]
+        },
+        {
+          "name": "392.69",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as decimal float values.",
+          "samples": [
+            389.4,
+            48.74,
+            304.58,
+            316.19,
+            312.38
+          ]
+        }
+      ]
+    },
+    "custhist_df": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "7888",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant numerical value of 7888.0 for each record in custhist_df table.",
+          "samples": [
+            7888.0,
+            4858.0,
+            15399.0,
+            17019.0,
+            14771.0
+          ]
+        },
+        {
+          "name": "1",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a series of identical floating-point values, possibly representing a constant value for each customer history record.",
+          "samples": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0
+          ]
+        },
+        {
+          "name": "9117",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers.",
+          "samples": [
+            3353.0,
+            2778.0,
+            4774.0,
+            3648.0,
+            9523.0
+          ]
+        },
+        {
+          "name": "19356",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a repeated value of 19356.0 as floating point numbers in the custhist_df table.",
+          "samples": [
+            19356.0,
+            9043.0,
+            403.0,
+            16509.0,
+            10292.0
+          ]
+        },
+        {
+          "name": "1001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated instances of customer ID 1001's total spending (as float).",
+          "samples": [
+            1001.0,
+            1002.0,
+            1003.0,
+            1004.0,
+            1005.0
+          ]
+        },
+        {
+          "name": "4380",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical purchase amounts for customers as floating point numbers.",
+          "samples": [
+            3538.0,
+            2678.0,
+            4440.0,
+            1777.0,
+            5667.0
+          ]
+        },
+        {
+          "name": "931",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical customer spending amounts in dollars, with a default value of 931.0.",
+          "samples": [
+            931.0,
+            14397.0,
+            409.0,
+            14315.0,
+            14589.0
+          ]
+        },
+        {
+          "name": "2001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the year value (as float) for each customer history record, predominantly 2001.",
+          "samples": [
+            2001.0,
+            2002.0,
+            2003.0,
+            2004.0,
+            2005.0
+          ]
+        },
+        {
+          "name": "9702",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical purchase amounts for customers as floating point numbers.",
+          "samples": [
+            3782.0,
+            2714.0,
+            4178.0,
+            4.0,
+            7109.0
+          ]
+        },
+        {
+          "name": "12411",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical purchase amounts for customers as floating point numbers.",
+          "samples": [
+            12411.0,
+            11537.0,
+            7620.0,
+            4492.0,
+            12752.0
+          ]
+        },
+        {
+          "name": "3001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores sequential product IDs (3001.0) associated with customer history records.",
+          "samples": [
+            3001.0,
+            3002.0,
+            3003.0,
+            3004.0,
+            3005.0
+          ]
+        },
+        {
+          "name": "9972",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers in DellStore2.",
+          "samples": [
+            3979.0,
+            8151.0,
+            8161.0,
+            5191.0,
+            4900.0
+          ]
+        },
+        {
+          "name": "14005",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant numerical value of 14005.0 for each record in custhist_df table.",
+          "samples": [
+            14005.0,
+            12910.0,
+            7707.0,
+            2489.0,
+            7577.0
+          ]
+        },
+        {
+          "name": "4001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant float value of 4001.0 for each record in custhist_df table.",
+          "samples": [
+            4001.0,
+            4002.0,
+            4003.0,
+            4004.0,
+            4005.0
+          ]
+        },
+        {
+          "name": "306",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers.",
+          "samples": [
+            4226.0,
+            7657.0,
+            3611.0,
+            1378.0,
+            4489.0
+          ]
+        },
+        {
+          "name": "15441",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical purchase amounts for customers, typically in Dollars.",
+          "samples": [
+            15441.0,
+            8400.0,
+            8959.0,
+            11278.0,
+            9859.0
+          ]
+        },
+        {
+          "name": "5001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer history IDs associated with product 5001.",
+          "samples": [
+            5001.0,
+            5002.0,
+            5003.0,
+            5004.0,
+            5005.0
+          ]
+        },
+        {
+          "name": "5549",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical purchase amounts for customers in float format.",
+          "samples": [
+            4398.0,
+            7568.0,
+            3244.0,
+            2745.0,
+            582.0
+          ]
+        },
+        {
+          "name": "16984",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant float value of 16984.0 across multiple customer history records.",
+          "samples": [
+            16984.0,
+            5465.0,
+            5650.0,
+            3023.0,
+            9521.0
+          ]
+        },
+        {
+          "name": "6001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated instances of the numerical value 6001.0 for customer history data points.",
+          "samples": [
+            6001.0,
+            6002.0,
+            6003.0,
+            6004.0,
+            6005.0
+          ]
+        },
+        {
+          "name": "5853",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers.",
+          "samples": [
+            4609.0,
+            7550.0,
+            2959.0,
+            7669.0,
+            6906.0
+          ]
+        },
+        {
+          "name": "8391",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers.",
+          "samples": [
+            18655.0,
+            15040.0,
+            9001.0,
+            2795.0,
+            4050.0
+          ]
+        },
+        {
+          "name": "7001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer history IDs associated with product 7001.",
+          "samples": [
+            7002.0,
+            7003.0,
+            7004.0,
+            7005.0,
+            7006.0
+          ]
+        },
+        {
+          "name": "6079",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers.",
+          "samples": [
+            7571.0,
+            730.0,
+            2982.0,
+            2602.0,
+            7955.0
+          ]
+        },
+        {
+          "name": "9922",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant float value of 9922 for each record in custhist_df.",
+          "samples": [
+            9922.0,
+            1039.0,
+            7980.0,
+            1026.0,
+            4389.0
+          ]
+        },
+        {
+          "name": "8001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a constant float value of 8001 for each record in custhist_df.",
+          "samples": [
+            8001.0,
+            8002.0,
+            8003.0,
+            8004.0,
+            8005.0
+          ]
+        },
+        {
+          "name": "1376",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical purchase amounts for customers as floating point numbers.",
+          "samples": [
+            9981.0,
+            7410.0,
+            2277.0,
+            8945.0,
+            4272.0
+          ]
+        },
+        {
+          "name": "1490",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a consistent value of 1490.0 for each record in custhist_df (float type).",
+          "samples": [
+            1490.0,
+            10911.0,
+            4550.0,
+            378.0,
+            12926.0
+          ]
+        },
+        {
+          "name": "9001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated instances of a floating point value, possibly customer ID-specific discount rates.",
+          "samples": [
+            9001.0,
+            9002.0,
+            9003.0,
+            9004.0,
+            9005.0
+          ]
+        },
+        {
+          "name": "1697",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical purchase amounts for customers in float format.",
+          "samples": [
+            5227.0,
+            2409.0,
+            7020.0,
+            2166.0,
+            5555.0
+          ]
+        },
+        {
+          "name": "12934",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated instances of a specific numerical value (12934.0) for customer history records.",
+          "samples": [
+            12934.0,
+            2761.0,
+            16077.0,
+            16213.0,
+            10403.0
+          ]
+        },
+        {
+          "name": "10001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a repeated sequence of identical floating point values (10001.0) for customer history data.",
+          "samples": [
+            10001.0,
+            10002.0,
+            10003.0,
+            10004.0,
+            10005.0
+          ]
+        },
+        {
+          "name": "6941",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical purchase amounts for customers in float format.",
+          "samples": [
+            5365.0,
+            7332.0,
+            6645.0,
+            240.0,
+            6731.0
+          ]
+        },
+        {
+          "name": "4497",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a consistent value of 4497 as floating point numbers.",
+          "samples": [
+            4497.0,
+            11426.0,
+            11638.0,
+            14033.0,
+            206.0
+          ]
+        },
+        {
+          "name": "11001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores repeated instances of a numerical value, possibly representing a customer ID.",
+          "samples": [
+            11001.0,
+            11002.0,
+            11003.0,
+            11004.0,
+            11005.0
+          ]
+        },
+        {
+          "name": "7259",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores historical total sales amounts for customers in DellStore2.",
+          "samples": [
+            618.0,
+            7328.0,
+            1387.0,
+            3472.0,
+            8008.0
+          ]
+        }
+      ]
+    },
+    "orders_df": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "1",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0
+          ]
+        },
+        {
+          "name": "2009/01/27",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as YYYY/MM/DD formatted strings for January 2009.",
+          "samples": [
+            "2009/01/01",
+            "2009/01/17",
+            "2009/01/28",
+            "2009/01/09",
+            "2009/01/11"
+          ]
+        },
+        {
+          "name": "7888",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            4858.0,
+            15399.0,
+            17019.0,
+            14771.0,
+            13734.0
+          ]
+        },
+        {
+          "name": "313.24",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            54.9,
+            160.1,
+            106.67,
+            256.0,
+            382.59
+          ]
+        },
+        {
+          "name": "25.84",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            4.53,
+            13.21,
+            8.8,
+            21.12,
+            31.56
+          ]
+        },
+        {
+          "name": "339.08",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as floating point numbers.",
+          "samples": [
+            59.43,
+            173.31,
+            115.47,
+            277.12,
+            414.15
+          ]
+        },
+        {
+          "name": "1001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order IDs as floating point numbers, incremented by 1 from 1002.0.",
+          "samples": [
+            1002.0,
+            1003.0,
+            1004.0,
+            1005.0,
+            1006.0
+          ]
+        },
+        {
+          "name": "2009/02/07",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates in a YYYY/MM/DD format for February 2009.",
+          "samples": [
+            "2009/02/15",
+            "2009/02/28",
+            "2009/02/17",
+            "2009/02/23",
+            "2009/02/13"
+          ]
+        },
+        {
+          "name": "19356",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            9043.0,
+            403.0,
+            16509.0,
+            10292.0,
+            8489.0
+          ]
+        },
+        {
+          "name": "170.63",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            158.21,
+            9.05,
+            302.72,
+            326.14,
+            212.16
+          ]
+        },
+        {
+          "name": "14.08",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            13.05,
+            0.75,
+            24.97,
+            26.91,
+            17.5
+          ]
+        },
+        {
+          "name": "184.71",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            171.26,
+            9.8,
+            327.69,
+            353.05,
+            229.66
+          ]
+        },
+        {
+          "name": "2001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the year corresponding to the order date, incremented by 1 compared to the order number.",
+          "samples": [
+            2002.0,
+            2003.0,
+            2004.0,
+            2005.0,
+            2006.0
+          ]
+        },
+        {
+          "name": "2009/03/04",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as formatted strings (YYYY/MM/DD) in March 2009.",
+          "samples": [
+            "2009/03/22",
+            "2009/03/13",
+            "2009/03/19",
+            "2009/03/14",
+            "2009/03/08"
+          ]
+        },
+        {
+          "name": "931",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            14397.0,
+            409.0,
+            14315.0,
+            14589.0,
+            18473.0
+          ]
+        },
+        {
+          "name": "31.84",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as floating point numbers.",
+          "samples": [
+            357.33,
+            172.38,
+            284.06,
+            245.5,
+            33.0
+          ]
+        },
+        {
+          "name": "2.63",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            29.48,
+            14.22,
+            23.43,
+            20.25,
+            2.72
+          ]
+        },
+        {
+          "name": "34.47",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as decimal numbers.",
+          "samples": [
+            386.81,
+            186.6,
+            307.49,
+            265.75,
+            35.72
+          ]
+        },
+        {
+          "name": "3001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            3002.0,
+            3003.0,
+            3004.0,
+            3005.0,
+            3006.0
+          ]
+        },
+        {
+          "name": "2009/04/30",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as formatted strings (YYYY/MM/DD) in April 2009.",
+          "samples": [
+            "2009/04/08",
+            "2009/04/14",
+            "2009/04/16",
+            "2009/04/07",
+            "2009/04/02"
+          ]
+        },
+        {
+          "name": "12411",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            11537.0,
+            7620.0,
+            4492.0,
+            12752.0,
+            13061.0
+          ]
+        },
+        {
+          "name": "289.62",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as floating point numbers.",
+          "samples": [
+            154.16,
+            293.76,
+            95.39,
+            247.97,
+            224.54
+          ]
+        },
+        {
+          "name": "23.89",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as decimal floating point numbers.",
+          "samples": [
+            12.72,
+            24.24,
+            7.87,
+            20.46,
+            18.52
+          ]
+        },
+        {
+          "name": "313.51",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            166.88,
+            318.0,
+            103.26,
+            268.43,
+            243.06
+          ]
+        },
+        {
+          "name": "4001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            4002.0,
+            4003.0,
+            4004.0,
+            4005.0,
+            4006.0
+          ]
+        },
+        {
+          "name": "2009/05/12",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as formatted strings (YYYY/MM/DD) in May 2009.",
+          "samples": [
+            "2009/05/25",
+            "2009/05/28",
+            "2009/05/30",
+            "2009/05/16",
+            "2009/05/21"
+          ]
+        },
+        {
+          "name": "14005",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals in U.S. dollars (up to four decimal places).",
+          "samples": [
+            12910.0,
+            7707.0,
+            2489.0,
+            7577.0,
+            35.0
+          ]
+        },
+        {
+          "name": "350.60",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            241.16,
+            242.29,
+            358.32,
+            123.71,
+            198.77
+          ]
+        },
+        {
+          "name": "28.92",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as decimal numbers (e.g., 19.9, 29.56).",
+          "samples": [
+            19.9,
+            19.99,
+            29.56,
+            10.21,
+            16.4
+          ]
+        },
+        {
+          "name": "379.52",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            261.06,
+            262.28,
+            387.88,
+            133.92,
+            215.17
+          ]
+        },
+        {
+          "name": "5001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            5002.0,
+            5003.0,
+            5004.0,
+            5005.0,
+            5006.0
+          ]
+        },
+        {
+          "name": "2009/06/08",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates in a YYYY/MM/DD format for June 2009.",
+          "samples": [
+            "2009/06/14",
+            "2009/06/30",
+            "2009/06/21",
+            "2009/06/10",
+            "2009/06/25"
+          ]
+        },
+        {
+          "name": "15441",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            8400.0,
+            8959.0,
+            11278.0,
+            9859.0,
+            19285.0
+          ]
+        },
+        {
+          "name": "8.36",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as floating point numbers.",
+          "samples": [
+            25.72,
+            218.22,
+            295.03,
+            225.79,
+            130.26
+          ]
+        },
+        {
+          "name": "0.69",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order subtotals as floating point numbers.",
+          "samples": [
+            2.12,
+            18.0,
+            24.34,
+            18.63,
+            10.75
+          ]
+        },
+        {
+          "name": "9.05",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            27.84,
+            236.22,
+            319.37,
+            244.42,
+            141.01
+          ]
+        },
+        {
+          "name": "6001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            6002.0,
+            6003.0,
+            6004.0,
+            6005.0,
+            6006.0
+          ]
+        },
+        {
+          "name": "2009/07/04",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as YYYY/MM/DD formatted strings for July 2009.",
+          "samples": [
+            "2009/07/14",
+            "2009/07/20",
+            "2009/07/08",
+            "2009/07/01",
+            "2009/07/15"
+          ]
+        },
+        {
+          "name": "16984",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            5465.0,
+            5650.0,
+            3023.0,
+            9521.0,
+            8131.0
+          ]
+        },
+        {
+          "name": "67.99",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as floating point numbers.",
+          "samples": [
+            262.95,
+            365.8,
+            378.63,
+            208.61,
+            190.72
+          ]
+        },
+        {
+          "name": "5.61",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            21.69,
+            30.18,
+            31.24,
+            17.21,
+            15.73
+          ]
+        },
+        {
+          "name": "73.60",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as floating point numbers.",
+          "samples": [
+            284.64,
+            395.98,
+            409.87,
+            225.82,
+            206.45
+          ]
+        },
+        {
+          "name": "7001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            7002.0,
+            7003.0,
+            7004.0,
+            7005.0,
+            7006.0
+          ]
+        },
+        {
+          "name": "2009/08/16",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores date of orders in DellStore2 database for August 2009.",
+          "samples": [
+            "2009/08/15",
+            "2009/08/01",
+            "2009/08/18",
+            "2009/08/10",
+            "2009/08/02"
+          ]
+        },
+        {
+          "name": "8391",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            18655.0,
+            15040.0,
+            9001.0,
+            2795.0,
+            4050.0
+          ]
+        },
+        {
+          "name": "123.98",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as decimal numbers.",
+          "samples": [
+            96.03,
+            43.7,
+            178.95,
+            264.47,
+            152.56
+          ]
+        },
+        {
+          "name": "10.23",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            7.92,
+            3.61,
+            14.76,
+            21.82,
+            12.59
+          ]
+        },
+        {
+          "name": "134.21",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            103.95,
+            47.31,
+            193.71,
+            286.29,
+            165.15
+          ]
+        },
+        {
+          "name": "8001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            8002.0,
+            8003.0,
+            8004.0,
+            8005.0,
+            8006.0
+          ]
+        },
+        {
+          "name": "2009/09/12",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as YYYY/MM/DD formatted strings (e.g., 2009/09/12).",
+          "samples": [
+            "2009/09/05",
+            "2009/09/10",
+            "2009/09/15",
+            "2009/09/29",
+            "2009/09/26"
+          ]
+        },
+        {
+          "name": "9922",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            1039.0,
+            7980.0,
+            1026.0,
+            4389.0,
+            19408.0
+          ]
+        },
+        {
+          "name": "384.52",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as decimal numbers in floating point format.",
+          "samples": [
+            160.02,
+            279.98,
+            117.96,
+            273.66,
+            218.21
+          ]
+        },
+        {
+          "name": "31.72",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order subtotals as floating point numbers.",
+          "samples": [
+            13.2,
+            23.1,
+            9.73,
+            22.58,
+            18.0
+          ]
+        },
+        {
+          "name": "416.24",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars (float format).",
+          "samples": [
+            173.22,
+            303.08,
+            127.69,
+            296.24,
+            236.21
+          ]
+        },
+        {
+          "name": "9001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            9002.0,
+            9003.0,
+            9004.0,
+            9005.0,
+            9006.0
+          ]
+        },
+        {
+          "name": "2009/10/24",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores date of order (YYYY/MM/DD format) for specific transactions.",
+          "samples": [
+            "2009/10/22",
+            "2009/10/26",
+            "2009/10/04",
+            "2009/10/24",
+            "2009/10/17"
+          ]
+        },
+        {
+          "name": "1490",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            10911.0,
+            4550.0,
+            378.0,
+            12926.0,
+            15463.0
+          ]
+        },
+        {
+          "name": "244.69",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as decimal numbers.",
+          "samples": [
+            226.02,
+            77.89,
+            195.62,
+            301.85,
+            388.59
+          ]
+        },
+        {
+          "name": "20.19",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            18.65,
+            6.43,
+            16.14,
+            24.9,
+            32.06
+          ]
+        },
+        {
+          "name": "264.88",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            244.67,
+            84.32,
+            211.76,
+            326.75,
+            420.65
+          ]
+        },
+        {
+          "name": "10001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            10002.0,
+            10003.0,
+            10004.0,
+            10005.0,
+            10006.0
+          ]
+        },
+        {
+          "name": "2009/11/19",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as YYYY/MM/DD formatted strings for November 2009.",
+          "samples": [
+            "2009/11/29",
+            "2009/11/17",
+            "2009/11/23",
+            "2009/11/14",
+            "2009/11/15"
+          ]
+        },
+        {
+          "name": "12934",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores total order amounts in floating point format.",
+          "samples": [
+            2761.0,
+            16077.0,
+            16213.0,
+            10403.0,
+            16547.0
+          ]
+        },
+        {
+          "name": "102.63",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as floating point numbers.",
+          "samples": [
+            174.51,
+            372.85,
+            126.2,
+            223.54,
+            127.28
+          ]
+        },
+        {
+          "name": "8.47",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            14.4,
+            30.76,
+            10.41,
+            18.44,
+            10.5
+          ]
+        },
+        {
+          "name": "111.10",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts in U.S. dollars as floating point numbers.",
+          "samples": [
+            188.91,
+            403.61,
+            136.61,
+            241.98,
+            137.78
+          ]
+        },
+        {
+          "name": "11001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique order identifiers as floating point numbers.",
+          "samples": [
+            11002.0,
+            11003.0,
+            11004.0,
+            11005.0,
+            11006.0
+          ]
+        },
+        {
+          "name": "2009/12/16",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores order dates as YYYY/MM/DD strings (e.g., 2009/12/16) for the orders_df table.",
+          "samples": [
+            "2009/12/26",
+            "2009/12/08",
+            "2009/12/27",
+            "2009/12/20",
+            "2009/12/16"
+          ]
+        },
+        {
+          "name": "4497",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order totals as floating point numbers.",
+          "samples": [
+            11426.0,
+            11638.0,
+            14033.0,
+            206.0,
+            765.0
+          ]
+        },
+        {
+          "name": "362.76",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            359.72,
+            45.03,
+            281.37,
+            292.09,
+            288.57
+          ]
+        },
+        {
+          "name": "29.93",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            29.68,
+            3.71,
+            23.21,
+            24.1,
+            23.81
+          ]
+        },
+        {
+          "name": "392.69",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores order amounts as floating point numbers.",
+          "samples": [
+            389.4,
+            48.74,
+            304.58,
+            316.19,
+            312.38
+          ]
+        }
+      ]
+    }
+  }
+}

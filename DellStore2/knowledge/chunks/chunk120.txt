@@ -1,0 +1,51 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, Customer Support Agents
+
+Activity:
+- Sales representatives register new customers by recording their details (SRIMVH, SLZCISTEWL, contact information, address, etc.) in the CUSTOMER table.
+- Customer support agents update customer details as needed in the CUSTOMER table.
+- Customer service representatives assign unique usernames and passwords to new customers.
+
+## 2. Order Placement and Management
+
+Performed By: Customers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Customers place orders by selecting products from the catalog and providing necessary details (order quantity, shipping address, etc.) in the CUST_HIST table.
+- Sales representatives confirm order details with customers and update the CUST_HIST table accordingly.
+- Warehouse staff track inventory levels and mark items as shipped once they are ready for dispatch.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the inventory levels in the CUSTOMER table when products are received or dispatched.
+- Purchasing teams order new stock based on current inventory levels and sales forecasts.
+
+## 4. Invoice Generation and Payment Processing
+
+Performed By: Sales Representatives, Finance Department
+
+Activity:
+- Sales representatives generate invoices for customers based on their orders in the CUST_HIST table.
+- The finance department records payments received from customers and updates the CUSTOMER table accordingly.
+
+## 5. Customer Support and Complaints Handling
+
+Performed By: Customer Support Agents, Quality Assurance Team
+
+Activity:
+- Customer support agents handle customer inquiries and complaints related to orders, products, or services.
+- The quality assurance team reviews customer feedback and suggests improvements to the product catalog or service offerings.
+
+## 6. Data Governance and Compliance
+
+Performed By: IT Administrators, Data Governance Team
+
+Activity:
+- IT administrators ensure that data is securely stored and backed up in the DellStore2 database.
+- The data governance team enforces data quality standards and ensures compliance with relevant regulations (e.g., GDPR).

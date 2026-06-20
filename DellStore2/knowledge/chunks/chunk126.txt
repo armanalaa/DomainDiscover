@@ -1,0 +1,50 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Sales Representatives, IT Support
+
+Activity:
+- Sales representatives register new customers by entering their personal and contact details (SRIMVH, SLZCISTEWL, DXPGGAE, Unnamed: 6, 00000, UK, 2, SLZCISTEWL@dell.com, 1467048332, 5)
+- IT support assigns unique usernames and passwords to each customer (user10001, password)
+
+## 2. Proof of Concept Management
+
+Performed By: Sales Representatives, Customer Support, IT Support
+
+Activity:
+- Sales representatives offer customers free trials or paid proofs of concept for product evaluation (Trial, POC)
+- Customer support assists customers in setting up and managing their trials or proofs of concept
+- IT support ensures trialware is provided "as is" with no warranties (Trialware)
+
+## 3. License Purchase and Renewal
+
+Performed By: Sales Representatives, Finance Department, Customer Support
+
+Activity:
+- Sales representatives help customers purchase licenses after the evaluation period ends
+- Finance department processes payments for license purchases
+- Customer support assists existing customers in renewing their licenses or bridging intervals between subscription periods
+
+## 4. Customer Support and Troubleshooting
+
+Performed By: Customer Support, IT Support
+
+Activity:
+- Customer support addresses customer queries and issues related to products and services
+- IT support troubleshoots technical problems reported by customers
+
+## 5. Data Management and Backup
+
+Performed By: IT Administrators
+
+Activity:
+- IT administrators manage and backup data stored in the database (cust_df, cust_hist, custhist_df)
+
+## 6. Analytics and Reporting
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts collect and analyze data for business intelligence purposes
+- Management uses reports to make informed decisions about the company's operations

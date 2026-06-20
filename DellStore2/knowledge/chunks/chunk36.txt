@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details and contact information (cust_df).
+- HR managers update customer account details when necessary (CUSTOMER).
+
+## 2. Customer History Management
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives log customer interactions and transactions (custhist_df).
+- Customer service representatives access and review a customer's history during support calls (CUST_HIST).
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording product code, name, category, and list price (cust_df).
+- Warehouse staff update product availability based on inventory levels (not specified in provided schema).
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels and manage stock movements (not specified in provided schema).
+- Purchasing teams order new products based on inventory levels and demand forecasts (not specified in provided schema).
+
+## 5. Order Processing
+
+Performed By: Sales Representatives, Customer Service Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by confirming availability and shipping details (not specified in provided schema).
+- Customer service representatives update order status and notify customers about shipment (custhist_df).
+- Warehouse staff prepare and ship ordered products (not specified in provided schema).
+
+## 6. Financial Management
+
+Performed By: Finance Teams, Accounting Staff
+
+Activity:
+- Finance teams record financial transactions related to sales, expenses, and assets (not specified in provided schema).
+- Accounting staff generate invoices based on order details and customer account information (custhist_df).
+
+## 7. Data Quality Assurance
+
+Performed By: Data Quality Analysts
+
+Activity:
+- Data quality analysts monitor data quality across all databases to ensure accuracy, completeness, consistency, and reliability (not specified in provided schema).

@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details and contact information (cust_df).
+- HR managers update customer employment statuses in the employee database (cust_df) when a customer becomes an employee.
+
+## 2. Customer Data Maintenance
+
+Performed By: Data Analysts, IT Support
+
+Activity:
+- Data analysts maintain and update customer data in the centralized customer database (CUSTOMER).
+- IT support staff resolve any technical issues related to the customer database (CUSTOMER).
+
+## 3. Customer History Tracking
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives record customer purchase history in the customer history table (cust_hist).
+- Customer service representatives access and review a customer's purchase history (cust_hist) to address queries or issues.
+
+## 4. Customer Support
+
+Performed By: Customer Service Representatives, IT Support
+
+Activity:
+- Customer service representatives handle customer inquiries and complaints, providing solutions or escalating as necessary.
+- IT support staff assist with technical issues related to the customer's account (CUSTOMER).
+
+## 5. Account Management
+
+Performed By: Account Managers, Finance Department
+
+Activity:
+- Account managers manage customer accounts, including billing and payment arrangements.
+- The finance department records and tracks payments from customers (CUSTOMER).
+
+## 6. Customer Segmentation and Analysis
+
+Performed By: Data Analysts, Marketing Team
+
+Activity:
+- Data analysts segment customers based on various factors like purchasing history, demographics, or behavior.
+- The marketing team uses customer segments for targeted advertising and promotions.
+
+## 7. Customer Compliance Management
+
+Performed By: Legal Department, IT Support
+
+Activity:
+- The legal department ensures that customer data is handled in compliance with regulations like GDPR and CCPA.
+- IT support staff implement necessary measures to maintain compliance with data protection regulations (CUSTOMER).

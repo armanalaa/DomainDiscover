@@ -1,0 +1,72 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Sales Representatives, IT Support
+
+Activity:
+- Sales representatives register new customers by recording their personal and contact details (SRIMVH, SLZCISTEWL, DXPGGAE, Unnamed: 4, SLZCISTEWL@dell.com, 1467048332, 5, 1281093623023480, 2012/09, user10001, password).
+- IT support assigns unique customer ID (10001) and sets up user accounts.
+
+## 2. Customer Profile Management
+
+Performed By: Customer Service Agents, IT Support
+
+Activity:
+- Customer service agents update customer profiles with new information or changes (e.g., address, phone number).
+- IT support maintains the integrity of customer data in the database.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products and providing shipping details (SLZCISTEWL@dell.com, 1467048332 Dell Way).
+- Sales representatives confirm order details and process them for fulfillment.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels and update the database when stock changes.
+- Purchasing teams issue purchase orders to replenish depleted items.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff pick, pack, and ship ordered products.
+- Shipping department records the shipping details (1287944454 Dell Way, XCXNWIS, ND, 42572, US) in the database.
+
+## 6. Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- Finance records invoices for each order, including total amount and due date (80000, F, 1, RNPOJG, FQIVBKWIZC, 1287944454 Dell Way).
+
+## 7. Payment Processing
+
+Performed By: Customers, Finance Department
+
+Activity:
+- Customers make payments through various methods (e.g., credit card, bank transfer) and provide payment details to the finance department.
+- Finance records the payment details in the database and updates the customer's account status accordingly.
+
+## 8. Customer Support
+
+Performed By: Customer Service Agents
+
+Activity:
+- Customer service agents handle customer inquiries, complaints, and returns.
+- They update the customer's profile and order history as needed.
+
+## 9. Data Management and Compliance
+
+Performed By: IT Support, Data Governance Team
+
+Activity:
+- IT support ensures data integrity, security, and backup (11001, 7259).
+- Data governance team maintains compliance with data protection regulations such as GDPR or CCPA.

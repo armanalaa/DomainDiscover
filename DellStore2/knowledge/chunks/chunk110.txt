@@ -1,0 +1,53 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact details and account information. (CUSTOMER)
+- Customer service agents update customer records with any changes in personal or account data. (CUSTOMER)
+- Sales representatives assign unique customer IDs to each new account. (CUSTOMER)
+- Customer service agents handle customer inquiries and complaints, documenting them for future reference. (Not specified table)
+- Sales representatives track sales history for individual customers, updating the records accordingly. (CUST_HIST)
+
+## 2. Customer History Management
+
+Performed By: Purchasing Teams, Finance Department
+
+Activity:
+- Purchasing teams record customer orders and their respective order numbers. (CUST_HIST)
+- Finance department updates the financial records of each customer, including invoices and payments. (Not specified table)
+- Purchasing teams update the status of each order in the customer history, indicating whether it has been shipped or cancelled. (CUST_HIST)
+- Finance department generates and sends invoices to customers based on their purchase history. (Not specified table)
+- Finance department records payments received from customers against their respective invoices. (Not specified table)
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price. (Not specified table)
+- Warehouse staff update inventory levels for each product as they receive or ship orders. (Not specified table)
+- Product managers monitor sales data to identify popular products and adjust pricing strategies accordingly. (Not specified table)
+- Warehouse staff track the location of each product within the warehouse, ensuring efficient picking and shipping processes. (Not specified table)
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff receive incoming shipments and update inventory levels accordingly. (Not specified table)
+- Purchasing teams place orders for products when stock levels fall below a predefined threshold. (Not specified table)
+- Warehouse staff pick items for outgoing orders, ensuring the correct quantity and product is included. (Not specified table)
+- Warehouse staff pack and ship orders to customers, updating the order status in the customer history. (CUST_HIST)
+
+## 5. Employee Management
+
+Performed By: HR Managers, IT Department
+
+Activity:
+- HR managers hire new employees by recording their personal details, employment history, and job roles. (Not specified table)
+- IT department sets up user accounts for new employees, granting them access to relevant systems. (Not specified table)
+- HR managers manage employee records, including promotions, transfers, and terminations. (Not specified table)
+- IT department updates user account details as necessary, such as password resets or role changes. (Not specified table)

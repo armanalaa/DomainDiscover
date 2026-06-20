@@ -1,0 +1,47 @@
+ # DellStore2 — Business Workflows
+
+## 1. Database Configuration Management
+
+Performed By: System Administrators, DBAs
+
+Activity:
+- Configure database instance size and paths for files storage (SQL Server or Oracle).
+- Generate build scripts from template files for database creation.
+- Edit newly created scripts to modify file sizes, paths, or number of files as needed.
+
+## 2. Database Instance Creation
+
+Performed By: System Administrators, DBAs
+
+Activity:
+- Execute Perl script to create database build scripts based on specified paths and instance size.
+- Run the generated scripts to create the DellStore2 database instance.
+
+## 3. Configuration File Generation
+
+Performed By: System Administrators
+
+Activity:
+- Use CreateConfigFile.pl Perl script to generate a configuration file (DriverConfig.txt) for the driver program.
+- Specify target hosts, database size, optional port numbers, and other parameters as required.
+
+## 4. Driver Program Configuration
+
+Performed By: System Administrators
+
+Activity:
+- Edit the generated configuration file to set n_threads, run_time, think_time, etc., as needed.
+
+## 5. Running Driver Programs
+
+Performed By: System Administrators
+
+Activity:
+- Run driver programs (ds2sqlserverdriver.exe) using the configured configuration file or command line parameters to drive workload on multiple target machines.
+
+## 6. Workload Driving on Multiple Target Machines
+
+Performed By: System Administrators
+
+Activity:
+- Open and run multiple instances of driver programs to drive workloads against multiple systems with Database or Web Servers installed.

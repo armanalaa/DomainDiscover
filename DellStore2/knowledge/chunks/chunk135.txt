@@ -1,0 +1,39 @@
+ # DellStore2 — Business Workflows
+
+## 1. Configuration Management
+
+Performed By: IT Administrators, Database Administrators
+
+Activity:
+- Configure database instances on multiple target machines to ensure they are of the same size (db_size parameter).
+- Specify target machines and their respective database instances in a configuration file for distribution of threads.
+- Set parameters like n_threads, ramp_rate, run_time, db_size, warmup_time, think_time, pct_newcustomers, n_searches, search_batch_size, n_line_items, virt_dir, page_type, and detailed_view in the configuration file.
+- For Linux CPU Utilization data, specify linux_perf_host parameter in the configuration file.
+
+## 2. Driver Program Execution
+
+Performed By: System Administrators
+
+Activity:
+- Execute the driver program using the specified configuration file to drive workload against multiple target machines.
+
+## 3. Workload Distribution
+
+Performed By: Driver Program
+
+Activity:
+- Distribute threads equally among the specified target machines based on the "n_threads" parameter.
+
+## 4. Database Size Management
+
+Performed By: Driver Program
+
+Activity:
+- Ensure that each machine has a database instance of the same size as specified by the "db_size" parameter.
+
+## 5. Query Parameterization (SQL Server)
+
+Performed By: SQL Server Developers
+
+Activity:
+- Convert queries created during the purchase phase of an order into parameterized queries to reduce workload for SQL Server.

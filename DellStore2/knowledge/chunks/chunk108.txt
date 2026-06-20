@@ -1,0 +1,66 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customer accounts by recording their contact details and preferences.
+- Customer service agents update customer information when contacted with changes or inquiries.
+- Sales representatives track customer interactions and follow-ups using the communication history column.
+
+## 2. Employee Management
+
+Performed By: HR Managers, IT Department
+
+Activity:
+- HR managers maintain employee records, including personal details, roles, and employment history.
+- The IT department assigns system access and permissions based on each employee's role within the company.
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers add new items to the catalog by recording product details such as name, category, list price, and images.
+- Warehouse staff update stock levels when products are received or sold.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Shipping Department
+
+Activity:
+- Sales representatives process customer orders by confirming availability, calculating shipping costs, and scheduling delivery.
+- Warehouse staff pick and pack items for shipment based on order details.
+- Shipping department prepares and sends out orders to customers.
+
+## 5. Invoice Generation
+
+Performed By: Sales Representatives, Accounting Department
+
+Activity:
+- Sales representatives generate invoices for completed orders, including item details, quantities, prices, and taxes.
+- The accounting department reviews and approves invoices before they are sent to customers.
+
+## 6. Payment Processing
+
+Performed By: Customers, Accounting Department
+
+Activity:
+- Customers make payments through various methods such as credit card or bank transfer.
+- The accounting department records incoming payments and updates customer accounts accordingly.
+
+## 7. Customer Support
+
+Performed By: Customer Service Agents
+
+Activity:
+- Customer service agents handle customer inquiries and complaints, providing assistance with products, orders, and billing issues.
+
+## 8. Data Documentation
+
+Performed By: IT Department, Data Management Team
+
+Activity:
+- The IT department maintains documentation for the company's data assets, including tables, columns, and relationships.
+- The data management team updates this documentation as changes are made to the database schema.

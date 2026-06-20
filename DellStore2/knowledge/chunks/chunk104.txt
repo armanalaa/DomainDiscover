@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details, contact information, and account credentials.
+- HR managers update customer records with employment history when a customer joins or leaves Dell.
+- Customer service representatives handle customer inquiries and updates related to account information.
+
+## 2. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process orders by confirming product availability, calculating prices, and scheduling deliveries.
+- Warehouse staff pick, pack, and ship ordered items to customers.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels by updating the quantity of each product in stock.
+- Purchasing teams order new products when inventory falls below a predefined threshold.
+
+## 4. Invoice Generation and Payment Processing
+
+Performed By: Finance, Customer Service Representatives
+
+Activity:
+- Finance generates invoices based on orders and sends them to customers.
+- Customer service representatives handle customer inquiries related to invoices and process payments.
+
+## 5. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives address customer concerns, troubleshoot issues, and provide technical support as needed.
+
+## 6. Data Governance and Compliance
+
+Performed By: IT Administrators, Data Governance Team
+
+Activity:
+- IT administrators ensure data security by implementing access controls and monitoring user activity.
+- The data governance team maintains the accuracy and integrity of customer data through regular audits and updates.
+
+## 7. Reporting and Analytics
+
+Performed By: Data Analysts, Management
+
+Activity:
+- Data analysts generate reports on sales performance, inventory levels, and customer behavior for internal analysis and decision making.
+- Management reviews these reports to identify trends, make strategic decisions, and set goals for future growth.

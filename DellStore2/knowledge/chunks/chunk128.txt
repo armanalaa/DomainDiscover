@@ -1,0 +1,65 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Sales Representatives, IT Support
+
+Activity:
+- Sales representatives register new customers by recording their contact details and account information (cust_df).
+- IT support assigns unique user IDs and passwords to each customer for secure access (cust_df).
+
+## 2. Customer Profile Management
+
+Performed By: Customers, Customer Service Representatives
+
+Activity:
+- Customers update their personal and contact information in their profiles (CUSTOMER).
+- Customer service representatives review and verify changes made to customer profiles (CUSTOMER).
+
+## 3. Customer History Tracking
+
+Performed By: Customer Service Representatives, Data Analysts
+
+Activity:
+- Customer service representatives log interactions with customers in their history (CUST_HIST).
+- Data analysts analyze customer histories to identify trends and patterns (custhist_df).
+
+## 4. Product Catalog Management
+
+Performed By: Product Managers, IT Support
+
+Activity:
+- Product managers add new items to the product catalog by recording their details (cust_df).
+- IT support ensures that all added products are properly indexed and searchable in the catalog.
+
+## 5. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders for products by selecting items from the catalog (CUST_HIST).
+- Sales representatives review and confirm customer orders before they are processed.
+
+## 6. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update inventory levels when new products arrive or existing ones are sold (cust_df).
+- Purchasing teams order replenishments for items with low stock levels based on sales data.
+
+## 7. Invoice Generation
+
+Performed By: Finance, Customer Service Representatives
+
+Activity:
+- Finance generates invoices for customers based on their orders (cust_df).
+- Customer service representatives send invoices to customers and follow up on any payment issues.
+
+## 8. Payment Processing
+
+Performed By: Customers, Finance
+
+Activity:
+- Customers make payments towards their invoices using various methods (not specified in the provided data).
+- Finance records payments received from customers and updates customer accounts accordingly (CUSTOMER).

@@ -1,0 +1,63 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact information and account details.
+- Customer service agents update customer records with changes to personal or billing data.
+- Sales representatives assign customer accounts to specific sales teams based on geographical location or industry.
+
+## 2. Customer History Tracking
+
+Performed By: Customer Service Agents, Data Analysts
+
+Activity:
+- Customer service agents log interactions with customers and record the outcomes of those interactions.
+- Data analysts analyze customer history data to identify trends and patterns in customer behavior.
+- Customer service agents update the customer history table with new records for each interaction.
+
+## 3. Pricing Management
+
+Performed By: Sales Representatives, Pricing Analysts
+
+Activity:
+- Sales representatives set prices for products based on market conditions and customer needs.
+- Pricing analysts review and adjust product prices to ensure competitiveness and profitability.
+- Sales representatives update the pricing information in the customer records when changes occur.
+
+## 4. Product Catalog Management
+
+Performed By: Product Managers, Data Entry Clerks
+
+Activity:
+- Product managers add new products to the catalog by entering product details such as name, category, and list price.
+- Data entry clerks update existing product records with changes to product information or specifications.
+
+## 5. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels by updating the quantity of each product in stock.
+- Purchasing teams order new products from suppliers when inventory levels fall below a certain threshold.
+- Warehouse staff update the inventory table with the receipt or shipment of products.
+
+## 6. Order Processing
+
+Performed By: Sales Representatives, Customer Service Agents, Warehouse Staff
+
+Activity:
+- Sales representatives process customer orders by confirming availability and calculating shipping costs.
+- Customer service agents update order statuses and notify customers when their orders are ready to ship.
+- Warehouse staff pick, pack, and ship products to customers according to the order details.
+
+## 7. Billing and Invoicing
+
+Performed By: Finance Teams, Customer Service Agents
+
+Activity:
+- Finance teams generate invoices based on customer orders and update the billing information in customer records.
+- Customer service agents send invoices to customers and follow up on any outstanding payments.
+- Finance teams record payments received from customers and update the account balances accordingly.

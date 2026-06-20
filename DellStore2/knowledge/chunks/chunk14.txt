@@ -1,0 +1,67 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers, IT Administrators
+
+Activity:
+- Sales representatives register new customer accounts by entering their personal details (SRIMVH, SLZCISTEWL, DXPGGAE, Unnamed: 4, Dell Way, email, phone number, password).
+- HR managers assign unique usernames and update customer account information.
+- IT administrators manage customer account security and access permissions.
+
+## 2. Customer Interaction Tracking
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives document interactions with customers (cust_df) to follow up on sales leads or provide support.
+- Customer service agents record customer inquiries and responses (custhist_df, cust_HIST).
+
+## 3. Cookies Management
+
+Performed By: IT Administrators, Marketing Analysts
+
+Activity:
+- IT administrators implement cookies for load balancing, statistics collection, and user experience optimization (lidc, _clck, _clsk, _cltk, _ga, _ga_#).
+- Marketing analysts track visitor behavior across devices and marketing channels (_ga, _ga_#, ajs_anonymous_id, ajs_anonymous_id Calendly, dd_cookie_test_#, dtCookie, dtPC, gsc Getsitecontrol).
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update inventory levels (not specified in the provided schema) as items are received or shipped.
+- Purchasing teams place orders for new stock based on inventory levels and demand forecasts.
+
+## 5. Order Processing
+
+Performed By: Sales Representatives, Customer Service Agents, Warehouse Staff
+
+Activity:
+- Sales representatives confirm customer orders (not specified in the provided schema).
+- Customer service agents process order changes or cancellations.
+- Warehouse staff pick and pack items for shipment.
+
+## 6. Shipping and Delivery
+
+Performed By: Warehouse Staff, Courier Services
+
+Activity:
+- Warehouse staff prepare orders for shipping (not specified in the provided schema).
+- Courier services deliver packages to customers' addresses.
+
+## 7. Invoice Generation and Payment Processing
+
+Performed By: Finance Department, Customer Service Agents
+
+Activity:
+- Finance department generates invoices based on order details (not specified in the provided schema).
+- Customer service agents address billing inquiries or handle payment issues.
+
+## 8. Analytics and Reporting
+
+Performed By: Marketing Analysts, Business Intelligence Analysts
+
+Activity:
+- Marketing analysts analyze visitor behavior data from cookies (lidc, _clck, _clsk, _cltk, _ga, _ga_#, ajs_anonymous_id, ajs_anonymous_id Calendly, dd_cookie_test_#, dtCookie, dtPC, gsc Getsitecontrol).
+- Business Intelligence Analysts generate reports on sales, inventory, and customer behavior trends.

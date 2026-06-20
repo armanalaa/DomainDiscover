@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customer details such as name, contact information, and location. (cust_df)
+- Customer service agents update customer records with any changes in personal or account data. (cust_df)
+- Sales representatives assign unique usernames and passwords to customers for account access. (cust_df)
+
+## 2. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers add new items to the product catalog with details like product code, name, category, and list price.
+- Warehouse staff update inventory levels when products are received or shipped out. (cust_df)
+
+## 3. Download Management
+
+Performed By: Customers, IT Support
+
+Activity:
+- Customers download software packages from the DellStore2 website based on their needs and product versions.
+- IT support team members address any issues related to software downloads or installations.
+
+## 4. Consent Management
+
+Performed By: Dataedo Team, Customers
+
+Activity:
+- The Dataedo team provides customers with information about data usage, cookies, and privacy policies.
+- Customers accept the terms of use and consent to data collection for personalization, social media features, and traffic analysis.
+
+## 5. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Team
+
+Activity:
+- Sales representatives process customer orders by selecting appropriate products and quantities. (cust_df)
+- Warehouse staff prepare the ordered items for shipment and update inventory levels accordingly. (cust_df)
+- The finance team records transaction details such as order ID, total cost, and payment information.
+
+## 6. Invoice Generation
+
+Performed By: Finance Team
+
+Activity:
+- The finance team generates invoices for customers based on their orders and sends them via email. (cust_df)
+
+## 7. Payment Processing
+
+Performed By: Customers, Finance Team
+
+Activity:
+- Customers make payments for their orders using various methods like credit cards or bank transfers.
+- The finance team verifies payment details and updates the customer's account status accordingly. (cust_df)

@@ -1,0 +1,56 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details and contact information (cust_df).
+- HR managers update customer profiles with employment history and qualifications (CUSTOMER).
+
+## 2. Customer History Management
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives log customer interactions and sales transactions (custhist_df).
+- Customer service representatives record customer complaints or issues (CUST_HIST).
+
+## 3. Account Management
+
+Performed By: Finance Team, IT Department
+
+Activity:
+- Finance team updates customer account information such as billing address and payment details (CUSTOMER).
+- IT department manages customer accounts' security and access permissions (cust_df).
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process orders by entering product details and shipping information (custhist_df).
+- Warehouse staff pick, pack, and ship ordered items to customers (not specified in provided data).
+
+## 5. Inventory Management
+
+Performed By: Purchasing Teams, Warehouse Staff
+
+Activity:
+- Purchasing teams order new inventory based on sales data and stock levels (not specified in provided data).
+- Warehouse staff receive, store, and track inventory levels (not specified in provided data).
+
+## 6. Invoice Generation
+
+Performed By: Finance Team
+
+Activity:
+- Finance team generates invoices for customers based on their order history and account information (custhist_df, CUSTOMER).
+
+## 7. Payment Processing
+
+Performed By: Finance Team, Customer Service Representatives
+
+Activity:
+- Finance team processes customer payments and updates account balances (CUSTOMER).
+- Customer service representatives handle payment disputes or issues (not specified in provided data).

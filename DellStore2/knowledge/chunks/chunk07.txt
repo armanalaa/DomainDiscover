@@ -1,0 +1,90 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Customer Service Representative
+
+Activity:
+- Registers new customers by entering their first name, last name, email, phone number, username, password, address details, country, region, credit card type, credit card identification number, credit card expiration date, age, and income.
+
+Performed By: Database Administrator
+
+Activity:
+- Validates the entered data for duplicates before inserting it into the CUSTOMERS table.
+
+## 2. Customer Login
+
+Performed By: Customer
+
+Activity:
+- Enters their username and password to access their account.
+
+Performed By: Database Administrator (through function)
+
+Activity:
+- Verifies the entered credentials against the CUSTOMERS table and returns a refcursor containing customer information and related purchases if valid, or 0 if invalid.
+
+## 3. Purchase Processing
+
+Performed By: Customer
+
+Activity:
+- Selects DVD films and quantities to purchase.
+
+Performed By: Database Administrator (through function)
+
+Activity:
+- Calculates the net amount, tax amount, and total amount based on the selected DVD films and quantities.
+
+Performed By: Database Administrator (through function)
+
+Activity:
+- Inserts the purchase details into the CUST_HIST table along with the customer ID.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Records the quantity of each DVD film available in the warehouse.
+
+Performed By: Database Administrator
+
+Activity:
+- Updates the inventory levels in the PRODUCTS table based on the recorded quantities.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff
+
+Activity:
+- Retrieves the DVD films for a customer's order from the warehouse.
+
+Performed By: Shipping Department
+
+Activity:
+- Packages the DVD films and prepares them for shipping to the customer.
+
+## 6. Order Tracking
+
+Performed By: Customer Service Representative
+
+Activity:
+- Tracks the status of a customer's order, including its current location and expected delivery date.
+
+## 7. Billing and Payment Processing
+
+Performed By: Finance Department
+
+Activity:
+- Calculates the total amount due for a customer's order based on the net amount, tax amount, and total amount.
+
+Performed By: Customer
+
+Activity:
+- Pays for their order using the provided payment methods.
+
+Performed By: Database Administrator (through function)
+
+Activity:
+- Updates the CUSTOMER table with the paid status of a customer's order.

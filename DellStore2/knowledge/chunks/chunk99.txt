@@ -1,0 +1,42 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives register new customers by recording their contact details and account information. (CUSTOMER table)
+- HR managers onboard new employees by entering their personal and employment data. (CUSTOMER table)
+- Customers update their profile information as needed. (CUSTOMER table)
+
+## 2. Customer History Tracking
+
+Performed By: Sales Representatives, Customer Support Agents
+
+Activity:
+- Sales representatives log customer interactions and sales history. (CUST_HIST table)
+- Customer support agents record customer inquiries and resolution details. (CUST_HIST table)
+
+## 3. Account Management
+
+Performed By: Finance Team, IT Department
+
+Activity:
+- Finance team manages user accounts and their associated permissions. (CUSTOMER table)
+- IT department handles password resets and account recovery. (CUSTOMER table)
+
+## 4. Data Documentation and Maintenance
+
+Performed By: Database Administrators, Technical Writers
+
+Activity:
+- Database administrators maintain the integrity and security of the data in DellStore2.
+- Technical writers document the database schema and workflows for easier understanding and management. (unspecified documents)
+
+## 5. Data Analysis and Reporting
+
+Performed By: Business Analysts, Management
+
+Activity:
+- Business analysts generate reports based on customer data to inform decision making. (unspecified reports)
+- Management reviews the reports to assess performance and identify opportunities for improvement. (unspecified reports)

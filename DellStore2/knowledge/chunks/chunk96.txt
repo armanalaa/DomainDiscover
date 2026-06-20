@@ -1,0 +1,64 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact details, location, and account type. (CUSTOMER)
+- Customer service agents update customer information when contacted, such as address changes or password resets. (CUSTOMER)
+- Customer service agents create support tickets for any reported issues or inquiries related to the customer's account. (Not specified table)
+
+## 2. Customer History Tracking
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives log interactions with customers, including sales calls and meetings, in the customer history. (CUST_HIST)
+- Customer service agents document customer complaints, resolutions, and follow-ups in the customer history. (CUST_HIST)
+- Both roles update the customer history when a customer's account status changes, such as upgrades or cancellations. (CUST_HIST)
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price. (Not specified table)
+- Warehouse staff update stock levels when products are received or shipped out. (Not specified table)
+- Warehouse staff track inventory movements and report any discrepancies to product managers. (Not specified table)
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Customer Service Agents, Warehouse Staff
+
+Activity:
+- Sales representatives or customer service agents process orders by confirming product availability, calculating shipping costs, and providing order confirmation numbers. (Not specified table)
+- Warehouse staff pick and pack ordered items for shipment. (Not specified table)
+- Warehouse staff update the order status when an order is shipped out. (Not specified table)
+
+## 5. Invoice Generation and Payment Processing
+
+Performed By: Finance Department, Customer Service Agents
+
+Activity:
+- Finance department generates invoices based on orders and sends them to customers. (Not specified table)
+- Customer service agents handle customer inquiries regarding invoices, such as disputes or payment issues. (Not specified table)
+- Customer service agents update the invoice status when payments are received or overdue notices are sent. (Not specified table)
+
+## 6. Shipping and Delivery Management
+
+Performed By: Warehouse Staff, Shipping Providers, Customer Service Agents
+
+Activity:
+- Warehouse staff prepare shipments by packing ordered items and affixing shipping labels. (Not specified table)
+- Shipping providers deliver orders to customers according to the provided address and shipping method. (Not specified table)
+- Customer service agents update the order status when a delivery is confirmed or if there are any delivery issues. (Not specified table)
+
+## 7. Returns and Refunds Processing
+
+Performed By: Customer Service Agents, Warehouse Staff
+
+Activity:
+- Customer service agents process returns by creating return requests and providing return shipping labels. (Not specified table)
+- Warehouse staff receive returned items, inspect them for damage or defects, and update the inventory accordingly. (Not specified table)
+- Customer service agents issue refunds or exchange products based on the return request and product condition. (Not specified table)

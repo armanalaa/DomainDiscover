@@ -1,0 +1,49 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details and contact information (cust_df).
+- HR managers update customer account details when changes occur (cust_df).
+
+## 2. Customer History Tracking
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives log customer purchases and interactions (CUST_HIST).
+- Customer service representatives access and review a customer's purchase history (CUST_HIST) to assist with inquiries.
+
+## 3. Data Documentation
+
+Performed By: IT Administrators, Data Analysts
+
+Activity:
+- IT administrators document all AWS data sources within the DellStore2 database (unspecified).
+- Data analysts analyze data quality of AWS data sources and identify areas requiring improvements (unspecified).
+
+## 4. Data Model Visualization
+
+Performed By: Data Analysts, Database Administrators
+
+Activity:
+- Data analysts visualize relationships in the DellStore2 database using ER Diagrams (unspecified).
+- Database administrators ensure accurate and transparent representation of data models for easier querying, reporting, and development.
+
+## 5. Schema Organization
+
+Performed By: IT Administrators, Data Analysts
+
+Activity:
+- IT administrators organize complex databases and data environments into subject areas (unspecified).
+- Data analysts decode cryptic names to improve understanding of the DellStore2 schema.
+
+## 6. Data Dictionary Creation
+
+Performed By: IT Administrators, Data Analysts
+
+Activity:
+- IT administrators extract a data dictionary for the DellStore2 database (unspecified).
+- Data analysts use sample data to learn what data is stored in the database and calculate useful metrics.

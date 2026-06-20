@@ -1,0 +1,65 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Sales Representatives, IT Support
+
+Activity:
+- Sales representatives register new customers by entering their details (SRIMVH, SLZCISTEWL, contact information) and creating a user account.
+- IT support assigns the customer a unique ID (10001) and sets up password protection for the account.
+
+## 2. Customer Profile Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives update customer profiles with changes in contact information or preferences.
+- HR managers maintain employee records related to each customer (name, address, etc.) within the customer profile.
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products and providing shipping details from their registered accounts.
+- Sales representatives confirm order details and process them for further processing.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track product availability and update inventory levels accordingly.
+- Purchasing teams issue purchase orders to replenish depleted stock.
+
+## 5. Order Fulfillment
+
+Performed By: Warehouse Staff, Shipping Department
+
+Activity:
+- Warehouse staff pick and pack ordered items for shipment.
+- Shipping department labels packages with appropriate shipping information and sends them to the customer's address.
+
+## 6. Invoice Generation
+
+Performed By: Sales Representatives, Finance Department
+
+Activity:
+- Sales representatives generate invoices based on order details and send them to customers.
+- Finance department records invoice details (invoices numbers, amounts, due dates) in the system.
+
+## 7. Payment Processing
+
+Performed By: Customers, Finance Department
+
+Activity:
+- Customers make payments towards their outstanding invoices using various payment methods.
+- Finance department updates customer accounts with payment status and records transaction details.
+
+## 8. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries, complaints, and returns.
+- They update customer profiles and order histories as necessary based on the interaction.

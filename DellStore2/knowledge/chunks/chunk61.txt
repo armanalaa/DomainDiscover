@@ -1,0 +1,56 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details and contact information (SRIMVH, SLZCISTEWL, DXPGGAE, Unnamed: 6, 00000, UK, SLZCISTEWL@dell.com, password).
+- HR managers update customer account details when necessary (1467048332 Dell Way, user10001).
+
+## 2. Customer History Tracking
+
+Performed By: Sales Representatives, Customer Service Representatives
+
+Activity:
+- Sales representatives log customer purchase history (CUST_HIST).
+- Customer service representatives access and review a customer's purchase history to assist with inquiries (7888, 1, 9117, 19356, 1001, 4380, 931, 2001, 9702, 12411, 3001, 9972, 14005, 4001, 306, 15441, 5001, 5549, 16984, 6001, 5853, 8391, 7001, 6079, 9922, 8001, 1376, 1490, 9001, 1697, 12934, 10001, 6941, 4497, 11001, 7259).
+
+## 3. Customer Profile Maintenance
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives update customer profiles with new contact information or address changes (SLZCISTEWL@dell.com, password, 1467048332 Dell Way).
+- HR managers modify customer profiles when a customer's employment status changes (user10001).
+
+## 4. Customer Authentication
+
+Performed By: Customers
+
+Activity:
+- Customers log in to their accounts using their username and password (user10001, password).
+
+## 5. Account Management
+
+Performed By: Customers, Customer Service Representatives
+
+Activity:
+- Customers view and manage their account details online (SLZCISTEWL@dell.com, password).
+- Customer service representatives assist customers with account management issues over the phone or email.
+
+## 6. Invoice Generation
+
+Performed By: Sales Representatives, Accounting Team
+
+Activity:
+- Sales representatives generate invoices for completed orders (CUST_HIST).
+- Accounting team reviews and approves invoices before they are sent to customers.
+
+## 7. Payment Processing
+
+Performed By: Customers, Finance Team
+
+Activity:
+- Customers make payments on their accounts through various methods (80000).
+- Finance team processes customer payments and updates account balances accordingly.

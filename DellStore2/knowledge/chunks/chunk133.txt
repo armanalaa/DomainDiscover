@@ -1,0 +1,72 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: IT Administrator, Customer Service Representative
+
+Activity:
+- IT Administrator sets environment variable PLINK_PATH for driver program.
+- IT Administrator installs sysstat package on target Linux machines.
+- Customer Service Representative generates CSV data files using InstallDVDStore.pl script.
+
+## 2. Database Configuration
+
+Performed By: Database Administrator
+
+Activity:
+- Database Administrator creates database build and cleanup scripts based on template files.
+- Database Administrator sets up database file paths for Oracle and SQL Server databases.
+
+## 3. Database Creation
+
+Performed By: Database Administrator
+
+Activity:
+- Database Administrator runs database build scripts to create the DellStore2 database.
+
+## 4. User Account Management
+
+Performed By: IT Administrator, Customer Service Representative
+
+Activity:
+- IT Administrator sets up user accounts in the DellStore2 database using provided CSV data files.
+- Customer Service Representative assigns passwords to new users.
+
+## 5. Data Population
+
+Performed By: Database Administrator
+
+Activity:
+- Database Administrator loads CSV data files into the DellStore2 database.
+
+## 6. Data Querying and Analysis
+
+Performed By: Data Analyst, Business Intelligence Specialist
+
+Activity:
+- Data Analyst queries the DellStore2 database to extract relevant data for analysis.
+- Business Intelligence Specialist analyzes the extracted data to generate reports and insights.
+
+## 7. Order Processing
+
+Performed By: Sales Representative, Warehouse Staff, Customer Service Representative
+
+Activity:
+- Sales Representative enters customer orders into the system.
+- Warehouse Staff tracks inventory levels and prepares orders for shipment.
+- Customer Service Representative updates order status and handles any issues or inquiries.
+
+## 8. Invoice Generation and Payment Processing
+
+Performed By: Finance Department, Customer Service Representative
+
+Activity:
+- Finance Department generates invoices based on completed orders.
+- Customer Service Representative sends invoices to customers and processes payments.
+
+## 9. Customer Support
+
+Performed By: Customer Service Representative
+
+Activity:
+- Customer Service Representative handles customer inquiries and complaints, providing support and resolving issues.

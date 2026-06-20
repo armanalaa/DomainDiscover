@@ -1,0 +1,104 @@
+{
+  "_meta": {
+    "domain_id": 0,
+    "domain_name": "Inventory and Product Data Management",
+    "definition": "This domain unifies the capability for managing inventory levels and product data within the system.",
+    "tables": [
+      "INVENTORY",
+      "inv_df"
+    ],
+    "n_tables": 2,
+    "n_columns_total": 6,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "INVENTORY": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "1",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores inventory item quantities (e.g., 2, 3, 4, 5, 6).",
+          "samples": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "138",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores inventory item identifiers as integers.",
+          "samples": [
+            118,
+            228,
+            279,
+            382,
+            109
+          ]
+        },
+        {
+          "name": "9",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores inventory item identifiers as integers.",
+          "samples": [
+            19,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ]
+    },
+    "inv_df": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "1",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for inventory items in the inv_df table.",
+          "samples": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "138",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique invoice identifiers, possibly sequential numbers.",
+          "samples": [
+            118,
+            228,
+            279,
+            382,
+            109
+          ]
+        },
+        {
+          "name": "9",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores unique identifiers for various inventory items.",
+          "samples": [
+            19,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ]
+    }
+  }
+}

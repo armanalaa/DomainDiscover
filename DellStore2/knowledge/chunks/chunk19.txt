@@ -1,0 +1,56 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal details (SRIMVH, SLZCISTEWL, email address, phone number, country, etc.) and creating a unique customer ID (10001).
+- HR managers assign roles and permissions to each registered user based on the provided role (DXPGGAE) and password.
+
+## 2. Subscription Management
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives manage customer subscriptions by updating subscription details (IP address, time of subscription).
+- They also handle unsubscribing requests by removing customers from the newsletter list (custhist_df).
+
+## 3. Data Collection and Profiling
+
+Performed By: Automated Systems, Manual Profilers
+
+Activity:
+- Automated systems collect data on customer behavior (webinars attended, blog posts read) for profiling purposes.
+- Manual profilers analyze the collected data to create customer profiles based on their interests and preferences.
+
+## 4. Privacy Policy Compliance
+
+Performed By: Data Protection Officers
+
+Activity:
+- Data protection officers ensure compliance with privacy policies by restricting access to personal data (email address, IP address) to authorized personnel only.
+- They also anonymize personal data when necessary and securely store it in databases.
+
+## 5. Data Security Measures
+
+Performed By: IT Administrators
+
+Activity:
+- IT administrators implement data security measures such as encryption (SSL certificate) and password protection to safeguard customer data.
+
+## 6. Consent Management
+
+Performed By: Customers, Customer Service Representatives
+
+Activity:
+- Customers provide their consent for data processing by subscribing to the newsletter.
+- Customer service representatives record the consent details (IP address, time of subscription) and retain this information as long as the customer remains a subscriber.
+
+## 7. Data Access and Retrieval
+
+Performed By: Customers, Customer Service Representatives
+
+Activity:
+- Customers can access their personal data by logging into their accounts (using the unique customer ID).
+- Customer service representatives retrieve customer data for various purposes (e.g., account management, support requests) from the customer database (CUSTOMER).

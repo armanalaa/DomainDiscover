@@ -1,0 +1,49 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives register new customers by recording their details (SRIMVH, SLZCISTEWL, contact information, address, country).
+- HR managers update customer records with personal details (name, gender, date of birth) and employment information (user ID, password, role, email).
+- Customers manage their accounts by changing their passwords.
+
+## 2. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries related to products, services, or account issues.
+- They update the customer's support history (1467048332 Dell Way, SLZCISTEWL@dell.com) with details of each interaction.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process orders by entering product details (product code, name, category, list price) and shipping information.
+- Warehouse staff track inventory levels to ensure items are available for shipment.
+
+## 4. Invoice Generation and Payment Processing
+
+Performed By: Accounting Team
+
+Activity:
+- The accounting team generates invoices based on order details (product, quantity, price) and customer information.
+- They record payments received from customers (80000, UK, 1.1, FQIVBKWIZC@dell.com).
+
+## 5. Inventory Management
+
+Performed By: Warehouse Staff
+
+Activity:
+- Warehouse staff update inventory levels when items are received or shipped (RNPOJG, FQIVBKWIZC, 1287944454 Dell Way).
+
+## 6. Data Governance and Compliance
+
+Performed By: IT Administrators, Compliance Officers
+
+Activity:
+- IT administrators maintain the data catalog and ensure end-to-end data lineage across clinical and administrative systems.
+- Compliance officers identify protected health information (PHI) and tag critical data assets for consistent reporting and HIPAA compliance.

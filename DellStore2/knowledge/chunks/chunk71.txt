@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers, Customers
+
+Activity:
+- Sales representatives register new customers by recording their contact details and preferences.
+- HR managers update customer information when changes occur, such as address or employment status.
+- Customers manage their accounts by modifying personal data, passwords, and billing information.
+
+## 2. Customer Support Ticketing
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives log customer support tickets related to product issues or inquiries.
+- They assign tickets to appropriate teams for resolution and track their progress until completion.
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, Warehouse Staff
+
+Activity:
+- Product managers add new items to the catalog by recording product code, name, category, and list price.
+- Warehouse staff update inventory levels when stock changes occur.
+
+## 4. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process orders by selecting items from the catalog and specifying quantities.
+- Warehouse staff prepare orders for shipping by packing products and updating inventory levels accordingly.
+
+## 5. Invoice Generation and Payment Processing
+
+Performed By: Finance Team, Customers
+
+Activity:
+- Finance team generates invoices based on order details and sends them to customers.
+- Customers pay their invoices through various payment methods, which are recorded in the system.
+
+## 6. Data Governance and Quality Assurance
+
+Performed By: Data Governance Team
+
+Activity:
+- Data governance team assigns owners to every table and column for accountability purposes.
+- They track data quality issues, discuss solutions within the community, and ensure timely resolution.
+
+## 7. Reporting and Analytics
+
+Performed By: Business Analysts, Management
+
+Activity:
+- Business analysts create reports based on data from various tables to analyze sales trends, customer behavior, and inventory levels.
+- Management uses these reports for decision-making purposes, such as setting pricing strategies or adjusting marketing efforts.

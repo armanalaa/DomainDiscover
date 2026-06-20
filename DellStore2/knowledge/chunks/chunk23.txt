@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact details and preferences.
+- Customer service agents update customer information when contacted with changes.
+- Sales representatives assign customer accounts to specific sales teams for targeted marketing efforts.
+
+## 2. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Department
+
+Activity:
+- Sales representatives create new orders by entering product details and shipping information.
+- Warehouse staff track inventory levels and prepare items for shipment based on order details.
+- Finance department records the financial aspects of each order, including payment and delivery terms.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update inventory levels when items are received or shipped out.
+- Purchasing teams place orders for new stock based on current inventory levels and sales forecasts.
+
+## 4. Invoice Generation
+
+Performed By: Finance Department
+
+Activity:
+- Finance department generates invoices for customers based on their orders and payment terms.
+
+## 5. Payment Processing
+
+Performed By: Finance Department, Customer Service Agents
+
+Activity:
+- Finance department records customer payments and updates account balances accordingly.
+- Customer service agents address any payment-related issues or disputes that arise.
+
+## 6. Customer Support
+
+Performed By: Customer Service Agents
+
+Activity:
+- Customer service agents handle inquiries, complaints, and technical support requests from customers.
+
+## 7. Data Governance
+
+Performed By: IT Department, Data Governance Team
+
+Activity:
+- IT department maintains the DellStore2 database and ensures its security and integrity.
+- Data governance team manages data lineage, quality, and cataloging for better data governance across the organization.

@@ -1,0 +1,57 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Sales Representatives, IT Support
+
+Activity:
+- Sales representatives register new customers by recording their contact details and assigning them a unique identifier (cust_df).
+- IT support sets up customer accounts with appropriate access levels based on the assigned role (CUSTOMER).
+
+## 2. Customer Profile Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives update customer profiles with changes in contact information or account details (CUST_DF).
+- HR managers maintain employee records associated with each customer account (CUSTOMER).
+
+## 3. Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products and providing shipping information (not specified in the provided schema).
+- Sales representatives confirm order details and process them for fulfillment (not specified in the provided schema).
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels and update them when products are added or removed (not specified in the provided schema).
+- Purchasing teams issue purchase orders for replenishing low stock items (not specified in the provided schema).
+
+## 5. Invoice Processing
+
+Performed By: Finance, Sales Representatives
+
+Activity:
+- Sales representatives generate invoices based on completed orders and send them to customers (not specified in the provided schema).
+- Finance records incoming payments and updates customer accounts accordingly (CUST_DF).
+
+## 6. Support Ticketing System Management
+
+Performed By: Customer Service Representatives, IT Support
+
+Activity:
+- Customer service representatives create support tickets for customer issues and assign them to the appropriate team (not specified in the provided schema).
+- IT support resolves technical issues and updates ticket status accordingly (not specified in the provided schema).
+
+## 7. Dataedo Product Usage
+
+Performed By: Customer Users, Dataedo Support
+
+Activity:
+- Customer users access and utilize the Dataedo products according to their assigned roles and permissions (CUSTOMER).
+- Dataedo support provides updates, enhancements, and technical assistance as needed (092_license.pdf p.4, 092_license.pdf p.6).

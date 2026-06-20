@@ -1,0 +1,54 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, HR Managers
+
+Activity:
+- Customer service representatives register new customers by recording their personal and contact details (SRIMVH, SLZCISTEWL, 1467048332 Dell Way, Unnamed: 4, DXPGGAE, Unnamed: 6, 00000, UK, 2, SLZCISTEWL@dell.com, 1467048332, 5, 1281093623023480, 2012/09, user10001, password).
+- HR managers update customer details as necessary (password).
+
+## 2. Customer History Tracking
+
+Performed By: Customer Service Representatives, Data Analysts
+
+Activity:
+- Customer service representatives log customer interactions and issues (7888, 1, 9117, 19356, 1001, 4380, 931, 2001, 9702, 12411, 3001, 9972, 14005, 4001, 306, 15441, 5001, 5549, 16984, 6001, 5853, 8391, 7001, 6079, 9922, 8001, 1376, 1490, 9001, 1697, 12934, 10001, 6941, 4497, 11001, 7259).
+- Data analysts analyze customer history to identify trends and improve service (custhist_df).
+
+## 3. Customer Account Maintenance
+
+Performed By: Customers, Customer Service Representatives
+
+Activity:
+- Customers manage their account details through the self-service portal (password).
+- Customer service representatives assist customers with account management as needed (password).
+
+## 4. Product Reference Data Management
+
+Performed By: Product Managers, Data Analysts
+
+Activity:
+- Product managers register new items in the catalog by recording the product code, name, category, and list price (SRIMVH, SLZCISTEWL, 1467048332 Dell Way, Unnamed: 4, DXPGGAE, Unnamed: 6, 00000, UK, 2, SLZCISTEWL@dell.com, 1467048332, 5, 1281093623023480, 2012/09).
+- Data analysts ensure accurate analytics and reporting with duplicate and mistake-free categorization of data such as countries, statuses, currency codes (cust_df).
+
+## 5. Data Governance
+
+Performed By: Data Governance Team
+
+Activity:
+- The data governance team standardizes values and their definitions within the organization to create a consistent understanding (Data Quality, Data Lineage).
+
+## 6. Data Integration
+
+Performed By: IT Administrators
+
+Activity:
+- IT administrators simplify data integration between different systems by providing trusted sets of lookup values (Data Warehousing).
+
+## 7. Data Documentation
+
+Performed By: Data Governance Team, Data Analysts
+
+Activity:
+- The data governance team creates a central documentation of reference data from all data sources and distributes it across teams working with data in the organization (Dataedo).

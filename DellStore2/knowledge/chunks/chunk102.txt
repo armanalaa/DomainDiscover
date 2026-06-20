@@ -1,0 +1,49 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers
+
+Activity:
+- Sales representatives register new customers by recording their contact details, such as name, email address, and phone number. (CUSTOMER table)
+- HR managers update customer information when changes occur, like job titles or addresses. (CUSTOMER table)
+
+## 2. Customer Support Interaction
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries and complaints by recording the issue, resolution, and follow-up actions. (Not specified in provided tables)
+
+## 3. Order Placement and Processing
+
+Performed By: Customers, Sales Representatives, Warehouse Staff
+
+Activity:
+- Customers place orders through the online store by selecting products and providing shipping information. (Not specified in provided tables)
+- Sales representatives review and confirm orders before they are processed for shipment. (Not specified in provided tables)
+- Warehouse staff pick, pack, and ship ordered items to customers. (Not specified in provided tables)
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update the inventory levels when products are received or shipped out. (Not specified in provided tables)
+- Purchasing teams order new stock based on current inventory levels and sales forecasts. (Not specified in provided tables)
+
+## 5. Financial Transactions
+
+Performed By: Finance Department, Sales Representatives
+
+Activity:
+- Sales representatives record the details of each sale, including the product, price, and customer information. (Not specified in provided tables)
+- The finance department processes payments, generates invoices, and records financial transactions related to sales. (Not specified in provided tables)
+
+## 6. Data Governance and Documentation
+
+Performed By: Data Stewards, Business Users
+
+Activity:
+- Data stewards ensure the accuracy and consistency of data across all systems. (Not specified in provided tables)
+- Business users document data definitions, relationships, and lineage within the Dataedo platform. (Not specified in provided tables)

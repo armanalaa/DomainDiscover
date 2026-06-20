@@ -1,0 +1,960 @@
+{
+  "_meta": {
+    "domain_id": 2,
+    "domain_name": "Customer Identity and Access Management",
+    "definition": "Unifying the management of customer accounts, login credentials, and account details across the enterprise system",
+    "tables": [
+      "CUSTOMER",
+      "cust_df"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "CUSTOMER": {
+      "_description": "The CUSTOMER table stores information about individual Dell customers, including their contact details, account credentials, and location.",
+      "columns": [
+        {
+          "name": "10001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores unique customer identifiers represented as floating point numbers.",
+          "samples": [
+            10002.0,
+            10003.0,
+            10004.0,
+            10005.0,
+            10006.0
+          ]
+        },
+        {
+          "name": "SRIMVH",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique, alphanumeric customer identifiers of up to 10 characters.",
+          "samples": [
+            "QDEMFI",
+            "VHHZGO",
+            "PUDOVQ",
+            "UTOHSN",
+            "NDHPGA"
+          ]
+        },
+        {
+          "name": "SLZCISTEWL",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique alphanumeric customer identifiers (10 characters long).",
+          "samples": [
+            "TGBSWAJVZH",
+            "WPDNKBNJZZ",
+            "PERBMQNKDH",
+            "WIQOPCPAKE",
+            "YTPICAXBVF"
+          ]
+        },
+        {
+          "name": "1467048332 Dell Way",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique Dell Way addresses associated with customers.",
+          "samples": [
+            "5268264831 Dell Way",
+            "5035397858 Dell Way",
+            "3014055309 Dell Way",
+            "4615288971 Dell Way",
+            "2849008574 Dell Way"
+          ]
+        },
+        {
+          "name": "Unnamed: 4",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores customer-specific free-form notes as text data.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "DXPGGAE",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores customer unique identification codes, possibly alphanumeric.",
+          "samples": [
+            "EVVMGTY",
+            "APRZAZP",
+            "GNXDYYF",
+            "HHBFHKE",
+            "DYNRYLI"
+          ]
+        },
+        {
+          "name": "Unnamed: 6",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores customer-specific free-form notes as text data.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "00000",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer credit limit as a floating point value.",
+          "samples": [
+            0.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "UK",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores country names of customers.",
+          "samples": [
+            "Chile",
+            "Germany",
+            "Russia",
+            "Canada",
+            "Australia"
+          ]
+        },
+        {
+          "name": "2",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer IDs as floating point numbers, consistently set to 2.0.",
+          "samples": [
+            2.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "SLZCISTEWL@dell.com",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique email addresses of customers at Dell.com.",
+          "samples": [
+            "TGBSWAJVZH@dell.com",
+            "WPDNKBNJZZ@dell.com",
+            "PERBMQNKDH@dell.com",
+            "WIQOPCPAKE@dell.com",
+            "YTPICAXBVF@dell.com"
+          ]
+        },
+        {
+          "name": "1467048332",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer IDs represented as large floating point numbers.",
+          "samples": [
+            5268264831.0,
+            5035397858.0,
+            3014055309.0,
+            4615288971.0,
+            2849008574.0
+          ]
+        },
+        {
+          "name": "5",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores customer IDs, with repeated values suggesting multiple records per unique customer.",
+          "samples": [
+            3,
+            4,
+            5,
+            1,
+            2
+          ]
+        },
+        {
+          "name": "1281093623023480",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer IDs as floating point numbers, possibly encoded.",
+          "samples": [
+            9600615079514682.0,
+            6207322841510177.0,
+            8303288342896849.0,
+            5996499293483794.0,
+            8045294675044715.0
+          ]
+        },
+        {
+          "name": "2012/09",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores year and month of customer registration (format: YYYY/MM)",
+          "samples": [
+            "2010/12",
+            "2008/07",
+            "2011/07",
+            "2009/01",
+            "2012/05"
+          ]
+        },
+        {
+          "name": "user10001",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique identifiers for users (up to 10 characters long) in the DellStore2 customer database.",
+          "samples": [
+            "user10002",
+            "user10003",
+            "user10004",
+            "user10005",
+            "user10006"
+          ]
+        },
+        {
+          "name": "password",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores encrypted customer passwords, limited to 10 characters.",
+          "samples": [
+            "password",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "44",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer heights as floating point values.",
+          "samples": [
+            57.0,
+            21.0,
+            75.0,
+            90.0,
+            64.0
+          ]
+        },
+        {
+          "name": "80000",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores customer account balances, as indicated by the sample values.",
+          "samples": [
+            100000,
+            20000,
+            40000,
+            80000,
+            60000
+          ]
+        },
+        {
+          "name": "F",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Gender of customers (Female or Male)",
+          "samples": [
+            "F",
+            "M",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "1",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer ratings, represented as floating point numbers.",
+          "samples": [
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0
+          ]
+        },
+        {
+          "name": "RNPOJG",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique alphanumeric customer identifiers (e.g., RKLQYY, GWPSHI).",
+          "samples": [
+            "RKLQYY",
+            "GWPSHI",
+            "ONCPHI",
+            "CIDXWX",
+            "FCHDNP"
+          ]
+        },
+        {
+          "name": "FQIVBKWIZC",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique alphanumeric customer identifiers (up to 10 characters).",
+          "samples": [
+            "HPUIUYBWZX",
+            "QWRLBUPCHY",
+            "TZIJOMZQJJ",
+            "GNYGKZXSCR",
+            "FQZNEVVHNA"
+          ]
+        },
+        {
+          "name": "1287944454 Dell Way",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores customer addresses in Dell Way format.",
+          "samples": [
+            "3104451734 Dell Way",
+            "3471147404 Dell Way",
+            "5811325555 Dell Way",
+            "9227139292 Dell Way",
+            "3460660721 Dell Way"
+          ]
+        },
+        {
+          "name": "XCXNWIS",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores customer unique identification codes, possibly initials and partial numbers.",
+          "samples": [
+            "OWLUWVE",
+            "RYWSJPW",
+            "IATPPWH",
+            "WGHZCLX",
+            "JHATXXG"
+          ]
+        },
+        {
+          "name": "ND",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores U.S. state abbreviations for customers.",
+          "samples": [
+            "CA",
+            "CT",
+            "AK",
+            "WA",
+            "MO"
+          ]
+        },
+        {
+          "name": "42572",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer total sales as floating point numbers.",
+          "samples": [
+            67434.0,
+            49571.0,
+            99909.0,
+            19937.0,
+            18761.0
+          ]
+        },
+        {
+          "name": "US",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores customer country codes, specifically USA.",
+          "samples": [
+            "US",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "1.1",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer loyalty score, consistently set to 1.0.",
+          "samples": [
+            1.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "FQIVBKWIZC@dell.com",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique email addresses of customers, all ending with @dell.com.",
+          "samples": [
+            "HPUIUYBWZX@dell.com",
+            "QWRLBUPCHY@dell.com",
+            "TZIJOMZQJJ@dell.com",
+            "GNYGKZXSCR@dell.com",
+            "FQZNEVVHNA@dell.com"
+          ]
+        },
+        {
+          "name": "1287944454",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer IDs as floating point numbers, possibly encoded.",
+          "samples": [
+            3104451734.0,
+            3471147404.0,
+            5811325555.0,
+            9227139292.0,
+            3460660721.0
+          ]
+        },
+        {
+          "name": "1890860486775636",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer IDs as large floating point numbers.",
+          "samples": [
+            1066779058426618.0,
+            5555479255504906.0,
+            9358483086340128.0,
+            8126189742702991.0,
+            8616535202134401.0
+          ]
+        },
+        {
+          "name": "2012/06",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores year and month of customer registration (YYYY/MM format).",
+          "samples": [
+            "2011/06",
+            "2010/09",
+            "2008/06",
+            "2008/04",
+            "2008/07"
+          ]
+        },
+        {
+          "name": "user1",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique user identifiers limited to six characters.",
+          "samples": [
+            "user2",
+            "user3",
+            "user4",
+            "user5",
+            "user6"
+          ]
+        },
+        {
+          "name": "49",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer ratings, represented as floating point numbers.",
+          "samples": [
+            87.0,
+            63.0,
+            71.0,
+            18.0,
+            78.0
+          ]
+        },
+        {
+          "name": "M",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores gender identifiers for customers (M for Male).",
+          "samples": [
+            "M",
+            "F",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "cust_df": {
+      "_description": "The cust_df table stores customer details, including personal information, email addresses, and account credentials.",
+      "columns": [
+        {
+          "name": "10001",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer IDs as floating point numbers, incremented by 1000.",
+          "samples": [
+            10002.0,
+            10003.0,
+            10004.0,
+            10005.0,
+            10006.0
+          ]
+        },
+        {
+          "name": "SRIMVH",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique, alphanumeric customer identification codes.",
+          "samples": [
+            "QDEMFI",
+            "VHHZGO",
+            "PUDOVQ",
+            "UTOHSN",
+            "NDHPGA"
+          ]
+        },
+        {
+          "name": "SLZCISTEWL",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique alphanumeric customer identifiers (10 characters long).",
+          "samples": [
+            "TGBSWAJVZH",
+            "WPDNKBNJZZ",
+            "PERBMQNKDH",
+            "WIQOPCPAKE",
+            "YTPICAXBVF"
+          ]
+        },
+        {
+          "name": "1467048332 Dell Way",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique Dell Way addresses for customers.",
+          "samples": [
+            "5268264831 Dell Way",
+            "5035397858 Dell Way",
+            "3014055309 Dell Way",
+            "4615288971 Dell Way",
+            "2849008574 Dell Way"
+          ]
+        },
+        {
+          "name": "Unnamed: 4",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores customer-specific free-form notes as text data.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "DXPGGAE",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores alphanumeric customer product group codes up to 10 characters long.",
+          "samples": [
+            "EVVMGTY",
+            "APRZAZP",
+            "GNXDYYF",
+            "HHBFHKE",
+            "DYNRYLI"
+          ]
+        },
+        {
+          "name": "Unnamed: 6",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores customer-specific free-form notes as text data.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "00000",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores initial deposit amounts for customers (as float) in the cust_df table.",
+          "samples": [
+            0.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "UK",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores country names of customers.",
+          "samples": [
+            "Chile",
+            "Germany",
+            "Russia",
+            "Canada",
+            "Australia"
+          ]
+        },
+        {
+          "name": "2",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a series of identical floating-point values representing customer discount rates.",
+          "samples": [
+            2.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "SLZCISTEWL@dell.com",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique email addresses of customers in DellStore2 database.",
+          "samples": [
+            "TGBSWAJVZH@dell.com",
+            "WPDNKBNJZZ@dell.com",
+            "PERBMQNKDH@dell.com",
+            "WIQOPCPAKE@dell.com",
+            "YTPICAXBVF@dell.com"
+          ]
+        },
+        {
+          "name": "1467048332",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores 64-bit floating point customer IDs, possibly hashed.",
+          "samples": [
+            5268264831.0,
+            5035397858.0,
+            3014055309.0,
+            4615288971.0,
+            2849008574.0
+          ]
+        },
+        {
+          "name": "5",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores customer tier levels (3, 4, 5) in DellStore2 database.",
+          "samples": [
+            3,
+            4,
+            5,
+            1,
+            2
+          ]
+        },
+        {
+          "name": "1281093623023480",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores large floating-point customer IDs in DellStore2 database.",
+          "samples": [
+            9600615079514682.0,
+            6207322841510177.0,
+            8303288342896849.0,
+            5996499293483794.0,
+            8045294675044715.0
+          ]
+        },
+        {
+          "name": "2012/09",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores year and month of customer registration (format: YYYY/MM).",
+          "samples": [
+            "2010/12",
+            "2008/07",
+            "2011/07",
+            "2009/01",
+            "2012/05"
+          ]
+        },
+        {
+          "name": "user10001",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique identifiers for users (e.g., user10002, user10003) within the cust_df table.",
+          "samples": [
+            "user10002",
+            "user10003",
+            "user10004",
+            "user10005",
+            "user10006"
+          ]
+        },
+        {
+          "name": "password",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores encrypted customer passwords (up to 10 characters).",
+          "samples": [
+            "password",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "44",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer ratings, represented as floating point numbers.",
+          "samples": [
+            57.0,
+            21.0,
+            75.0,
+            90.0,
+            64.0
+          ]
+        },
+        {
+          "name": "80000",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores customer account balances, as indicated by sample values.",
+          "samples": [
+            100000,
+            20000,
+            40000,
+            80000,
+            60000
+          ]
+        },
+        {
+          "name": "F",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores gender identities (Female or Male) for customers.",
+          "samples": [
+            "F",
+            "M",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "1",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer ratings, represented as floating point numbers.",
+          "samples": [
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0
+          ]
+        },
+        {
+          "name": "RNPOJG",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique alphanumeric customer project job codes.",
+          "samples": [
+            "RKLQYY",
+            "GWPSHI",
+            "ONCPHI",
+            "CIDXWX",
+            "FCHDNP"
+          ]
+        },
+        {
+          "name": "FQIVBKWIZC",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores unique alphanumeric customer identifiers (10 characters long).",
+          "samples": [
+            "HPUIUYBWZX",
+            "QWRLBUPCHY",
+            "TZIJOMZQJJ",
+            "GNYGKZXSCR",
+            "FQZNEVVHNA"
+          ]
+        },
+        {
+          "name": "1287944454 Dell Way",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique Dell Way addresses for customers.",
+          "samples": [
+            "3104451734 Dell Way",
+            "3471147404 Dell Way",
+            "5811325555 Dell Way",
+            "9227139292 Dell Way",
+            "3460660721 Dell Way"
+          ]
+        },
+        {
+          "name": "XCXNWIS",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores customer unique identification codes (e.g., OWLUWVE, RYWSJPW, etc.), limited to 10 alphanumeric characters.",
+          "samples": [
+            "OWLUWVE",
+            "RYWSJPW",
+            "IATPPWH",
+            "WGHZCLX",
+            "JHATXXG"
+          ]
+        },
+        {
+          "name": "ND",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores U.S. state abbreviations for customers.",
+          "samples": [
+            "CA",
+            "CT",
+            "AK",
+            "WA",
+            "MO"
+          ]
+        },
+        {
+          "name": "42572",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer purchase amounts as floating point numbers.",
+          "samples": [
+            67434.0,
+            49571.0,
+            99909.0,
+            19937.0,
+            18761.0
+          ]
+        },
+        {
+          "name": "US",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores five-character country codes representing customer locations, consistently set to 'US'.",
+          "samples": [
+            "US",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "1.1",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores a series of identical floating-point values representing customer discount rates.",
+          "samples": [
+            1.0,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "FQIVBKWIZC@dell.com",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores unique email addresses of customers, all ending with @dell.com.",
+          "samples": [
+            "HPUIUYBWZX@dell.com",
+            "QWRLBUPCHY@dell.com",
+            "TZIJOMZQJJ@dell.com",
+            "GNYGKZXSCR@dell.com",
+            "FQZNEVVHNA@dell.com"
+          ]
+        },
+        {
+          "name": "1287944454",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer IDs as floating point numbers, possibly encoded.",
+          "samples": [
+            3104451734.0,
+            3471147404.0,
+            5811325555.0,
+            9227139292.0,
+            3460660721.0
+          ]
+        },
+        {
+          "name": "1890860486775636",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores large, floating-point customer deposit amounts in DellStore2 database.",
+          "samples": [
+            1066779058426618.0,
+            5555479255504906.0,
+            9358483086340128.0,
+            8126189742702991.0,
+            8616535202134401.0
+          ]
+        },
+        {
+          "name": "2012/06",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores year and month of customer registration (format: YYYY/MM)",
+          "samples": [
+            "2011/06",
+            "2010/09",
+            "2008/06",
+            "2008/04",
+            "2008/07"
+          ]
+        },
+        {
+          "name": "user1",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores user names up to 10 characters long (e.g., user2, user3, etc.) in the cust_df table.",
+          "samples": [
+            "user2",
+            "user3",
+            "user4",
+            "user5",
+            "user6"
+          ]
+        },
+        {
+          "name": "49",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores customer satisfaction ratings, represented as floating point numbers.",
+          "samples": [
+            87.0,
+            63.0,
+            71.0,
+            18.0,
+            78.0
+          ]
+        },
+        {
+          "name": "M",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores gender identifiers (M) for customers in the cust_df table.",
+          "samples": [
+            "M",
+            "F",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

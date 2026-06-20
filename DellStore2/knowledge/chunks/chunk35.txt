@@ -1,0 +1,61 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Sales Representatives, HR Managers, IT Support
+
+Activity:
+- Sales representatives register new customers by recording their contact information and creating a customer account (cust_df).
+- HR managers assign unique usernames and passwords to each customer for account access.
+- IT support ensures secure storage of customer data in the DellStore2 database.
+- Customer service representatives update customer details as needed (CUSTOMER).
+
+## 2. Customer Order Placement
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place orders by selecting products and providing shipping information (cust_df).
+- Sales representatives confirm order details with customers and process the orders in the system.
+
+## 3. Product Catalog Management
+
+Performed By: Product Managers, IT Support
+
+Activity:
+- Product managers update product information such as name, category, list price, and images (cust_df).
+- IT support ensures that the updated product data is accurately reflected in the DellStore2 database.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff track inventory levels and update them as products are sold or received (cust_df).
+- Purchasing teams order new stock when inventory levels fall below a certain threshold.
+
+## 5. Invoice Generation and Payment Processing
+
+Performed By: Sales Representatives, Finance Department
+
+Activity:
+- Sales representatives generate invoices based on customer orders (cust_df).
+- The finance department reviews the invoices for accuracy before sending them to customers.
+- Customers make payments through various methods, and the finance department records these transactions.
+
+## 6. Data Quality Assurance and Improvement
+
+Performed By: Data Analysts, IT Support
+
+Activity:
+- Data analysts run automated quality checks on datasets to uncover errors, anomalies, and inconsistencies (cust_df, custhist_df).
+- IT support implements fixes for identified issues and monitors data quality over time.
+- The community provides feedback on potential data issues, which are addressed by the data team.
+
+## 7. Data Governance and Compliance
+
+Performed By: Data Governance Team, Legal Department
+
+Activity:
+- The data governance team ensures that all data is stored securely and in compliance with relevant regulations (CUSTOMER).
+- The legal department reviews and updates the privacy policy as needed to protect customer information.

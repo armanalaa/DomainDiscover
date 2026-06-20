@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact details and preferences.
+- Customer service agents update customer information as needed, such as address or account status.
+- Sales representatives assign customer accounts to specific sales teams for targeted marketing efforts.
+
+## 2. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Finance Teams
+
+Activity:
+- Sales representatives create new orders by entering product details and shipping information.
+- Warehouse staff track inventory levels and prepare orders for shipment.
+- Finance teams record order-related transactions, such as payments and refunds.
+
+## 3. Inventory Management
+
+Performed By: Warehouse Staff, Purchasing Teams
+
+Activity:
+- Warehouse staff update inventory levels when products are received or shipped.
+- Purchasing teams place orders for new stock based on current inventory levels and sales forecasts.
+
+## 4. Financial Management
+
+Performed By: Finance Teams, Accounting Staff
+
+Activity:
+- Finance teams record financial transactions related to orders, payments, and refunds.
+- Accounting staff prepare financial reports and statements for internal use and external stakeholders.
+
+## 5. Data Governance
+
+Performed By: IT Administrators, Data Governance Team
+
+Activity:
+- IT administrators manage the database schema, including creating, modifying, or deleting tables and columns.
+- The data governance team ensures data quality, consistency, and security across all databases.
+
+## 6. Impact Analysis
+
+Performed By: Data Governance Team, Change Management Teams
+
+Activity:
+- The data governance team uses impact analysis tools to identify downstream dependencies of any table or column changes.
+- Change management teams review the impact assessment and plan updates accordingly.
+
+## 7. Compliance and Reporting
+
+Performed By: Legal Team, Compliance Officers, Regulatory Bodies
+
+Activity:
+- The legal team ensures that all data collection, storage, and usage comply with relevant regulations and laws.
+- Compliance officers monitor and report on the company's adherence to these regulations.
+- Regulatory bodies may request access to specific data for audits or investigations.

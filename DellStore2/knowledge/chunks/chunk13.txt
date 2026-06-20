@@ -1,0 +1,58 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Registration and Management
+
+Performed By: Customer Service Representatives, IT Administrators
+
+Activity:
+- Customer service representatives register new users by recording their personal details (SRIMVH, SLZCISTEWL, email address, password, phone number) and address information (DXPGGAE, Unnamed: 6, 00000, UK, 1467048332 Dell Way).
+- IT administrators assign unique user IDs (user10001) to each registered customer.
+- Customer service representatives update customer details as needed (SLZCISTEWL@dell.com, password).
+
+## 2. Cookie Consent Management
+
+Performed By: Website Visitors, IT Administrators
+
+Activity:
+- Website visitors accept the cookie consent box, which is stored for a year using the OptanonConsent cookie.
+- IT administrators monitor and manage the storage duration of various cookies (persist:hs-beacon-, rc::a, rc::c, sentry-offline#queue, XSRF-TOKEN) to ensure website functionality and security.
+
+## 3. Customer History Tracking
+
+Performed By: Sales Representatives, IT Administrators
+
+Activity:
+- Sales representatives record customer purchase history (CUST_HIST) including transaction ID, product ID, quantity, price, and date.
+- IT administrators maintain the customer history database (custhist_df).
+
+## 4. Customer Profile Management
+
+Performed By: Customer Service Representatives, IT Administrators
+
+Activity:
+- Customer service representatives access and update customer profiles (CUSTOMER) with their personal details, address information, and purchase history.
+- IT administrators manage the storage and retrieval of customer profile data.
+
+## 5. Preference Settings Management
+
+Performed By: Website Visitors, IT Administrators
+
+Activity:
+- Website visitors set their preferences (language, region) which are stored in preference cookies for future reference.
+- IT administrators manage the storage and retrieval of preference settings.
+
+## 6. Chat Function Integrity Management
+
+Performed By: Intercom Team, IT Administrators
+
+Activity:
+- The Intercom team ensures the integrity of the website’s chat function by setting specific IDs for users (intercom-device-id-, intercom-id-, intercom-session-) and managing the storage of these IDs.
+- IT administrators monitor and manage the storage duration of these ID cookies.
+
+## 7. Security Measures Implementation
+
+Performed By: Website Visitors, IT Administrators
+
+Activity:
+- XSRF-TOKEN cookie is used to ensure visitor browsing security by preventing cross-site request forgery for a day.
+- IT administrators monitor and manage the storage duration of security cookies (XSRF-TOKEN).

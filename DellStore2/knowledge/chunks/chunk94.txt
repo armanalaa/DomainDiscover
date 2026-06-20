@@ -1,0 +1,56 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Customer Service Representatives, Data Entry Clerks
+
+Activity:
+- Customer service representatives register new customers by recording their names, contact information, and addresses.
+- Data entry clerks update customer details as provided by the customers or received from other departments.
+- Customer service representatives assign unique usernames and passwords to each customer for account access.
+
+## 2. Account Maintenance
+
+Performed By: Customers, Customer Service Representatives
+
+Activity:
+- Customers change their personal information, such as addresses or contact details, through the customer portal.
+- Customer service representatives verify and update customer information when necessary.
+
+## 3. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff
+
+Activity:
+- Sales representatives process orders by recording product codes, quantities, and shipping addresses.
+- Warehouse staff retrieve the ordered items from inventory and prepare them for shipment.
+
+## 4. Invoice Generation
+
+Performed By: Accounting Team
+
+Activity:
+- The accounting team generates invoices based on order details and customer account information.
+
+## 5. Payment Processing
+
+Performed By: Customers, Finance Department
+
+Activity:
+- Customers make payments through various methods (credit card, bank transfer, etc.).
+- The finance department records the payments and updates the corresponding customer accounts.
+
+## 6. Shipping and Delivery
+
+Performed By: Warehouse Staff, Courier Services
+
+Activity:
+- Warehouse staff package and label orders for shipment.
+- Courier services deliver the packages to the specified addresses.
+
+## 7. Customer Support
+
+Performed By: Customer Service Representatives
+
+Activity:
+- Customer service representatives handle customer inquiries and complaints, providing assistance and solutions as needed.

@@ -1,0 +1,60 @@
+ # DellStore2 — Business Workflows
+
+## 1. Customer Management
+
+Performed By: Sales Representatives, Customer Service Agents
+
+Activity:
+- Sales representatives register new customers by recording their contact details and account information. (CUSTOMER)
+- Customer service agents update customer records with changes to personal or billing information. (CUSTOMER)
+- Sales representatives assign customers to appropriate sales regions based on geographical location. (CUSTOMER)
+
+## 2. Order Processing
+
+Performed By: Sales Representatives, Warehouse Staff, Customer Service Agents
+
+Activity:
+- Sales representatives create new orders for customers by specifying products, quantities, and delivery dates. (cust_df)
+- Warehouse staff prepare items for shipment once an order is confirmed. (Not specified in the schema)
+- Customer service agents handle any issues that arise during the order fulfillment process. (Not specified in the schema)
+
+## 3. Invoice Generation
+
+Performed By: Finance Department, Sales Representatives
+
+Activity:
+- Sales representatives generate invoices for completed orders by calculating total costs and applying any discounts or promotions. (Not specified in the schema)
+- The finance department reviews and approves invoices before they are sent to customers. (Not specified in the schema)
+- The finance department records approved invoices in the system, updating the customer's account balance accordingly. (CUSTOMER)
+
+## 4. Payment Processing
+
+Performed By: Customers, Finance Department
+
+Activity:
+- Customers make payments on their accounts by providing payment details and choosing a payment method. (Not specified in the schema)
+- The finance department processes customer payments and updates the account balance accordingly. (CUSTOMER)
+
+## 5. Customer Support
+
+Performed By: Customer Service Agents, Technical Support Staff
+
+Activity:
+- Customer service agents handle customer inquiries related to orders, billing, or account information. (Not specified in the schema)
+- Technical support staff assist customers with product-related issues and provide troubleshooting guidance. (Not specified in the schema)
+
+## 6. Sales Performance Tracking
+
+Performed By: Sales Managers, Finance Department
+
+Activity:
+- Sales managers monitor sales performance by reviewing order data and identifying trends or opportunities for improvement. (cust_df, custhist_df)
+- The finance department generates reports on sales revenue, profit margins, and customer retention rates. (Not specified in the schema)
+
+## 7. Data Maintenance
+
+Performed By: IT Department
+
+Activity:
+- The IT department ensures data integrity by regularly backing up the DellStore2 database. (Not specified in the schema)
+- The IT department performs routine maintenance tasks to optimize database performance and security. (Not specified in the schema)
