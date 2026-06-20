@@ -1,0 +1,71 @@
+[
+  {
+    "domain_id": 0,
+    "domain_name": "Film Rental Management",
+    "definition": "The unifying capability across all tables is the management of film rentals, encompassing inventory tracking, customer transactions, and payment processing.",
+    "tables": [
+      "inventory",
+      "payment",
+      "rental"
+    ],
+    "phi_scores": {
+      "C5": 0.2187,
+      "C4": 0.2105,
+      "C1": 0.2001,
+      "C2": 0.1797,
+      "C3": 0.1448
+    }
+  },
+  {
+    "domain_id": 1,
+    "domain_name": "Customer Address Management",
+    "definition": "The set of activities related to managing customer addresses and their associated details.",
+    "tables": [
+      "address"
+    ],
+    "phi_scores": {
+      "C1": 0.1867,
+      "C5": 0.0968,
+      "C3": 0.0906,
+      "C2": 0.0802,
+      "C4": 0.0788
+    }
+  },
+  {
+    "domain_id": 2,
+    "domain_name": "Film Catalog and Inventory Management",
+    "definition": "The set of activities related to managing the film catalog, categorizing films, tracking and updating film inventory levels.",
+    "tables": [
+      "category",
+      "city",
+      "film",
+      "film_category",
+      "language"
+    ],
+    "phi_scores": {
+      "C2": 0.2617,
+      "C3": 0.2139,
+      "C4": 0.1976,
+      "C5": 0.1702,
+      "C1": 0.1426
+    }
+  },
+  {
+    "domain_id": 3,
+    "domain_name": "Customer and Staff Management",
+    "definition": "The set of activities related to managing customer and staff accounts and their associated data.",
+    "tables": [
+      "actor",
+      "customer",
+      "staff",
+      "store"
+    ],
+    "phi_scores": {
+      "C1": 0.2441,
+      "C4": 0.1221,
+      "C2": 0.111,
+      "C5": 0.1045,
+      "C3": 0.0949
+    }
+  }
+]

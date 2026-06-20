@@ -1,2 +1,0 @@
-method,w1_stat_raw,w2_name_raw,w3_sem_raw,w1_stat_rounded,w2_name_rounded,w3_sem_rounded,w1_heuristic,w2_heuristic,w3_heuristic
-variance_based,0.2699,0.7249,0.0052,0.25,0.7,0.05,0.4,0.3,0.3

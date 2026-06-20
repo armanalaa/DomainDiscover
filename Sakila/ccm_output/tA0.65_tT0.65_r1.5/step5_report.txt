@@ -1,0 +1,62 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 13
+Edges in G_T         : 48
+θ_T applied in Step 4: 0.65
+Domains discovered   : 5
+Modularity Q         : 0.0523
+
+──────────────────────────────────────────────────────────────────────
+D0  Customer and Staff Management
+──────────────────────────────────────────────────────────────────────
+  Definition : This domain unifies the activities related to managing customer accounts, staff information, and associated data.
+  Tables     : actor, customer, language, staff
+  Phi top-3  : C1=0.235  C4=0.117  C2=0.117
+
+──────────────────────────────────────────────────────────────────────
+D1  Location and Category Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing geographical locations, their associated categories, and the corresponding data.
+  Tables     : address, category, city
+  Phi top-3  : C1=0.169  C3=0.136  C2=0.128
+
+──────────────────────────────────────────────────────────────────────
+D2  MediaInventoryManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing the inventory and categorization of media resources such as films.
+  Tables     : film, film_category, inventory
+  Phi top-3  : C2=0.304  C4=0.268  C3=0.227
+
+──────────────────────────────────────────────────────────────────────
+D3  Store Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing store-specific data, including staff, locations, and inventory.
+  Tables     : store
+  Phi top-3  : C1=0.226  C4=0.167  C3=0.156
+
+──────────────────────────────────────────────────────────────────────
+D4  Payment and Rental Processing
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing film rentals, payments, and associated details.
+  Tables     : payment, rental
+  Phi top-3  : C5=0.234  C1=0.207  C4=0.157
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  actor                                D       0  Customer and Staff Management
+  customer                             D       0  Customer and Staff Management
+  language                             D       0  Customer and Staff Management
+  staff                                D       0  Customer and Staff Management
+  address                              D       1  Location and Category Management
+  category                             D       1  Location and Category Management
+  city                                 D       1  Location and Category Management
+  film                                 D       2  MediaInventoryManagement
+  film_category                        D       2  MediaInventoryManagement
+  inventory                            D       2  MediaInventoryManagement
+  store                                D       3  Store Management
+  payment                              D       4  Payment and Rental Processing
+  rental                               D       4  Payment and Rental Processing
+======================================================================

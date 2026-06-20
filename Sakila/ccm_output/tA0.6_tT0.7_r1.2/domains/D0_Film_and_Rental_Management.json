@@ -1,0 +1,441 @@
+{
+  "_meta": {
+    "domain_id": 0,
+    "domain_name": "Film and Rental Management",
+    "definition": "The set of activities related to managing the film catalog, tracking inventory levels, processing rentals, and recording relevant details.",
+    "tables": [
+      "film",
+      "inventory",
+      "payment",
+      "rental"
+    ],
+    "n_tables": 4,
+    "n_columns_total": 31,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "film": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "film_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in film",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "title",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of film titles, such as ACADEMY DINOSAUR, ACE GOLDFINGER, etc.",
+          "samples": [
+            "ACADEMY DINOSAUR",
+            "ACE GOLDFINGER",
+            "ADAPTATION HOLES",
+            "AFFAIR PREJUDICE",
+            "AFRICAN EGG"
+          ]
+        },
+        {
+          "name": "description",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores brief narrative summaries of film plots.",
+          "samples": [
+            "A Epic Drama of a Feminist And a Mad Scientist who must Battle a Teacher in The Canadian Rockies",
+            "A Astounding Epistle of a Database Administrator And a Explorer who must Find a Car in Ancient China",
+            "A Astounding Reflection of a Lumberjack And a Car who must Sink a Lumberjack in A Baloon Factory",
+            "A Fanciful Documentary of a Frisbee And a Lumberjack who must Chase a Monkey in A Shark Tank",
+            "A Fast-Paced Documentary of a Pastry Chef And a Dentist who must Pursue a Forensic Psychologist in The Gulf of Mexico"
+          ]
+        },
+        {
+          "name": "release_year",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the year of release for films, all shown examples are from 2006.",
+          "samples": [
+            2006,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "language_id",
+          "sql_type": "BOOLEAN",
+          "key": "FK",
+          "description": "Foreign key linking to the language_ entity",
+          "samples": [
+            "1",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "original_language_id",
+          "sql_type": "TEXT",
+          "key": "FK",
+          "description": "Foreign key linking to the original_language_ entity",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "rental_duration",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of days a film can be rented.",
+          "samples": [
+            6,
+            3,
+            7,
+            5,
+            4
+          ]
+        },
+        {
+          "name": "rental_rate",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the rental cost for each film title in the Sakila database.",
+          "samples": [
+            0.99,
+            4.99,
+            2.99,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "length",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores film durations in minutes.",
+          "samples": [
+            86,
+            48,
+            50,
+            117,
+            130
+          ]
+        },
+        {
+          "name": "replacement_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the price for replacing a film title.",
+          "samples": [
+            20.99,
+            12.99,
+            18.99,
+            26.99,
+            22.99
+          ]
+        },
+        {
+          "name": "rating",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores film ratings, such as PG, G, NC-17.",
+          "samples": [
+            "PG",
+            "G",
+            "NC-17",
+            "PG-13",
+            "R"
+          ]
+        },
+        {
+          "name": "special_features",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores additional features of films such as deleted scenes, behind-the-scenes footage, trailers, and commentaries.",
+          "samples": [
+            "Deleted Scenes,Behind the Scenes",
+            "Trailers,Deleted Scenes",
+            "Commentaries,Behind the Scenes",
+            "Deleted Scenes",
+            "Trailers"
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the last update for each film record.",
+          "samples": [
+            "2006-02-15 05:03:42",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "inventory": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "inventory_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in inventory",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "film_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the film_ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "store_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the store_ entity",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the most recent update for all inventory records.",
+          "samples": [
+            "2006-02-15 05:09:17",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "payment": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "payment_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in payment",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "customer_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the customer_ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "staff_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the staff_ entity",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "rental_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the rental_ entity",
+          "samples": [
+            76,
+            573,
+            1185,
+            1422,
+            1476
+          ]
+        },
+        {
+          "name": "amount",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of payments made in the Sakila database.",
+          "samples": [
+            2.99,
+            0.99,
+            5.99,
+            9.99,
+            4.99
+          ]
+        },
+        {
+          "name": "payment_date",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores formatted timestamps of payment transactions.",
+          "samples": [
+            "2005-05-25 11:30:37",
+            "2005-05-28 10:35:23",
+            "2005-06-15 00:54:12",
+            "2005-06-15 18:02:53",
+            "2005-06-15 21:08:46"
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the last update for each payment record.",
+          "samples": [
+            "2006-02-15 22:12:30",
+            "2006-02-15 22:12:31",
+            "2006-02-15 22:12:32",
+            "2006-02-15 22:12:33",
+            "2006-02-15 22:12:34"
+          ]
+        }
+      ]
+    },
+    "rental": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "rental_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in rental",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "rental_date",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of rental start dates in YYYY-MM-DD HH:MI:SS format.",
+          "samples": [
+            "2005-05-24 22:53:30",
+            "2005-05-24 22:54:33",
+            "2005-05-24 23:03:39",
+            "2005-05-24 23:04:41",
+            "2005-05-24 23:05:21"
+          ]
+        },
+        {
+          "name": "inventory_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the inventory_ entity",
+          "samples": [
+            367,
+            1525,
+            1711,
+            2452,
+            2079
+          ]
+        },
+        {
+          "name": "customer_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the customer_ entity",
+          "samples": [
+            130,
+            459,
+            408,
+            333,
+            222
+          ]
+        },
+        {
+          "name": "return_date",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the date and time when a movie rental was returned.",
+          "samples": [
+            "2005-05-26 22:04:30",
+            "2005-05-28 19:40:33",
+            "2005-06-01 22:12:39",
+            "2005-06-03 01:43:41",
+            "2005-06-02 04:33:21"
+          ]
+        },
+        {
+          "name": "staff_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the staff_ entity",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of the most recent update for each rental record.",
+          "samples": [
+            "2006-02-15 21:30:53",
+            "2006-02-23 04:12:08",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

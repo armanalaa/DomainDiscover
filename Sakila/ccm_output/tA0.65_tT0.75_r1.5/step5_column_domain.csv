@@ -1,0 +1,81 @@
+table,column,domain_id,domain_name
+actor,actor_id,0,Customer and Store Management
+actor,first_name,0,Customer and Store Management
+actor,last_name,0,Customer and Store Management
+actor,last_update,0,Customer and Store Management
+customer,active,0,Customer and Store Management
+customer,address_id,0,Customer and Store Management
+customer,create_date,0,Customer and Store Management
+customer,customer_id,0,Customer and Store Management
+customer,email,0,Customer and Store Management
+customer,first_name,0,Customer and Store Management
+customer,last_name,0,Customer and Store Management
+customer,last_update,0,Customer and Store Management
+customer,store_id,0,Customer and Store Management
+staff,active,0,Customer and Store Management
+staff,address_id,0,Customer and Store Management
+staff,email,0,Customer and Store Management
+staff,first_name,0,Customer and Store Management
+staff,last_name,0,Customer and Store Management
+staff,last_update,0,Customer and Store Management
+staff,password,0,Customer and Store Management
+staff,picture,0,Customer and Store Management
+staff,staff_id,0,Customer and Store Management
+staff,store_id,0,Customer and Store Management
+staff,username,0,Customer and Store Management
+store,address_id,0,Customer and Store Management
+store,last_update,0,Customer and Store Management
+store,manager_staff_id,0,Customer and Store Management
+store,store_id,0,Customer and Store Management
+category,category_id,1,Media Catalog Management
+category,last_update,1,Media Catalog Management
+category,name,1,Media Catalog Management
+city,city,1,Media Catalog Management
+city,city_id,1,Media Catalog Management
+city,country_id,1,Media Catalog Management
+city,last_update,1,Media Catalog Management
+film,description,1,Media Catalog Management
+film,film_id,1,Media Catalog Management
+film,language_id,1,Media Catalog Management
+film,last_update,1,Media Catalog Management
+film,length,1,Media Catalog Management
+film,original_language_id,1,Media Catalog Management
+film,rating,1,Media Catalog Management
+film,release_year,1,Media Catalog Management
+film,rental_duration,1,Media Catalog Management
+film,rental_rate,1,Media Catalog Management
+film,replacement_cost,1,Media Catalog Management
+film,special_features,1,Media Catalog Management
+film,title,1,Media Catalog Management
+film_category,category_id,1,Media Catalog Management
+film_category,film_id,1,Media Catalog Management
+film_category,last_update,1,Media Catalog Management
+language,language_id,1,Media Catalog Management
+language,last_update,1,Media Catalog Management
+language,name,1,Media Catalog Management
+inventory,film_id,2,Film Rental Processing
+inventory,inventory_id,2,Film Rental Processing
+inventory,last_update,2,Film Rental Processing
+inventory,store_id,2,Film Rental Processing
+payment,amount,2,Film Rental Processing
+payment,customer_id,2,Film Rental Processing
+payment,last_update,2,Film Rental Processing
+payment,payment_date,2,Film Rental Processing
+payment,payment_id,2,Film Rental Processing
+payment,rental_id,2,Film Rental Processing
+payment,staff_id,2,Film Rental Processing
+rental,customer_id,2,Film Rental Processing
+rental,inventory_id,2,Film Rental Processing
+rental,last_update,2,Film Rental Processing
+rental,rental_date,2,Film Rental Processing
+rental,rental_id,2,Film Rental Processing
+rental,return_date,2,Film Rental Processing
+rental,staff_id,2,Film Rental Processing
+address,address,3,Address Management
+address,address2,3,Address Management
+address,address_id,3,Address Management
+address,city_id,3,Address Management
+address,district,3,Address Management
+address,last_update,3,Address Management
+address,phone,3,Address Management
+address,postal_code,3,Address Management

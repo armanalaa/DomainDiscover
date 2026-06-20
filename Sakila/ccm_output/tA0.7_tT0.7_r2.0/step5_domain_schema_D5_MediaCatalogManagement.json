@@ -1,0 +1,232 @@
+{
+  "_meta": {
+    "domain_id": 5,
+    "domain_name": "MediaCatalogManagement",
+    "definition": "The set of activities related to managing the media catalog, including registration, updates, and metadata management.",
+    "tables": [
+      "film",
+      "language"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "film": {
+      "_description": "Captures details of films in a video rental store inventory.",
+      "columns": [
+        {
+          "name": "film_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in film",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "title",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of film titles, such as ACADEMY DINOSAUR, ACE GOLDFINGER, etc.",
+          "samples": [
+            "ACADEMY DINOSAUR",
+            "ACE GOLDFINGER",
+            "ADAPTATION HOLES",
+            "AFFAIR PREJUDICE",
+            "AFRICAN EGG"
+          ]
+        },
+        {
+          "name": "description",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores brief narrative summaries of film plots.",
+          "samples": [
+            "A Epic Drama of a Feminist And a Mad Scientist who must Battle a Teacher in The Canadian Rockies",
+            "A Astounding Epistle of a Database Administrator And a Explorer who must Find a Car in Ancient China",
+            "A Astounding Reflection of a Lumberjack And a Car who must Sink a Lumberjack in A Baloon Factory",
+            "A Fanciful Documentary of a Frisbee And a Lumberjack who must Chase a Monkey in A Shark Tank",
+            "A Fast-Paced Documentary of a Pastry Chef And a Dentist who must Pursue a Forensic Psychologist in The Gulf of Mexico"
+          ]
+        },
+        {
+          "name": "release_year",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the year of release for films, all shown examples are from 2006.",
+          "samples": [
+            2006,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "language_id",
+          "sql_type": "BOOLEAN",
+          "key": "FK",
+          "description": "Foreign key linking to the language_ entity",
+          "samples": [
+            "1",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "original_language_id",
+          "sql_type": "TEXT",
+          "key": "FK",
+          "description": "Foreign key linking to the original_language_ entity",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "rental_duration",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of days a film can be rented.",
+          "samples": [
+            6,
+            3,
+            7,
+            5,
+            4
+          ]
+        },
+        {
+          "name": "rental_rate",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the rental cost for each film title in the Sakila database.",
+          "samples": [
+            0.99,
+            4.99,
+            2.99,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "length",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores film durations in minutes.",
+          "samples": [
+            86,
+            48,
+            50,
+            117,
+            130
+          ]
+        },
+        {
+          "name": "replacement_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the price for replacing a film title.",
+          "samples": [
+            20.99,
+            12.99,
+            18.99,
+            26.99,
+            22.99
+          ]
+        },
+        {
+          "name": "rating",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores film ratings, such as PG, G, NC-17.",
+          "samples": [
+            "PG",
+            "G",
+            "NC-17",
+            "PG-13",
+            "R"
+          ]
+        },
+        {
+          "name": "special_features",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores additional features of films such as deleted scenes, behind-the-scenes footage, trailers, and commentaries.",
+          "samples": [
+            "Deleted Scenes,Behind the Scenes",
+            "Trailers,Deleted Scenes",
+            "Commentaries,Behind the Scenes",
+            "Deleted Scenes",
+            "Trailers"
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the last update for each film record.",
+          "samples": [
+            "2006-02-15 05:03:42",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "language": {
+      "_description": "Tracks various languages used in DVD rentals for user interface and film subtitles.",
+      "columns": [
+        {
+          "name": "language_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in language",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "name",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores the 10-character name of a language (e.g., English, Italian, Japanese, Mandarin, French).",
+          "samples": [
+            "English",
+            "Italian",
+            "Japanese",
+            "Mandarin",
+            "French"
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "The \"language\" table's \"last_update\" column stores timestamps for when each language record was last updated.",
+          "samples": [
+            "2006-02-15 05:02:19",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

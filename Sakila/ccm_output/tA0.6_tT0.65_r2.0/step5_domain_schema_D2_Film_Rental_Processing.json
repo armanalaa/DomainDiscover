@@ -1,0 +1,109 @@
+{
+  "_meta": {
+    "domain_id": 2,
+    "domain_name": "Film Rental Processing",
+    "definition": "The set of activities related to processing film rentals and recording relevant details",
+    "tables": [
+      "rental"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "rental": {
+      "_description": "Tracks rental history of movies or other items for specific customers.",
+      "columns": [
+        {
+          "name": "rental_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in rental",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "rental_date",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of rental start dates in YYYY-MM-DD HH:MI:SS format.",
+          "samples": [
+            "2005-05-24 22:53:30",
+            "2005-05-24 22:54:33",
+            "2005-05-24 23:03:39",
+            "2005-05-24 23:04:41",
+            "2005-05-24 23:05:21"
+          ]
+        },
+        {
+          "name": "inventory_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the inventory_ entity",
+          "samples": [
+            367,
+            1525,
+            1711,
+            2452,
+            2079
+          ]
+        },
+        {
+          "name": "customer_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the customer_ entity",
+          "samples": [
+            130,
+            459,
+            408,
+            333,
+            222
+          ]
+        },
+        {
+          "name": "return_date",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the date and time when a movie rental was returned.",
+          "samples": [
+            "2005-05-26 22:04:30",
+            "2005-05-28 19:40:33",
+            "2005-06-01 22:12:39",
+            "2005-06-03 01:43:41",
+            "2005-06-02 04:33:21"
+          ]
+        },
+        {
+          "name": "staff_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the staff_ entity",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of the most recent update for each rental record.",
+          "samples": [
+            "2006-02-15 21:30:53",
+            "2006-02-23 04:12:08",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

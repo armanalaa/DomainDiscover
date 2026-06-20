@@ -1,0 +1,69 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 13
+Edges in G_T         : 32
+θ_T applied in Step 4: 0.7
+Domains discovered   : 6
+Modularity Q         : 0.1020
+
+──────────────────────────────────────────────────────────────────────
+D0  Customer and Store Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing customer accounts and associated store information.
+  Tables     : customer, store
+  Phi top-3  : C1=0.303  C4=0.121  C5=0.116
+
+──────────────────────────────────────────────────────────────────────
+D1  Film Rental Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing film rentals, including inventory tracking, customer processing, and payment recording.
+  Tables     : inventory, payment, rental
+  Phi top-3  : C5=0.219  C4=0.210  C1=0.200
+
+──────────────────────────────────────────────────────────────────────
+D2  Location and Category Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing geographical locations (cities), their associated addresses, and film categorization.
+  Tables     : address, city, film_category
+  Phi top-3  : C1=0.169  C3=0.145  C2=0.144
+
+──────────────────────────────────────────────────────────────────────
+D3  Staff and Store Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing staff accounts and their associated store information.
+  Tables     : staff
+  Phi top-3  : C1=0.213  C4=0.114  C2=0.094
+
+──────────────────────────────────────────────────────────────────────
+D4  Film Metadata Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing film metadata, including actor and category information.
+  Tables     : actor, category
+  Phi top-3  : C2=0.211  C3=0.207  C4=0.160
+
+──────────────────────────────────────────────────────────────────────
+D5  MediaCatalogManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing the media catalog, including registration, updates, and metadata management.
+  Tables     : film, language
+  Phi top-3  : C2=0.283  C4=0.220  C3=0.196
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  customer                             D       0  Customer and Store Management
+  store                                D       0  Customer and Store Management
+  inventory                            D       1  Film Rental Management
+  payment                              D       1  Film Rental Management
+  rental                               D       1  Film Rental Management
+  address                              D       2  Location and Category Management
+  city                                 D       2  Location and Category Management
+  film_category                        D       2  Location and Category Management
+  staff                                D       3  Staff and Store Management
+  actor                                D       4  Film Metadata Management
+  category                             D       4  Film Metadata Management
+  film                                 D       5  MediaCatalogManagement
+  language                             D       5  MediaCatalogManagement
+======================================================================

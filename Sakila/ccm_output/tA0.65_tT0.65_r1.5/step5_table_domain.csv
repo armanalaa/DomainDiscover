@@ -1,0 +1,14 @@
+table,domain_id,domain_name
+actor,0,Customer and Staff Management
+customer,0,Customer and Staff Management
+language,0,Customer and Staff Management
+staff,0,Customer and Staff Management
+address,1,Location and Category Management
+category,1,Location and Category Management
+city,1,Location and Category Management
+film,2,MediaInventoryManagement
+film_category,2,MediaInventoryManagement
+inventory,2,MediaInventoryManagement
+store,3,Store Management
+payment,4,Payment and Rental Processing
+rental,4,Payment and Rental Processing

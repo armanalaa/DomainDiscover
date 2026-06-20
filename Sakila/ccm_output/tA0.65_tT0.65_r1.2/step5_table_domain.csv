@@ -1,0 +1,14 @@
+table,domain_id,domain_name
+actor,0,Customer and Content Management
+category,0,Customer and Content Management
+customer,0,Customer and Content Management
+language,0,Customer and Content Management
+staff,0,Customer and Content Management
+address,1,Media Inventory and Organization
+city,1,Media Inventory and Organization
+film,1,Media Inventory and Organization
+film_category,1,Media Inventory and Organization
+inventory,2,Film Rental and Inventory Management
+payment,2,Film Rental and Inventory Management
+rental,2,Film Rental and Inventory Management
+store,2,Film Rental and Inventory Management

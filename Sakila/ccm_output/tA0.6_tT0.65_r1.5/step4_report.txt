@@ -1,0 +1,85 @@
+======================================================================
+CCM Pipeline — Step 4 Report
+Aggregate to Table-Level Similarity
+======================================================================
+Table pairs computed    : 78
+Threshold θ_T           : 0.65
+Edges in G_T            : 48
+Pairs where CR < 1.0    : 0
+
+Sim_T distribution:
+  min    : 0.4837
+  max    : 0.9248
+  mean   : 0.6830
+  median : 0.6693
+
+  Ti                              Tj                                 raw  M_max     CR   Sim_T
+  --------------------------------------------------------------------
+  actor                           customer                        0.9248      4  1.000  0.9248
+  actor                           staff                           0.9121      4  1.000  0.9121
+  staff                           store                           0.9052      4  1.000  0.9052
+  film_category                   inventory                       0.8944      3  1.000  0.8944
+  customer                        staff                           0.8794      9  1.000  0.8794
+  customer                        store                           0.8528      4  1.000  0.8528
+  category                        language                        0.8406      3  1.000  0.8406
+  film                            film_category                   0.8263      3  1.000  0.8263
+  inventory                       rental                          0.8044      4  1.000  0.8044
+  film                            language                        0.7945      3  1.000  0.7945
+  payment                         rental                          0.7890      7  1.000  0.7890
+  city                            film_category                   0.7785      3  1.000  0.7785
+  category                        film_category                   0.7784      3  1.000  0.7784
+  category                        staff                           0.7477      3  1.000  0.7477
+  actor                           category                        0.7466      3  1.000  0.7466
+
+G_T edges (Sim_T ≥ 0.65):
+  Ti                              Tj                               Sim_T
+  --------------------------------------------
+  actor                           customer                        0.9248
+  actor                           staff                           0.9121
+  staff                           store                           0.9052
+  film_category                   inventory                       0.8944
+  customer                        staff                           0.8794
+  customer                        store                           0.8528
+  category                        language                        0.8406
+  film                            film_category                   0.8263
+  inventory                       rental                          0.8044
+  film                            language                        0.7945
+  payment                         rental                          0.7890
+  city                            film_category                   0.7785
+  category                        film_category                   0.7784
+  category                        staff                           0.7477
+  actor                           category                        0.7466
+  inventory                       store                           0.7434
+  category                        customer                        0.7420
+  customer                        inventory                       0.7386
+  inventory                       staff                           0.7330
+  film                            inventory                       0.7290
+  film_category                   rental                          0.7279
+  customer                        film_category                   0.7224
+  film_category                   staff                           0.7198
+  address                         film_category                   0.7172
+  address                         city                            0.7135
+  inventory                       payment                         0.7118
+  address                         store                           0.7069
+  category                        rental                          0.7060
+  actor                           film_category                   0.7033
+  language                        staff                           0.7025
+  film_category                   store                           0.7010
+  actor                           language                        0.7009
+  customer                        language                        0.6998
+  film_category                   payment                         0.6974
+  customer                        rental                          0.6807
+  payment                         store                           0.6802
+  category                        inventory                       0.6756
+  language                        rental                          0.6743
+  customer                        payment                         0.6706
+  rental                          store                           0.6680
+  category                        payment                         0.6679
+  category                        store                           0.6673
+  language                        payment                         0.6670
+  address                         category                        0.6608
+  city                            film                            0.6574
+  rental                          staff                           0.6547
+  category                        city                            0.6541
+  actor                           rental                          0.6511
+======================================================================

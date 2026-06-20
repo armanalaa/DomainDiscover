@@ -1,0 +1,81 @@
+table,column,domain_id,domain_name
+actor,actor_id,0,Customer and Content Management
+actor,first_name,0,Customer and Content Management
+actor,last_name,0,Customer and Content Management
+actor,last_update,0,Customer and Content Management
+category,category_id,0,Customer and Content Management
+category,last_update,0,Customer and Content Management
+category,name,0,Customer and Content Management
+customer,active,0,Customer and Content Management
+customer,address_id,0,Customer and Content Management
+customer,create_date,0,Customer and Content Management
+customer,customer_id,0,Customer and Content Management
+customer,email,0,Customer and Content Management
+customer,first_name,0,Customer and Content Management
+customer,last_name,0,Customer and Content Management
+customer,last_update,0,Customer and Content Management
+customer,store_id,0,Customer and Content Management
+language,language_id,0,Customer and Content Management
+language,last_update,0,Customer and Content Management
+language,name,0,Customer and Content Management
+staff,active,0,Customer and Content Management
+staff,address_id,0,Customer and Content Management
+staff,email,0,Customer and Content Management
+staff,first_name,0,Customer and Content Management
+staff,last_name,0,Customer and Content Management
+staff,last_update,0,Customer and Content Management
+staff,password,0,Customer and Content Management
+staff,picture,0,Customer and Content Management
+staff,staff_id,0,Customer and Content Management
+staff,store_id,0,Customer and Content Management
+staff,username,0,Customer and Content Management
+address,address,1,Media Inventory and Organization
+address,address2,1,Media Inventory and Organization
+address,address_id,1,Media Inventory and Organization
+address,city_id,1,Media Inventory and Organization
+address,district,1,Media Inventory and Organization
+address,last_update,1,Media Inventory and Organization
+address,phone,1,Media Inventory and Organization
+address,postal_code,1,Media Inventory and Organization
+city,city,1,Media Inventory and Organization
+city,city_id,1,Media Inventory and Organization
+city,country_id,1,Media Inventory and Organization
+city,last_update,1,Media Inventory and Organization
+film,description,1,Media Inventory and Organization
+film,film_id,1,Media Inventory and Organization
+film,language_id,1,Media Inventory and Organization
+film,last_update,1,Media Inventory and Organization
+film,length,1,Media Inventory and Organization
+film,original_language_id,1,Media Inventory and Organization
+film,rating,1,Media Inventory and Organization
+film,release_year,1,Media Inventory and Organization
+film,rental_duration,1,Media Inventory and Organization
+film,rental_rate,1,Media Inventory and Organization
+film,replacement_cost,1,Media Inventory and Organization
+film,special_features,1,Media Inventory and Organization
+film,title,1,Media Inventory and Organization
+film_category,category_id,1,Media Inventory and Organization
+film_category,film_id,1,Media Inventory and Organization
+film_category,last_update,1,Media Inventory and Organization
+inventory,film_id,2,Film Rental and Inventory Management
+inventory,inventory_id,2,Film Rental and Inventory Management
+inventory,last_update,2,Film Rental and Inventory Management
+inventory,store_id,2,Film Rental and Inventory Management
+payment,amount,2,Film Rental and Inventory Management
+payment,customer_id,2,Film Rental and Inventory Management
+payment,last_update,2,Film Rental and Inventory Management
+payment,payment_date,2,Film Rental and Inventory Management
+payment,payment_id,2,Film Rental and Inventory Management
+payment,rental_id,2,Film Rental and Inventory Management
+payment,staff_id,2,Film Rental and Inventory Management
+rental,customer_id,2,Film Rental and Inventory Management
+rental,inventory_id,2,Film Rental and Inventory Management
+rental,last_update,2,Film Rental and Inventory Management
+rental,rental_date,2,Film Rental and Inventory Management
+rental,rental_id,2,Film Rental and Inventory Management
+rental,return_date,2,Film Rental and Inventory Management
+rental,staff_id,2,Film Rental and Inventory Management
+store,address_id,2,Film Rental and Inventory Management
+store,last_update,2,Film Rental and Inventory Management
+store,manager_staff_id,2,Film Rental and Inventory Management
+store,store_id,2,Film Rental and Inventory Management

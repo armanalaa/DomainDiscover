@@ -1,0 +1,24 @@
+15:50:31  INFO      Log file: C:\Users\alaar\Desktop\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\Sakila\logs\run_pipeline_20260510_155031.log
+15:50:31  INFO      [clean] Removed dir  : C:\Users\alaar\Desktop\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\Sakila\ccm_output\tA0.6_tT0.65_r1.5
+15:50:31  INFO      [clean] run_pipeline run_dir=C:\Users\alaar\Desktop\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\Sakila\ccm_output\tA0.6_tT0.65_r1.5 — 1 item(s) removed.
+15:50:31  INFO      
+15:50:31  INFO      ======================================================================
+15:50:31  INFO        CCM Pipeline — TwoLevelDomainDiscovery
+15:50:31  INFO        Started    : 2026-05-10 15:50:31
+15:50:31  INFO        Dataset dir: C:\Users\alaar\Desktop\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\Sakila
+15:50:31  INFO        Script dir : C:\Users\alaar\Desktop\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner
+15:50:31  INFO        Schema     : C:\Users\alaar\Desktop\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\Sakila\schema.json
+15:50:31  INFO        Shared dir : C:\Users\alaar\Desktop\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\Sakila\ccm_output   (Steps 1+2, 3a, 3b)
+15:50:31  INFO        Run dir    : C:\Users\alaar\Desktop\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\Sakila\ccm_output\tA0.6_tT0.65_r1.5   (Steps 3c, 4, 5)
+15:50:31  INFO        Run tag    : tA0.6_tT0.65_r1.5
+15:50:31  INFO        Log file   : C:\Users\alaar\Desktop\Sapienza\CAISe2025_Revised\DL-To-DM\python\DomainMiner\Sakila\logs\run_pipeline_20260510_155031.log
+15:50:31  INFO        Knowledge  : knowledge.docx
+15:50:31  INFO        theta_A    : 0.6  theta_T: 0.65
+15:50:31  INFO        LLM model  : mistral:latest  backend=ollama
+15:50:31  INFO        ollama_url : http://localhost:11434
+15:50:31  INFO        num_predict: 512  num_ctx=4096  temperature=0.0  timeout=1200s
+15:50:31  INFO        embed_model: sentence-transformers/all-mpnet-base-v2
+15:50:31  INFO        resolution : 1.5  random_state=0
+15:50:31  INFO        Clean run  : True
+15:50:31  INFO        Dry run    : False
+15:50:31  INFO      ======================================================================

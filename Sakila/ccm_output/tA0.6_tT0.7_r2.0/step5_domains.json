@@ -1,0 +1,99 @@
+[
+  {
+    "domain_id": 0,
+    "domain_name": "Customer and Store Management",
+    "definition": "The set of activities related to managing customer accounts and associated store information.",
+    "tables": [
+      "customer",
+      "store"
+    ],
+    "phi_scores": {
+      "C1": 0.3035,
+      "C4": 0.1212,
+      "C5": 0.1164,
+      "C2": 0.1053,
+      "C3": 0.101
+    }
+  },
+  {
+    "domain_id": 1,
+    "domain_name": "Film Rental Management",
+    "definition": "The set of activities related to managing film rentals, including inventory tracking, customer processing, and payment recording.",
+    "tables": [
+      "inventory",
+      "payment",
+      "rental"
+    ],
+    "phi_scores": {
+      "C5": 0.2187,
+      "C4": 0.2105,
+      "C1": 0.2001,
+      "C2": 0.1797,
+      "C3": 0.1448
+    }
+  },
+  {
+    "domain_id": 2,
+    "domain_name": "Location and Category Management",
+    "definition": "The set of activities related to managing geographical locations (cities), their associated addresses, and film categorization.",
+    "tables": [
+      "address",
+      "city",
+      "film_category"
+    ],
+    "phi_scores": {
+      "C1": 0.1686,
+      "C3": 0.1452,
+      "C2": 0.1436,
+      "C5": 0.1214,
+      "C4": 0.1148
+    }
+  },
+  {
+    "domain_id": 3,
+    "domain_name": "Staff and Store Management",
+    "definition": "The set of activities related to managing staff accounts and their associated store information.",
+    "tables": [
+      "staff"
+    ],
+    "phi_scores": {
+      "C1": 0.2135,
+      "C4": 0.1138,
+      "C2": 0.0937,
+      "C5": 0.0879,
+      "C3": 0.0791
+    }
+  },
+  {
+    "domain_id": 4,
+    "domain_name": "Film Metadata Management",
+    "definition": "The set of activities related to managing film metadata, including actor and category information.",
+    "tables": [
+      "actor",
+      "category"
+    ],
+    "phi_scores": {
+      "C2": 0.2111,
+      "C3": 0.2072,
+      "C4": 0.1595,
+      "C1": 0.1423,
+      "C5": 0.1275
+    }
+  },
+  {
+    "domain_id": 5,
+    "domain_name": "MediaCatalogManagement",
+    "definition": "The set of activities related to managing the media catalog, including registration, updates, and metadata management.",
+    "tables": [
+      "film",
+      "language"
+    ],
+    "phi_scores": {
+      "C2": 0.2827,
+      "C4": 0.2201,
+      "C3": 0.1956,
+      "C5": 0.1833,
+      "C1": 0.1386
+    }
+  }
+]

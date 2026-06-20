@@ -1,0 +1,135 @@
+{
+  "_meta": {
+    "domain_id": 1,
+    "domain_name": "Customer Information Management",
+    "definition": "The set of activities related to managing customer accounts and their associated data.",
+    "tables": [
+      "customer"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "customer": {
+      "_description": "Tracks individual customers and their associated details such as names, contact information, and activity status in the Sakila store.",
+      "columns": [
+        {
+          "name": "customer_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in customer",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "store_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the store_ entity",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "first_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of a customer's given name, typically female, as indicated by sample values.",
+          "samples": [
+            "MARY",
+            "PATRICIA",
+            "LINDA",
+            "BARBARA",
+            "ELIZABETH"
+          ]
+        },
+        {
+          "name": "last_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of a customer's surname.",
+          "samples": [
+            "SMITH",
+            "JOHNSON",
+            "WILLIAMS",
+            "JONES",
+            "BROWN"
+          ]
+        },
+        {
+          "name": "email",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores customer email addresses in a Sakila database, following the format of [first_name].[last_name]@sakilacustomer.org.",
+          "samples": [
+            "MARY.SMITH@sakilacustomer.org",
+            "PATRICIA.JOHNSON@sakilacustomer.org",
+            "LINDA.WILLIAMS@sakilacustomer.org",
+            "BARBARA.JONES@sakilacustomer.org",
+            "ELIZABETH.BROWN@sakilacustomer.org"
+          ]
+        },
+        {
+          "name": "address_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the address_ entity",
+          "samples": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "active",
+          "sql_type": "BOOLEAN",
+          "key": "",
+          "description": "Stores whether a customer account is currently active (1 indicates active).",
+          "samples": [
+            "1",
+            "0",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "create_date",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the date and time when a customer account was created (in YYYY-MM-DD HH:MI:SS format).",
+          "samples": [
+            "2006-02-14 22:04:36",
+            "2006-02-14 22:04:37",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the last update for each customer record.",
+          "samples": [
+            "2006-02-15 04:57:20",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

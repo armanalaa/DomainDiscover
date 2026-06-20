@@ -1,0 +1,117 @@
+{
+  "_meta": {
+    "domain_id": 4,
+    "domain_name": "Film Metadata Management",
+    "definition": "The set of activities related to managing film metadata, including actor and category information.",
+    "tables": [
+      "actor",
+      "category"
+    ],
+    "n_tables": 2,
+    "n_columns_total": 7,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "actor": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "actor_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in actor",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "first_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of actors' first names.",
+          "samples": [
+            "PENELOPE",
+            "NICK",
+            "ED",
+            "JENNIFER",
+            "JOHNNY"
+          ]
+        },
+        {
+          "name": "last_name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the surnames of actors, such as Guiness, Wahlberg, Chase, Davis, and Lollobrigida.",
+          "samples": [
+            "GUINESS",
+            "WAHLBERG",
+            "CHASE",
+            "DAVIS",
+            "LOLLOBRIGIDA"
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of the last update for all actor records.",
+          "samples": [
+            "2006-02-15 04:34:33",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "category": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "category_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in category",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "name",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores movie genre names such as Action, Animation, Children, Classics, Comedy.",
+          "samples": [
+            "Action",
+            "Animation",
+            "Children",
+            "Classics",
+            "Comedy"
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the last update for all category records.",
+          "samples": [
+            "2006-02-15 04:46:27",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,90 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 13
+Edges in G_T         : 48
+θ_T applied in Step 4: 0.65
+Domains discovered   : 9
+Modularity Q         : -0.0177
+
+──────────────────────────────────────────────────────────────────────
+D0  Customer and Staff Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing customer and staff accounts and their associated data.
+  Tables     : actor, staff
+  Phi top-3  : C1=0.193  C4=0.123  C2=0.116
+
+──────────────────────────────────────────────────────────────────────
+D1  Customer Information Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing customer accounts and their associated data.
+  Tables     : customer
+  Phi top-3  : C1=0.338  C5=0.114  C4=0.101
+
+──────────────────────────────────────────────────────────────────────
+D2  Film Rental Processing
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to processing film rentals and recording relevant details
+  Tables     : rental
+  Phi top-3  : C5=0.242  C2=0.209  C1=0.203
+
+──────────────────────────────────────────────────────────────────────
+D3  Store Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing store-specific data, including store details and staff management.
+  Tables     : store
+  Phi top-3  : C1=0.226  C4=0.167  C3=0.156
+
+──────────────────────────────────────────────────────────────────────
+D4  Payment and Rental Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing customer payments for film rentals
+  Tables     : payment
+  Phi top-3  : C5=0.226  C1=0.211  C3=0.114
+
+──────────────────────────────────────────────────────────────────────
+D5  Film Inventory Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to tracking and updating film inventory levels across stores.
+  Tables     : inventory
+  Phi top-3  : C4=0.400  C2=0.285  C3=0.191
+
+──────────────────────────────────────────────────────────────────────
+D6  Location and Category Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing the locations, their associated categories, and customer addresses.
+  Tables     : address, category, city
+  Phi top-3  : C1=0.169  C3=0.136  C2=0.128
+
+──────────────────────────────────────────────────────────────────────
+D7  Media Catalog Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing the media catalog, including registration, updates, and categorization.
+  Tables     : film, language
+  Phi top-3  : C2=0.283  C4=0.220  C3=0.196
+
+──────────────────────────────────────────────────────────────────────
+D8  Film Category Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing the categorization and organization of films in the film catalog.
+  Tables     : film_category
+  Phi top-3  : C3=0.372  C2=0.336  C4=0.219
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  actor                                D       0  Customer and Staff Management
+  staff                                D       0  Customer and Staff Management
+  customer                             D       1  Customer Information Management
+  rental                               D       2  Film Rental Processing
+  store                                D       3  Store Management
+  payment                              D       4  Payment and Rental Management
+  inventory                            D       5  Film Inventory Management
+  address                              D       6  Location and Category Management
+  category                             D       6  Location and Category Management
+  city                                 D       6  Location and Category Management
+  film                                 D       7  Media Catalog Management
+  language                             D       7  Media Catalog Management
+  film_category                        D       8  Film Category Management
+======================================================================

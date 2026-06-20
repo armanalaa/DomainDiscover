@@ -1,0 +1,208 @@
+{
+  "_meta": {
+    "domain_id": 4,
+    "domain_name": "Payment and Rental Processing",
+    "definition": "The set of activities related to managing film rentals, payments, and associated details.",
+    "tables": [
+      "payment",
+      "rental"
+    ],
+    "n_tables": 2,
+    "n_columns_total": 14,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "payment": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "payment_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in payment",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "customer_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the customer_ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "staff_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the staff_ entity",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "rental_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the rental_ entity",
+          "samples": [
+            76,
+            573,
+            1185,
+            1422,
+            1476
+          ]
+        },
+        {
+          "name": "amount",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of payments made in the Sakila database.",
+          "samples": [
+            2.99,
+            0.99,
+            5.99,
+            9.99,
+            4.99
+          ]
+        },
+        {
+          "name": "payment_date",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores formatted timestamps of payment transactions.",
+          "samples": [
+            "2005-05-25 11:30:37",
+            "2005-05-28 10:35:23",
+            "2005-06-15 00:54:12",
+            "2005-06-15 18:02:53",
+            "2005-06-15 21:08:46"
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the last update for each payment record.",
+          "samples": [
+            "2006-02-15 22:12:30",
+            "2006-02-15 22:12:31",
+            "2006-02-15 22:12:32",
+            "2006-02-15 22:12:33",
+            "2006-02-15 22:12:34"
+          ]
+        }
+      ]
+    },
+    "rental": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "rental_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in rental",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "rental_date",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of rental start dates in YYYY-MM-DD HH:MI:SS format.",
+          "samples": [
+            "2005-05-24 22:53:30",
+            "2005-05-24 22:54:33",
+            "2005-05-24 23:03:39",
+            "2005-05-24 23:04:41",
+            "2005-05-24 23:05:21"
+          ]
+        },
+        {
+          "name": "inventory_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the inventory_ entity",
+          "samples": [
+            367,
+            1525,
+            1711,
+            2452,
+            2079
+          ]
+        },
+        {
+          "name": "customer_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the customer_ entity",
+          "samples": [
+            130,
+            459,
+            408,
+            333,
+            222
+          ]
+        },
+        {
+          "name": "return_date",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the date and time when a movie rental was returned.",
+          "samples": [
+            "2005-05-26 22:04:30",
+            "2005-05-28 19:40:33",
+            "2005-06-01 22:12:39",
+            "2005-06-03 01:43:41",
+            "2005-06-02 04:33:21"
+          ]
+        },
+        {
+          "name": "staff_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the staff_ entity",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamp of the most recent update for each rental record.",
+          "samples": [
+            "2006-02-15 21:30:53",
+            "2006-02-23 04:12:08",
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

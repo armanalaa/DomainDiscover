@@ -1,0 +1,72 @@
+ # Sakila — Business Workflows
+
+## 1. Customer Registration
+
+Performed By: Staff, New Customers
+
+Activity:
+- Staff members create new customer accounts by entering the customer's first name, last name, email, and address details.
+- New customers provide their active status, store ID, and create date during account creation.
+- Staff update customer records when necessary to reflect changes in contact information or account status.
+
+## 2. Film Catalog Management
+
+Performed By: Product Managers
+
+Activity:
+- Product managers register new films by recording the film code, title, category, list price, rental duration, rental rate, length, replacement cost, rating, and special features.
+- They update film details as needed to reflect changes in product information or availability.
+
+## 3. Category Assignment
+
+Performed By: Product Managers
+
+Activity:
+- Product managers assign films to appropriate categories for easy browsing and organization within the catalog.
+
+## 4. Inventory Management
+
+Performed By: Warehouse Staff, Sales Representatives
+
+Activity:
+- Warehouse staff track inventory levels by updating film availability in each store.
+- Sales representatives update inventory when films are rented or returned.
+
+## 5. Rental Processing
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers place rental requests for desired films at the store.
+- Sales representatives confirm film availability and process the rental by recording the rental date, inventory ID, customer ID, staff ID, and other relevant details.
+
+## 6. Payment Processing
+
+Performed By: Customers, Staff
+
+Activity:
+- Customers make payments for their rentals at the store or online.
+- Staff record payment details, including payment ID, customer ID, staff ID, rental ID, amount, and payment date.
+
+## 7. Return Processing
+
+Performed By: Customers, Sales Representatives
+
+Activity:
+- Customers return rented films to the store or by mail.
+- Sales representatives update inventory and rental records with the return date and staff ID upon receipt of returned films.
+
+## 8. City Management
+
+Performed By: City Managers
+
+Activity:
+- City managers add new cities, including city name, country ID, and district, to the database for geographical reference.
+
+## 9. Address Management
+
+Performed By: Staff, Customers (for personal addresses)
+
+Activity:
+- Staff members enter address details for stores and city offices.
+- Customers provide their home addresses during account creation or updates.

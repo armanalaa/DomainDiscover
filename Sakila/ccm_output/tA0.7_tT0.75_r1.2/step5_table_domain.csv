@@ -1,0 +1,14 @@
+table,domain_id,domain_name
+inventory,0,Film Rental Management
+payment,0,Film Rental Management
+rental,0,Film Rental Management
+address,1,Customer Address Management
+category,2,Film Catalog and Inventory Management
+city,2,Film Catalog and Inventory Management
+film,2,Film Catalog and Inventory Management
+film_category,2,Film Catalog and Inventory Management
+language,2,Film Catalog and Inventory Management
+actor,3,Customer and Staff Management
+customer,3,Customer and Staff Management
+staff,3,Customer and Staff Management
+store,3,Customer and Staff Management

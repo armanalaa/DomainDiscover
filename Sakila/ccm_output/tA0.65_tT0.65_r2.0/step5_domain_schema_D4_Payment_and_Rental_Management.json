@@ -1,0 +1,109 @@
+{
+  "_meta": {
+    "domain_id": 4,
+    "domain_name": "Payment and Rental Management",
+    "definition": "The set of activities related to managing customer payments for film rentals",
+    "tables": [
+      "payment"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "payment": {
+      "_description": "Tracks customer payments for rentals, recording details such as amount, date, and associated staff and rental.",
+      "columns": [
+        {
+          "name": "payment_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in payment",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "customer_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the customer_ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "staff_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the staff_ entity",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "rental_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the rental_ entity",
+          "samples": [
+            76,
+            573,
+            1185,
+            1422,
+            1476
+          ]
+        },
+        {
+          "name": "amount",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the monetary value of payments made in the Sakila database.",
+          "samples": [
+            2.99,
+            0.99,
+            5.99,
+            9.99,
+            4.99
+          ]
+        },
+        {
+          "name": "payment_date",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores formatted timestamps of payment transactions.",
+          "samples": [
+            "2005-05-25 11:30:37",
+            "2005-05-28 10:35:23",
+            "2005-06-15 00:54:12",
+            "2005-06-15 18:02:53",
+            "2005-06-15 21:08:46"
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the last update for each payment record.",
+          "samples": [
+            "2006-02-15 22:12:30",
+            "2006-02-15 22:12:31",
+            "2006-02-15 22:12:32",
+            "2006-02-15 22:12:33",
+            "2006-02-15 22:12:34"
+          ]
+        }
+      ]
+    }
+  }
+}

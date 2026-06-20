@@ -1,0 +1,55 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 13
+Edges in G_T         : 32
+θ_T applied in Step 4: 0.7
+Domains discovered   : 4
+Modularity Q         : 0.1712
+
+──────────────────────────────────────────────────────────────────────
+D0  Customer and Store Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing customer accounts and associated store information.
+  Tables     : customer, store
+  Phi top-3  : C1=0.303  C4=0.121  C5=0.116
+
+──────────────────────────────────────────────────────────────────────
+D1  Film Rental Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing film rentals, including inventory tracking, customer processing, and payment recording.
+  Tables     : inventory, payment, rental
+  Phi top-3  : C5=0.219  C4=0.210  C1=0.200
+
+──────────────────────────────────────────────────────────────────────
+D2  MediaInventoryManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing the inventory and categorization of media resources such as films.
+  Tables     : address, city, film, film_category
+  Phi top-3  : C2=0.217  C3=0.173  C4=0.172
+
+──────────────────────────────────────────────────────────────────────
+D3  MediaCatalogManagement
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing the media catalog, including registration and updates of actors, categories, languages, and staff.
+  Tables     : actor, category, language, staff
+  Phi top-3  : C1=0.179  C2=0.148  C3=0.133
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  customer                             D       0  Customer and Store Management
+  store                                D       0  Customer and Store Management
+  inventory                            D       1  Film Rental Management
+  payment                              D       1  Film Rental Management
+  rental                               D       1  Film Rental Management
+  address                              D       2  MediaInventoryManagement
+  city                                 D       2  MediaInventoryManagement
+  film                                 D       2  MediaInventoryManagement
+  film_category                        D       2  MediaInventoryManagement
+  actor                                D       3  MediaCatalogManagement
+  category                             D       3  MediaCatalogManagement
+  language                             D       3  MediaCatalogManagement
+  staff                                D       3  MediaCatalogManagement
+======================================================================

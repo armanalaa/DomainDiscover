@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "domain_id": 8,
+    "domain_name": "Film Category Management",
+    "definition": "The set of activities related to managing the categorization and organization of films in the film catalog.",
+    "tables": [
+      "film_category"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "film_category": {
+      "_description": "The film_category table records the association between individual films and their respective categories in the Sakila video rental store.",
+      "columns": [
+        {
+          "name": "film_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in film_category",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "category_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in film_category",
+          "samples": [
+            6,
+            11,
+            8,
+            9,
+            5
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps of the last update for each film_category record.",
+          "samples": [
+            "2006-02-15 05:07:09",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

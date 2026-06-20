@@ -1,0 +1,141 @@
+[
+  {
+    "domain_id": 0,
+    "domain_name": "Customer and Staff Management",
+    "definition": "The set of activities related to managing customer and staff accounts and their associated data.",
+    "tables": [
+      "actor",
+      "staff"
+    ],
+    "phi_scores": {
+      "C1": 0.1927,
+      "C4": 0.1229,
+      "C2": 0.116,
+      "C5": 0.0942,
+      "C3": 0.0895
+    }
+  },
+  {
+    "domain_id": 1,
+    "domain_name": "Customer Information Management",
+    "definition": "The set of activities related to managing customer accounts and their associated data.",
+    "tables": [
+      "customer"
+    ],
+    "phi_scores": {
+      "C1": 0.3379,
+      "C5": 0.1136,
+      "C4": 0.1007,
+      "C2": 0.0917,
+      "C3": 0.0767
+    }
+  },
+  {
+    "domain_id": 2,
+    "domain_name": "Film Rental Processing",
+    "definition": "The set of activities related to processing film rentals and recording relevant details",
+    "tables": [
+      "rental"
+    ],
+    "phi_scores": {
+      "C5": 0.2423,
+      "C2": 0.2089,
+      "C1": 0.2028,
+      "C4": 0.2004,
+      "C3": 0.1493
+    }
+  },
+  {
+    "domain_id": 3,
+    "domain_name": "Store Management",
+    "definition": "The set of activities related to managing store-specific data, including store details and staff management.",
+    "tables": [
+      "store"
+    ],
+    "phi_scores": {
+      "C1": 0.2262,
+      "C4": 0.1674,
+      "C3": 0.1559,
+      "C2": 0.136,
+      "C5": 0.1228
+    }
+  },
+  {
+    "domain_id": 4,
+    "domain_name": "Payment and Rental Management",
+    "definition": "The set of activities related to managing customer payments for film rentals",
+    "tables": [
+      "payment"
+    ],
+    "phi_scores": {
+      "C5": 0.2258,
+      "C1": 0.2115,
+      "C3": 0.1137,
+      "C4": 0.1126,
+      "C2": 0.0905
+    }
+  },
+  {
+    "domain_id": 5,
+    "domain_name": "Film Inventory Management",
+    "definition": "The set of activities related to tracking and updating film inventory levels across stores.",
+    "tables": [
+      "inventory"
+    ],
+    "phi_scores": {
+      "C4": 0.3997,
+      "C2": 0.2849,
+      "C3": 0.1914,
+      "C1": 0.1755,
+      "C5": 0.165
+    }
+  },
+  {
+    "domain_id": 6,
+    "domain_name": "Location and Category Management",
+    "definition": "The set of activities related to managing the locations, their associated categories, and customer addresses.",
+    "tables": [
+      "address",
+      "category",
+      "city"
+    ],
+    "phi_scores": {
+      "C1": 0.169,
+      "C3": 0.136,
+      "C2": 0.1276,
+      "C5": 0.11,
+      "C4": 0.106
+    }
+  },
+  {
+    "domain_id": 7,
+    "domain_name": "Media Catalog Management",
+    "definition": "The set of activities related to managing the media catalog, including registration, updates, and categorization.",
+    "tables": [
+      "film",
+      "language"
+    ],
+    "phi_scores": {
+      "C2": 0.2827,
+      "C4": 0.2201,
+      "C3": 0.1956,
+      "C5": 0.1833,
+      "C1": 0.1386
+    }
+  },
+  {
+    "domain_id": 8,
+    "domain_name": "Film Category Management",
+    "definition": "The set of activities related to managing the categorization and organization of films in the film catalog.",
+    "tables": [
+      "film_category"
+    ],
+    "phi_scores": {
+      "C3": 0.372,
+      "C2": 0.336,
+      "C4": 0.2187,
+      "C5": 0.2056,
+      "C1": 0.1495
+    }
+  }
+]

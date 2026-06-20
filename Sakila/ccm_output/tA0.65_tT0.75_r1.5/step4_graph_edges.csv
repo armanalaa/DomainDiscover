@@ -1,0 +1,14 @@
+table_i,table_j,Sim_T
+actor,customer,0.924769
+actor,staff,0.912099
+staff,store,0.90522
+film_category,inventory,0.894409
+customer,staff,0.879388
+customer,store,0.85281
+category,language,0.840629
+film,film_category,0.826343
+inventory,rental,0.80443
+film,language,0.794523
+payment,rental,0.789003
+city,film_category,0.778463
+category,film_category,0.77837

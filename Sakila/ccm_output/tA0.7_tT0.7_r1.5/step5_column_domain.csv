@@ -1,0 +1,81 @@
+table,column,domain_id,domain_name
+customer,active,0,Customer and Store Management
+customer,address_id,0,Customer and Store Management
+customer,create_date,0,Customer and Store Management
+customer,customer_id,0,Customer and Store Management
+customer,email,0,Customer and Store Management
+customer,first_name,0,Customer and Store Management
+customer,last_name,0,Customer and Store Management
+customer,last_update,0,Customer and Store Management
+customer,store_id,0,Customer and Store Management
+store,address_id,0,Customer and Store Management
+store,last_update,0,Customer and Store Management
+store,manager_staff_id,0,Customer and Store Management
+store,store_id,0,Customer and Store Management
+inventory,film_id,1,Film Rental Management
+inventory,inventory_id,1,Film Rental Management
+inventory,last_update,1,Film Rental Management
+inventory,store_id,1,Film Rental Management
+payment,amount,1,Film Rental Management
+payment,customer_id,1,Film Rental Management
+payment,last_update,1,Film Rental Management
+payment,payment_date,1,Film Rental Management
+payment,payment_id,1,Film Rental Management
+payment,rental_id,1,Film Rental Management
+payment,staff_id,1,Film Rental Management
+rental,customer_id,1,Film Rental Management
+rental,inventory_id,1,Film Rental Management
+rental,last_update,1,Film Rental Management
+rental,rental_date,1,Film Rental Management
+rental,rental_id,1,Film Rental Management
+rental,return_date,1,Film Rental Management
+rental,staff_id,1,Film Rental Management
+address,address,2,MediaInventoryManagement
+address,address2,2,MediaInventoryManagement
+address,address_id,2,MediaInventoryManagement
+address,city_id,2,MediaInventoryManagement
+address,district,2,MediaInventoryManagement
+address,last_update,2,MediaInventoryManagement
+address,phone,2,MediaInventoryManagement
+address,postal_code,2,MediaInventoryManagement
+city,city,2,MediaInventoryManagement
+city,city_id,2,MediaInventoryManagement
+city,country_id,2,MediaInventoryManagement
+city,last_update,2,MediaInventoryManagement
+film,description,2,MediaInventoryManagement
+film,film_id,2,MediaInventoryManagement
+film,language_id,2,MediaInventoryManagement
+film,last_update,2,MediaInventoryManagement
+film,length,2,MediaInventoryManagement
+film,original_language_id,2,MediaInventoryManagement
+film,rating,2,MediaInventoryManagement
+film,release_year,2,MediaInventoryManagement
+film,rental_duration,2,MediaInventoryManagement
+film,rental_rate,2,MediaInventoryManagement
+film,replacement_cost,2,MediaInventoryManagement
+film,special_features,2,MediaInventoryManagement
+film,title,2,MediaInventoryManagement
+film_category,category_id,2,MediaInventoryManagement
+film_category,film_id,2,MediaInventoryManagement
+film_category,last_update,2,MediaInventoryManagement
+actor,actor_id,3,MediaCatalogManagement
+actor,first_name,3,MediaCatalogManagement
+actor,last_name,3,MediaCatalogManagement
+actor,last_update,3,MediaCatalogManagement
+category,category_id,3,MediaCatalogManagement
+category,last_update,3,MediaCatalogManagement
+category,name,3,MediaCatalogManagement
+language,language_id,3,MediaCatalogManagement
+language,last_update,3,MediaCatalogManagement
+language,name,3,MediaCatalogManagement
+staff,active,3,MediaCatalogManagement
+staff,address_id,3,MediaCatalogManagement
+staff,email,3,MediaCatalogManagement
+staff,first_name,3,MediaCatalogManagement
+staff,last_name,3,MediaCatalogManagement
+staff,last_update,3,MediaCatalogManagement
+staff,password,3,MediaCatalogManagement
+staff,picture,3,MediaCatalogManagement
+staff,staff_id,3,MediaCatalogManagement
+staff,store_id,3,MediaCatalogManagement
+staff,username,3,MediaCatalogManagement

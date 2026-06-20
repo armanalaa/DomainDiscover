@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "domain_id": 5,
+    "domain_name": "Film Inventory Management",
+    "definition": "The set of activities related to tracking and updating film inventory levels across stores.",
+    "tables": [
+      "inventory"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "inventory": {
+      "_description": "Tracks the current inventory of films across different stores in the Sakila video rental store.",
+      "columns": [
+        {
+          "name": "inventory_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in inventory",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "film_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the film_ entity",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "store_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the store_ entity",
+          "samples": [
+            1,
+            2,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the most recent update for all inventory records.",
+          "samples": [
+            "2006-02-15 05:09:17",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "domain_id": 2,
+    "domain_name": "Location and Category Management",
+    "definition": "The set of activities related to managing geographical locations (cities), their associated addresses, and film categorization.",
+    "tables": [
+      "address",
+      "city",
+      "film_category"
+    ],
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "address": {
+      "_description": "Holds customer and store contact addresses for delivery, billing, or communication purposes.",
+      "columns": [
+        {
+          "name": "address_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in address",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "address",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores street addresses up to 50 characters long, including house number and street name.",
+          "samples": [
+            "47 MySakila Drive",
+            "28 MySQL Boulevard",
+            "23 Workhaven Lane",
+            "1411 Lillydale Drive",
+            "1913 Hanoi Way"
+          ]
+        },
+        {
+          "name": "address2",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores additional address lines (if any), as it is of TEXT type.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "district",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical districts, represented by Alberta, QLD, Nagasaki, etc.",
+          "samples": [
+            "Alberta",
+            "QLD",
+            "Nagasaki",
+            "California",
+            "Attika"
+          ]
+        },
+        {
+          "name": "city_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the city_ entity",
+          "samples": [
+            300,
+            576,
+            463,
+            449,
+            38
+          ]
+        },
+        {
+          "name": "postal_code",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores five-digit numerical postal codes for addresses.",
+          "samples": [
+            35200,
+            17886,
+            83579,
+            53561,
+            42399
+          ]
+        },
+        {
+          "name": "phone",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores 10-digit phone numbers in international format.",
+          "samples": [
+            14033335568,
+            6172235589,
+            28303384290,
+            838635286649,
+            448477190408
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores binary representation of timestamps for the last update of address records.",
+          "samples": [
+            "/*!50705 0x0000000001010000003E0A325D63345CC0761FDB8D99D94840",
+            "/*!50705 0x0000000001010000008E10D4DF812463404EE08C5022A23BC0",
+            "/*!50705 0x000000000101000000CDC4196863345CC01DEE7E7099D94840",
+            "/*!50705 0x0000000001010000005B0DE4341F26634042D6AE6422A23BC0",
+            "/*!50705 0x00000000010100000028D1370E21376040ABB58BC45F944040"
+          ]
+        }
+      ]
+    },
+    "city": {
+      "_description": "Captures information about cities in various countries within the Sakila DVD rental chain.",
+      "columns": [
+        {
+          "name": "city_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in city",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "city",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores city names up to 50 characters long, as demonstrated by examples like A Coruña (La Coruña), Abha, Abu Dhabi, Acuña, Adana.",
+          "samples": [
+            "A Coruña (La Coruña)",
+            "Abha",
+            "Abu Dhabi",
+            "Acuña",
+            "Adana"
+          ]
+        },
+        {
+          "name": "country_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the country_ entity",
+          "samples": [
+            87,
+            82,
+            101,
+            60,
+            97
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the last update for each city record.",
+          "samples": [
+            "2006-02-15 04:45:25",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "film_category": {
+      "_description": "The film_category table records the association between individual films and their respective categories in the Sakila video rental store.",
+      "columns": [
+        {
+          "name": "film_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in film_category",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "category_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in film_category",
+          "samples": [
+            6,
+            11,
+            8,
+            9,
+            5
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps of the last update for each film_category record.",
+          "samples": [
+            "2006-02-15 05:07:09",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}

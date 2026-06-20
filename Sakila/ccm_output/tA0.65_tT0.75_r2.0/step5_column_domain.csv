@@ -1,0 +1,81 @@
+table,column,domain_id,domain_name
+inventory,film_id,0,Film Rental Management
+inventory,inventory_id,0,Film Rental Management
+inventory,last_update,0,Film Rental Management
+inventory,store_id,0,Film Rental Management
+payment,amount,0,Film Rental Management
+payment,customer_id,0,Film Rental Management
+payment,last_update,0,Film Rental Management
+payment,payment_date,0,Film Rental Management
+payment,payment_id,0,Film Rental Management
+payment,rental_id,0,Film Rental Management
+payment,staff_id,0,Film Rental Management
+rental,customer_id,0,Film Rental Management
+rental,inventory_id,0,Film Rental Management
+rental,last_update,0,Film Rental Management
+rental,rental_date,0,Film Rental Management
+rental,rental_id,0,Film Rental Management
+rental,return_date,0,Film Rental Management
+rental,staff_id,0,Film Rental Management
+address,address,1,Customer Address Management
+address,address2,1,Customer Address Management
+address,address_id,1,Customer Address Management
+address,city_id,1,Customer Address Management
+address,district,1,Customer Address Management
+address,last_update,1,Customer Address Management
+address,phone,1,Customer Address Management
+address,postal_code,1,Customer Address Management
+category,category_id,2,FilmCatalogAndCategoryManagement
+category,last_update,2,FilmCatalogAndCategoryManagement
+category,name,2,FilmCatalogAndCategoryManagement
+film,description,2,FilmCatalogAndCategoryManagement
+film,film_id,2,FilmCatalogAndCategoryManagement
+film,language_id,2,FilmCatalogAndCategoryManagement
+film,last_update,2,FilmCatalogAndCategoryManagement
+film,length,2,FilmCatalogAndCategoryManagement
+film,original_language_id,2,FilmCatalogAndCategoryManagement
+film,rating,2,FilmCatalogAndCategoryManagement
+film,release_year,2,FilmCatalogAndCategoryManagement
+film,rental_duration,2,FilmCatalogAndCategoryManagement
+film,rental_rate,2,FilmCatalogAndCategoryManagement
+film,replacement_cost,2,FilmCatalogAndCategoryManagement
+film,special_features,2,FilmCatalogAndCategoryManagement
+film,title,2,FilmCatalogAndCategoryManagement
+language,language_id,2,FilmCatalogAndCategoryManagement
+language,last_update,2,FilmCatalogAndCategoryManagement
+language,name,2,FilmCatalogAndCategoryManagement
+actor,actor_id,3,Customer and Staff Management
+actor,first_name,3,Customer and Staff Management
+actor,last_name,3,Customer and Staff Management
+actor,last_update,3,Customer and Staff Management
+customer,active,3,Customer and Staff Management
+customer,address_id,3,Customer and Staff Management
+customer,create_date,3,Customer and Staff Management
+customer,customer_id,3,Customer and Staff Management
+customer,email,3,Customer and Staff Management
+customer,first_name,3,Customer and Staff Management
+customer,last_name,3,Customer and Staff Management
+customer,last_update,3,Customer and Staff Management
+customer,store_id,3,Customer and Staff Management
+staff,active,3,Customer and Staff Management
+staff,address_id,3,Customer and Staff Management
+staff,email,3,Customer and Staff Management
+staff,first_name,3,Customer and Staff Management
+staff,last_name,3,Customer and Staff Management
+staff,last_update,3,Customer and Staff Management
+staff,password,3,Customer and Staff Management
+staff,picture,3,Customer and Staff Management
+staff,staff_id,3,Customer and Staff Management
+staff,store_id,3,Customer and Staff Management
+staff,username,3,Customer and Staff Management
+store,address_id,3,Customer and Staff Management
+store,last_update,3,Customer and Staff Management
+store,manager_staff_id,3,Customer and Staff Management
+store,store_id,3,Customer and Staff Management
+city,city,4,FilmMetadataManagement
+city,city_id,4,FilmMetadataManagement
+city,country_id,4,FilmMetadataManagement
+city,last_update,4,FilmMetadataManagement
+film_category,category_id,4,FilmMetadataManagement
+film_category,film_id,4,FilmMetadataManagement
+film_category,last_update,4,FilmMetadataManagement

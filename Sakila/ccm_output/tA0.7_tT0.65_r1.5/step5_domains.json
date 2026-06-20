@@ -1,0 +1,85 @@
+[
+  {
+    "domain_id": 0,
+    "domain_name": "Customer and Staff Management",
+    "definition": "This domain unifies the activities related to managing customer accounts, staff information, and associated data.",
+    "tables": [
+      "actor",
+      "customer",
+      "language",
+      "staff"
+    ],
+    "phi_scores": {
+      "C1": 0.235,
+      "C4": 0.1175,
+      "C2": 0.1172,
+      "C5": 0.1044,
+      "C3": 0.0928
+    }
+  },
+  {
+    "domain_id": 1,
+    "domain_name": "Location and Category Management",
+    "definition": "The set of activities related to managing geographical locations, their associated categories, and the corresponding data.",
+    "tables": [
+      "address",
+      "category",
+      "city"
+    ],
+    "phi_scores": {
+      "C1": 0.169,
+      "C3": 0.136,
+      "C2": 0.1276,
+      "C5": 0.11,
+      "C4": 0.106
+    }
+  },
+  {
+    "domain_id": 2,
+    "domain_name": "MediaInventoryManagement",
+    "definition": "The set of activities related to managing the inventory and categorization of media resources such as films.",
+    "tables": [
+      "film",
+      "film_category",
+      "inventory"
+    ],
+    "phi_scores": {
+      "C2": 0.3036,
+      "C4": 0.2676,
+      "C3": 0.2268,
+      "C5": 0.1913,
+      "C1": 0.1477
+    }
+  },
+  {
+    "domain_id": 3,
+    "domain_name": "Store Management",
+    "definition": "The set of activities related to managing store-specific data, including staff, locations, and inventory.",
+    "tables": [
+      "store"
+    ],
+    "phi_scores": {
+      "C1": 0.2262,
+      "C4": 0.1674,
+      "C3": 0.1559,
+      "C2": 0.136,
+      "C5": 0.1228
+    }
+  },
+  {
+    "domain_id": 4,
+    "domain_name": "Payment and Rental Processing",
+    "definition": "The set of activities related to managing film rentals, payments, and associated details.",
+    "tables": [
+      "payment",
+      "rental"
+    ],
+    "phi_scores": {
+      "C5": 0.2341,
+      "C1": 0.2072,
+      "C4": 0.1565,
+      "C2": 0.1497,
+      "C3": 0.1315
+    }
+  }
+]

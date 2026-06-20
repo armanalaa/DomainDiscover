@@ -1,0 +1,81 @@
+table,column,domain_id,domain_name
+inventory,film_id,0,Film Rental Management
+inventory,inventory_id,0,Film Rental Management
+inventory,last_update,0,Film Rental Management
+inventory,store_id,0,Film Rental Management
+payment,amount,0,Film Rental Management
+payment,customer_id,0,Film Rental Management
+payment,last_update,0,Film Rental Management
+payment,payment_date,0,Film Rental Management
+payment,payment_id,0,Film Rental Management
+payment,rental_id,0,Film Rental Management
+payment,staff_id,0,Film Rental Management
+rental,customer_id,0,Film Rental Management
+rental,inventory_id,0,Film Rental Management
+rental,last_update,0,Film Rental Management
+rental,rental_date,0,Film Rental Management
+rental,rental_id,0,Film Rental Management
+rental,return_date,0,Film Rental Management
+rental,staff_id,0,Film Rental Management
+address,address,1,Customer Address Management
+address,address2,1,Customer Address Management
+address,address_id,1,Customer Address Management
+address,city_id,1,Customer Address Management
+address,district,1,Customer Address Management
+address,last_update,1,Customer Address Management
+address,phone,1,Customer Address Management
+address,postal_code,1,Customer Address Management
+category,category_id,2,Film Catalog and Inventory Management
+category,last_update,2,Film Catalog and Inventory Management
+category,name,2,Film Catalog and Inventory Management
+city,city,2,Film Catalog and Inventory Management
+city,city_id,2,Film Catalog and Inventory Management
+city,country_id,2,Film Catalog and Inventory Management
+city,last_update,2,Film Catalog and Inventory Management
+film,description,2,Film Catalog and Inventory Management
+film,film_id,2,Film Catalog and Inventory Management
+film,language_id,2,Film Catalog and Inventory Management
+film,last_update,2,Film Catalog and Inventory Management
+film,length,2,Film Catalog and Inventory Management
+film,original_language_id,2,Film Catalog and Inventory Management
+film,rating,2,Film Catalog and Inventory Management
+film,release_year,2,Film Catalog and Inventory Management
+film,rental_duration,2,Film Catalog and Inventory Management
+film,rental_rate,2,Film Catalog and Inventory Management
+film,replacement_cost,2,Film Catalog and Inventory Management
+film,special_features,2,Film Catalog and Inventory Management
+film,title,2,Film Catalog and Inventory Management
+film_category,category_id,2,Film Catalog and Inventory Management
+film_category,film_id,2,Film Catalog and Inventory Management
+film_category,last_update,2,Film Catalog and Inventory Management
+language,language_id,2,Film Catalog and Inventory Management
+language,last_update,2,Film Catalog and Inventory Management
+language,name,2,Film Catalog and Inventory Management
+actor,actor_id,3,Customer and Staff Management
+actor,first_name,3,Customer and Staff Management
+actor,last_name,3,Customer and Staff Management
+actor,last_update,3,Customer and Staff Management
+customer,active,3,Customer and Staff Management
+customer,address_id,3,Customer and Staff Management
+customer,create_date,3,Customer and Staff Management
+customer,customer_id,3,Customer and Staff Management
+customer,email,3,Customer and Staff Management
+customer,first_name,3,Customer and Staff Management
+customer,last_name,3,Customer and Staff Management
+customer,last_update,3,Customer and Staff Management
+customer,store_id,3,Customer and Staff Management
+staff,active,3,Customer and Staff Management
+staff,address_id,3,Customer and Staff Management
+staff,email,3,Customer and Staff Management
+staff,first_name,3,Customer and Staff Management
+staff,last_name,3,Customer and Staff Management
+staff,last_update,3,Customer and Staff Management
+staff,password,3,Customer and Staff Management
+staff,picture,3,Customer and Staff Management
+staff,staff_id,3,Customer and Staff Management
+staff,store_id,3,Customer and Staff Management
+staff,username,3,Customer and Staff Management
+store,address_id,3,Customer and Staff Management
+store,last_update,3,Customer and Staff Management
+store,manager_staff_id,3,Customer and Staff Management
+store,store_id,3,Customer and Staff Management

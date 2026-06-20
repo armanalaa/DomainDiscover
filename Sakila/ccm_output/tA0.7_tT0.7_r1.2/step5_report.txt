@@ -1,0 +1,48 @@
+======================================================================
+CCM Pipeline — Step 5 Report
+Graph Clustering — Domain Discovery
+======================================================================
+Tables in G_T        : 13
+Edges in G_T         : 32
+θ_T applied in Step 4: 0.7
+Domains discovered   : 3
+Modularity Q         : 0.2066
+
+──────────────────────────────────────────────────────────────────────
+D0  Film and Rental Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing the film catalog, tracking inventory levels, processing rentals, and recording relevant details.
+  Tables     : film, inventory, payment, rental
+  Phi top-3  : C2=0.231  C4=0.222  C5=0.209
+
+──────────────────────────────────────────────────────────────────────
+D1  Location and Store Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing store locations, customer addresses, city information, and store details.
+  Tables     : address, city, film_category, store
+  Phi top-3  : C1=0.181  C3=0.147  C2=0.142
+
+──────────────────────────────────────────────────────────────────────
+D2  Customer and Content Management
+──────────────────────────────────────────────────────────────────────
+  Definition : The set of activities related to managing customer accounts, film catalog, and their associated data.
+  Tables     : actor, category, customer, language, staff
+  Phi top-3  : C1=0.227  C2=0.131  C4=0.123
+
+Table → Domain assignment:
+  Table                                Domain ID  Domain Name
+  ------------------------------------------------------------
+  film                                 D       0  Film and Rental Management
+  inventory                            D       0  Film and Rental Management
+  payment                              D       0  Film and Rental Management
+  rental                               D       0  Film and Rental Management
+  address                              D       1  Location and Store Management
+  city                                 D       1  Location and Store Management
+  film_category                        D       1  Location and Store Management
+  store                                D       1  Location and Store Management
+  actor                                D       2  Customer and Content Management
+  category                             D       2  Customer and Content Management
+  customer                             D       2  Customer and Content Management
+  language                             D       2  Customer and Content Management
+  staff                                D       2  Customer and Content Management
+======================================================================

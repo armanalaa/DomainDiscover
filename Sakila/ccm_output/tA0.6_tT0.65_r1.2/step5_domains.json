@@ -1,0 +1,57 @@
+[
+  {
+    "domain_id": 0,
+    "domain_name": "Customer and Content Management",
+    "definition": "The set of activities related to managing customer accounts, content catalog, and their associated data.",
+    "tables": [
+      "actor",
+      "category",
+      "customer",
+      "language",
+      "staff"
+    ],
+    "phi_scores": {
+      "C1": 0.2267,
+      "C2": 0.1311,
+      "C4": 0.1233,
+      "C3": 0.1161,
+      "C5": 0.1088
+    }
+  },
+  {
+    "domain_id": 1,
+    "domain_name": "Media Inventory and Organization",
+    "definition": "The set of activities related to managing the film catalog, categorizing films, tracking inventory levels, and recording relevant details.",
+    "tables": [
+      "address",
+      "city",
+      "film",
+      "film_category"
+    ],
+    "phi_scores": {
+      "C2": 0.2171,
+      "C3": 0.1726,
+      "C4": 0.1721,
+      "C5": 0.1561,
+      "C1": 0.1547
+    }
+  },
+  {
+    "domain_id": 2,
+    "domain_name": "Film Rental and Inventory Management",
+    "definition": "The set of activities related to managing film rentals, inventory levels, and associated payments.",
+    "tables": [
+      "inventory",
+      "payment",
+      "rental",
+      "store"
+    ],
+    "phi_scores": {
+      "C1": 0.2049,
+      "C4": 0.2027,
+      "C5": 0.2013,
+      "C2": 0.1718,
+      "C3": 0.1468
+    }
+  }
+]

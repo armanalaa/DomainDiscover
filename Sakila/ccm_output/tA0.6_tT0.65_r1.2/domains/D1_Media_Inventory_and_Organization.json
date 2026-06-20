@@ -1,0 +1,402 @@
+{
+  "_meta": {
+    "domain_id": 1,
+    "domain_name": "Media Inventory and Organization",
+    "definition": "The set of activities related to managing the film catalog, categorizing films, tracking inventory levels, and recording relevant details.",
+    "tables": [
+      "address",
+      "city",
+      "film",
+      "film_category"
+    ],
+    "n_tables": 4,
+    "n_columns_total": 28,
+    "source_schema": "schema.json"
+  },
+  "tables": {
+    "address": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "address_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in address",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "address",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores street addresses up to 50 characters long, including house number and street name.",
+          "samples": [
+            "47 MySakila Drive",
+            "28 MySQL Boulevard",
+            "23 Workhaven Lane",
+            "1411 Lillydale Drive",
+            "1913 Hanoi Way"
+          ]
+        },
+        {
+          "name": "address2",
+          "sql_type": "TEXT",
+          "key": "",
+          "description": "Stores additional address lines (if any), as it is of TEXT type.",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "district",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores geographical districts, represented by Alberta, QLD, Nagasaki, etc.",
+          "samples": [
+            "Alberta",
+            "QLD",
+            "Nagasaki",
+            "California",
+            "Attika"
+          ]
+        },
+        {
+          "name": "city_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the city_ entity",
+          "samples": [
+            300,
+            576,
+            463,
+            449,
+            38
+          ]
+        },
+        {
+          "name": "postal_code",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores five-digit numerical postal codes for addresses.",
+          "samples": [
+            35200,
+            17886,
+            83579,
+            53561,
+            42399
+          ]
+        },
+        {
+          "name": "phone",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores 10-digit phone numbers in international format.",
+          "samples": [
+            14033335568,
+            6172235589,
+            28303384290,
+            838635286649,
+            448477190408
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores binary representation of timestamps for the last update of address records.",
+          "samples": [
+            "/*!50705 0x0000000001010000003E0A325D63345CC0761FDB8D99D94840",
+            "/*!50705 0x0000000001010000008E10D4DF812463404EE08C5022A23BC0",
+            "/*!50705 0x000000000101000000CDC4196863345CC01DEE7E7099D94840",
+            "/*!50705 0x0000000001010000005B0DE4341F26634042D6AE6422A23BC0",
+            "/*!50705 0x00000000010100000028D1370E21376040ABB58BC45F944040"
+          ]
+        }
+      ]
+    },
+    "city": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "city_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in city",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "city",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores city names up to 50 characters long, as demonstrated by examples like A Coruña (La Coruña), Abha, Abu Dhabi, Acuña, Adana.",
+          "samples": [
+            "A Coruña (La Coruña)",
+            "Abha",
+            "Abu Dhabi",
+            "Acuña",
+            "Adana"
+          ]
+        },
+        {
+          "name": "country_id",
+          "sql_type": "INT",
+          "key": "FK",
+          "description": "Foreign key linking to the country_ entity",
+          "samples": [
+            87,
+            82,
+            101,
+            60,
+            97
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the last update for each city record.",
+          "samples": [
+            "2006-02-15 04:45:25",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "film": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "film_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in film",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "title",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores up to 50 characters of film titles, such as ACADEMY DINOSAUR, ACE GOLDFINGER, etc.",
+          "samples": [
+            "ACADEMY DINOSAUR",
+            "ACE GOLDFINGER",
+            "ADAPTATION HOLES",
+            "AFFAIR PREJUDICE",
+            "AFRICAN EGG"
+          ]
+        },
+        {
+          "name": "description",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores brief narrative summaries of film plots.",
+          "samples": [
+            "A Epic Drama of a Feminist And a Mad Scientist who must Battle a Teacher in The Canadian Rockies",
+            "A Astounding Epistle of a Database Administrator And a Explorer who must Find a Car in Ancient China",
+            "A Astounding Reflection of a Lumberjack And a Car who must Sink a Lumberjack in A Baloon Factory",
+            "A Fanciful Documentary of a Frisbee And a Lumberjack who must Chase a Monkey in A Shark Tank",
+            "A Fast-Paced Documentary of a Pastry Chef And a Dentist who must Pursue a Forensic Psychologist in The Gulf of Mexico"
+          ]
+        },
+        {
+          "name": "release_year",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the year of release for films, all shown examples are from 2006.",
+          "samples": [
+            2006,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "language_id",
+          "sql_type": "BOOLEAN",
+          "key": "FK",
+          "description": "Foreign key linking to the language_ entity",
+          "samples": [
+            "1",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "original_language_id",
+          "sql_type": "TEXT",
+          "key": "FK",
+          "description": "Foreign key linking to the original_language_ entity",
+          "samples": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "rental_duration",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores the number of days a film can be rented.",
+          "samples": [
+            6,
+            3,
+            7,
+            5,
+            4
+          ]
+        },
+        {
+          "name": "rental_rate",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the rental cost for each film title in the Sakila database.",
+          "samples": [
+            0.99,
+            4.99,
+            2.99,
+            null,
+            null
+          ]
+        },
+        {
+          "name": "length",
+          "sql_type": "INT",
+          "key": "",
+          "description": "Stores film durations in minutes.",
+          "samples": [
+            86,
+            48,
+            50,
+            117,
+            130
+          ]
+        },
+        {
+          "name": "replacement_cost",
+          "sql_type": "FLOAT",
+          "key": "",
+          "description": "Stores the price for replacing a film title.",
+          "samples": [
+            20.99,
+            12.99,
+            18.99,
+            26.99,
+            22.99
+          ]
+        },
+        {
+          "name": "rating",
+          "sql_type": "VARCHAR(10)",
+          "key": "",
+          "description": "Stores film ratings, such as PG, G, NC-17.",
+          "samples": [
+            "PG",
+            "G",
+            "NC-17",
+            "PG-13",
+            "R"
+          ]
+        },
+        {
+          "name": "special_features",
+          "sql_type": "VARCHAR(255)",
+          "key": "",
+          "description": "Stores additional features of films such as deleted scenes, behind-the-scenes footage, trailers, and commentaries.",
+          "samples": [
+            "Deleted Scenes,Behind the Scenes",
+            "Trailers,Deleted Scenes",
+            "Commentaries,Behind the Scenes",
+            "Deleted Scenes",
+            "Trailers"
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores the timestamp of the last update for each film record.",
+          "samples": [
+            "2006-02-15 05:03:42",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    },
+    "film_category": {
+      "domain": "",
+      "columns": [
+        {
+          "name": "film_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in film_category",
+          "samples": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "category_id",
+          "sql_type": "INT",
+          "key": "PK",
+          "description": "Primary key uniquely identifying each row in film_category",
+          "samples": [
+            6,
+            11,
+            8,
+            9,
+            5
+          ]
+        },
+        {
+          "name": "last_update",
+          "sql_type": "VARCHAR(50)",
+          "key": "",
+          "description": "Stores timestamps of the last update for each film_category record.",
+          "samples": [
+            "2006-02-15 05:07:09",
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  }
+}
