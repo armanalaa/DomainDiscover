@@ -1,7 +1,10 @@
 # DomainDiscover
 
 **Automatic data mesh domain discovery from data lake CSV tables.**  
-DomainDiscover takes a collection of CSV files and groups them into business domains using column similarity, table graphs, and Louvain clustering, with LLM-generated domain labels.
+DomainDiscover takes a collection of CSV files and groups them into business domains using column similarity, table graphs, and Louvain community detection, with LLM-generated domain labels.
+
+> **Paper:** *From Data Lakes to Data Mesh: LLM-Guided Domain Discovery* — submitted to EDOC 2026 Forum Track.  
+> **Artifact:** This repository is the reference implementation accompanying the paper.
 
 ---
 
@@ -13,31 +16,25 @@ DomainDiscover takes a collection of CSV files and groups them into business dom
 4. [Folder Structure](#folder-structure)
 5. [All Scripts Reference](#all-scripts-reference)
 6. [Step-by-Step: Running the Pipeline](#step-by-step-running-the-pipeline)
-   - [Step 0 — Prepare your dataset](#step-0--prepare-your-dataset)
-   - [Step 1 — Extract schema](#step-1--extract-schema)
-   - [Step 2 — Crawl documentation](#step-2--crawl-documentation)
-   - [Step 3 — Extract knowledge](#step-3--extract-knowledge)
-   - [Step 4 — Tune parameters](#step-4--tune-parameters)
-   - [Step 5 — Rebuild results](#step-5--rebuild-results)
-   - [Step 6 — Retry failed runs](#step-6--retry-failed-runs)
-   - [Step 7 — Pick the best result](#step-7--pick-the-best-result)
 7. [Running a Single Configuration](#running-a-single-configuration)
 8. [Parameter Reference](#parameter-reference)
-9. [Validated Datasets](#validated-datasets)
+9. [Analyzing Results](#analyzing-results)
+10. [Validated Datasets](#validated-datasets)
+11. [Sakila Walkthrough — Complete Running Example](#sakila-walkthrough--complete-running-example)
 
 ---
 
 ## How It Works
 
-The pipeline runs in 5 stages (CCM):
+The pipeline runs in 5 stages:
 
 | Stage | Script | What it does |
 |---|---|---|
-| 1 — Prepare | `extract_schema.py` + `extract_knowledge.py` | Profiles columns, builds embeddings, extracts business knowledge from PDFs via LLM |
-| 2 — Column similarity | `1_knowledge_concept_embedding.py`, `2_p_stat_name_sem.py`, `3_sim_attr_weights.py` | Computes statistical, name, and semantic similarity between every column pair |
-| 3 — Column graph | `4_column_graph.py` | Connects similar columns above a threshold into a graph |
-| 4 — Table graph | `5_table_similarity.py` | Aggregates column edges into table-level similarity; builds a table graph |
-| 5 — Domain discovery | `6_domain_discovery.py` | Runs Louvain clustering; LLM assigns a business name to each domain |
+| 1 — Concept Analysis | `1_knowledge_concept_embedding.py` | LLM extracts business concepts from tables + external knowledge; concepts embedded via sentence-transformer |
+| 2 — Column Analysis | `1_knowledge_concept_embedding.py` | Each column embedded; cosine similarity against every concept builds the φ-matrix |
+| 3 — Column-Level Similarity | `2_p_stat_name_sem.py`, `3_sim_attr_weights.py`, `4_column_graph.py` | Statistical (P_stat), name-based (P_name), and semantic (P_sem) similarity combined into Sim_col; column graph G_C built above threshold θ_C |
+| 4 — Table-Level Similarity | `5_table_similarity.py` | Greedy one-to-one column matching aggregated into Sim_table × coverage ratio; table graph G_T built above threshold θ_T |
+| 5 — Domain Realization | `6_domain_discovery.py` | Louvain community detection partitions G_T into domains; LLM synthesizes a name and definition per domain from top-ranked concepts |
 
 ---
 
@@ -80,38 +77,55 @@ ollama list
 
 ## Folder Structure
 
-Place your dataset inside the project root. Each dataset follows this layout:
-
 ```
 DomainDiscover/
 │
-├── extract_schema.py           ← Step 1: profile columns, build schema.json
-├── extract_knowledge.py        ← Step 3: extract knowledge from PDFs → knowledge.docx
-├── crawl_to_pdf.py             ← Step 2: crawl documentation websites → knowledge/ PDFs
-├── run_pipeline.py             ← Run a single parameter combination
-├── tune_params.py              ← Run all 27 parameter combinations
-├── run_failed.py               ← Retry failed runs automatically
-├── build_tune_params_results.py← Rebuild results xlsx from existing run folders
-├── pipeline_utils.py           ← Shared utilities (logging, cleanup, run tags)
+├── extract_schema.py               ← Step 1: profile columns, build schema.json
+├── extract_knowledge.py            ← Step 3: extract knowledge from PDFs → knowledge.docx
+├── crawl_to_pdf.py                 ← Step 2: crawl documentation websites → knowledge/ PDFs
+├── run_pipeline.py                 ← Run a single parameter combination
+├── tune_params.py                  ← Run all 27 parameter combinations
+├── run_failed.py                   ← Retry failed runs automatically
+├── build_tune_params_results.py    ← Rebuild results xlsx from existing run folders
+├── pipeline_utils.py               ← Shared utilities (logging, cleanup, run tags)
 ├── 1_knowledge_concept_embedding.py
 ├── 2_p_stat_name_sem.py
 ├── 3_sim_attr_weights.py
 ├── 4_column_graph.py
 ├── 5_table_similarity.py
 ├── 6_domain_discovery.py
-├── Modelfile                   ← Ollama model configuration (4096 context window)
+├── Modelfile                       ← Ollama model config (mistral-ctx4k, 4096-token context)
 │
 └── <YourDataset>/
-    ├── csv/                    ← put all your CSV files here
-    ├── knowledge/              ← put documentation PDFs here
-    ├── schema.json             ← generated by extract_schema.py
-    ├── knowledge.docx          ← generated by extract_knowledge.py
-    ├── logs/                   ← created automatically
-    └── ccm_output/             ← all results written here
-        ├── tA0.65_tT0.70_r1.2/
+    ├── csv/                        ← put all your CSV files here
+    ├── knowledge/                  ← put documentation PDFs here (or crawl them)
+    ├── schema.json                 ← generated by extract_schema.py
+    ├── knowledge.docx              ← generated by extract_knowledge.py
+    ├── logs/                       ← created automatically
+    └── ccm_output/                 ← all results written here
+        ├── derived_weights.csv     ← variance-based weights for P_stat, P_name, P_sem
+        ├── phi_matrix.csv          ← column × concept cosine similarity scores
+        ├── step1_concepts.json     ← extracted business concepts + embeddings
+        ├── step2_column_profiles.json
+        ├── step2_zscore_stats.json
+        ├── step3_P_stat.csv
+        ├── step3_P_name.csv
+        ├── step3_P_sem.csv
+        ├── step3_proximity_long.csv
+        ├── tA0.65_tT0.75_r1.2/    ← one folder per parameter combination
+        │   ├── step3_Sim_attr.csv
+        │   ├── step3_graph_edges.csv
         │   ├── step3_sim_attr_report.txt
+        │   ├── step4_graph_edges.csv
+        │   ├── step4_table_sim.csv
         │   ├── step4_report.txt
-        │   └── step5_report.txt
+        │   ├── step5_domains.json
+        │   ├── step5_table_domain.csv
+        │   ├── step5_column_domain.csv
+        │   ├── step5_report.txt    ← Q score and domain listing for this run
+        │   └── domains/
+        │       ├── D0_<name>.json
+        │       └── D1_<name>.json
         ├── tune_params_results.xlsx
         └── tune_params_summary.txt
 ```
@@ -122,35 +136,35 @@ DomainDiscover/
 
 ### Core pipeline scripts
 
-| Script | Purpose | Run from |
-|---|---|---|
-| `extract_schema.py` | Profiles every CSV column and builds `schema.json` | DomainDiscover root |
-| `extract_knowledge.py` | Reads PDFs in `knowledge/` and writes `knowledge.docx` | DomainDiscover root |
-| `crawl_to_pdf.py` | Crawls a documentation website and saves pages as PDFs | DomainDiscover root |
-| `run_pipeline.py` | Runs the full CCM pipeline for one parameter combination | DomainDiscover root |
-| `tune_params.py` | Runs all 27 combinations of `theta_a × theta_t × resolution` | DomainDiscover root |
-| `run_failed.py` | Scans for failed runs and retries them automatically | DomainDiscover root |
-| `build_tune_params_results.py` | Rebuilds `tune_params_results.xlsx` from existing run folders | DomainDiscover root |
-| `pipeline_utils.py` | Shared helpers: logging, cleanup, run tag generation | (imported, not run directly) |
+| Script | Purpose |
+|---|---|
+| `extract_schema.py` | Profiles every CSV column and builds `schema.json` |
+| `extract_knowledge.py` | Reads PDFs in `knowledge/` and writes `knowledge.docx` using LLM |
+| `crawl_to_pdf.py` | Crawls a documentation website and saves pages as PDFs |
+| `run_pipeline.py` | Runs the full 5-stage pipeline for one parameter combination |
+| `tune_params.py` | Runs all combinations of `θ_C × θ_T × resolution`; writes results xlsx |
+| `run_failed.py` | Scans for failed runs and retries them automatically |
+| `build_tune_params_results.py` | Rebuilds `tune_params_results.xlsx` from existing run folders without re-running |
+| `pipeline_utils.py` | Shared helpers: logging, cleanup, run tag generation (not run directly) |
 
 ### Internal pipeline step scripts
 
-These are called automatically by `run_pipeline.py` — you do not run them directly.
+Called automatically by `run_pipeline.py` — do not run these directly.
 
 | Script | Stage | What it does |
 |---|---|---|
-| `1_knowledge_concept_embedding.py` | Steps 1+2 | Embeds knowledge concepts and profiles columns |
-| `2_p_stat_name_sem.py` | Step 2 | Computes statistical, name, and semantic proximity matrices |
-| `3_sim_attr_weights.py` | Step 3a/3b | Computes weighted attribute similarity |
-| `4_column_graph.py` | Step 3c | Builds column similarity graph above `theta_a` threshold |
-| `5_table_similarity.py` | Step 4 | Aggregates to table graph above `theta_t` threshold |
-| `6_domain_discovery.py` | Step 5 | Louvain clustering + LLM domain labeling |
+| `1_knowledge_concept_embedding.py` | Stages 1+2 | Concept extraction (LLM), concept embedding, column embedding, φ-matrix |
+| `2_p_stat_name_sem.py` | Stage 3a | P_stat (17 statistical meta-features, z-scored), P_name (Levenshtein), P_sem (cosine on φ-rows) |
+| `3_sim_attr_weights.py` | Stage 3b | Variance-based weight derivation; combines into Sim_col |
+| `4_column_graph.py` | Stage 3c | Builds column graph G_C above threshold θ_C |
+| `5_table_similarity.py` | Stage 4 | Greedy column matching → Sim_table = raw_sim × CR; builds G_T above θ_T |
+| `6_domain_discovery.py` | Stage 5 | Louvain on G_T; LLM generates domain name + definition per cluster |
 
 ---
 
 ## Step-by-Step: Running the Pipeline
 
-Replace `<Dataset>` with your dataset folder name and `<DBName>` with a short name for your database (e.g. `TPC-H`, `Northwind`).
+Replace `<Dataset>` with your dataset folder name and `<DBName>` with a short identifier (e.g. `Sakila`, `Northwind`).
 
 ---
 
@@ -158,7 +172,7 @@ Replace `<Dataset>` with your dataset folder name and `<DBName>` with a short na
 
 1. Create a folder with your dataset name inside the project root.
 2. Put all CSV files inside `<Dataset>/csv/`.
-3. Remove pure lookup tables (very few rows, only code+label columns — e.g. a `region` table with 5 rows and 2 columns).
+3. Remove pure lookup tables (very few rows, only code+label columns).
 
 ```
 DomainDiscover/
@@ -192,34 +206,30 @@ python extract_schema.py \
 ### Step 2 — Crawl documentation
 
 Crawls a documentation website and saves each page as a PDF into `<Dataset>/knowledge/`.
-Run multiple times with different URLs to build a rich knowledge base.
 
 ```bash
-# Run from the DomainDiscover root
 python crawl_to_pdf.py \
   --dataset_dir <Dataset> \
   --url https://en.wikipedia.org/wiki/Your_Topic \
   --depth 1
 ```
 
-**Arguments:**
-
 | Argument | Default | Description |
 |---|---|---|
-| `--dataset_dir` | required | Dataset subfolder name (e.g. `Northwind`) |
-| `--url` | required | Root URL to start crawling from |
+| `--dataset_dir` | required | Dataset subfolder name |
+| `--url` | required | Root URL to crawl |
 | `--depth` | `2` | Maximum crawl depth |
 | `--delay` | `1.5` | Seconds between page loads |
 
 **Output:** PDFs saved to `<Dataset>/knowledge/`
 
-> **Tip:** Wikipedia pages always render cleanly. Avoid JavaScript-heavy sites (React SPAs) — they often produce empty PDFs.
+> **Tip:** Wikipedia pages render reliably. Avoid JavaScript-heavy SPAs — they often produce empty PDFs.
 
 ---
 
 ### Step 3 — Extract knowledge
 
-Reads all PDFs in `<Dataset>/knowledge/` and uses the LLM to extract business descriptions. Writes `knowledge.docx`.
+Reads all PDFs in `<Dataset>/knowledge/` and extracts business workflow descriptions via LLM. Writes `knowledge.docx`.
 
 ```bash
 python extract_knowledge.py \
@@ -241,13 +251,13 @@ python extract_knowledge.py \
 
 **Output:** `<Dataset>/knowledge.docx`
 
-> This step can take 10–30 minutes depending on PDF size and number of tables.
+> This step can take 10–30 minutes depending on PDF count and table size.
 
 ---
 
 ### Step 4 — Tune parameters
 
-Runs all 27 combinations of `theta_a`, `theta_t`, and `resolution` and scores each with modularity Q.
+Runs all combinations of `θ_C`, `θ_T`, and `resolution` and scores each with modularity Q.
 
 ```bash
 python tune_params.py \
@@ -260,27 +270,29 @@ python tune_params.py \
 
 **Output:**
 - `<Dataset>/ccm_output/tune_params_results.xlsx` — color-coded Excel table
-- `<Dataset>/ccm_output/tune_params_summary.txt` — plain text table sorted by Q
+- `<Dataset>/ccm_output/tune_params_summary.txt` — plain-text table sorted by Q
+
+To skip LLM domain labeling for a faster Q-only grid search:
+
+```bash
+python tune_params.py --dataset_dir <Dataset> --knowledge knowledge.docx --no_llm
+```
 
 ---
 
-### Step 5 — Rebuild results
+### Step 5 — Rebuild results (if needed)
 
-If any runs completed after the xlsx was last generated, or if you suspect results are stale, rebuild from the existing run folders:
+If runs completed after the xlsx was last written, or after patching the pipeline:
 
 ```bash
 python build_tune_params_results.py --dataset_dir <Dataset>
 ```
 
-This scans all `tA*_tT*_r*` subfolders in `ccm_output/`, reads each `step5_report.txt`, and writes a fresh `tune_params_results.xlsx`. No pipeline re-runs needed.
-
-> Run this after any patch to the pipeline (e.g. fixing the modularity regex) to update results without re-running all 27 combinations.
+Scans all `tA*_tT*_r*` folders in `ccm_output/`, reads each `step5_report.txt`, and rewrites a fresh xlsx. No re-runs needed.
 
 ---
 
 ### Step 6 — Retry failed runs
-
-If any runs show as FAILED in the results xlsx, retry them automatically:
 
 ```bash
 python run_failed.py \
@@ -288,18 +300,12 @@ python run_failed.py \
   --max_retries 2
 ```
 
-**Arguments:**
-
 | Argument | Default | Description |
 |---|---|---|
 | `--dataset_dir` | required | Dataset folder name |
 | `--max_retries` | `2` | Retry attempts per failed run |
-| `--no_llm` | off | Skip Ollama domain labeling (faster) |
+| `--no_llm` | off | Skip LLM domain labeling (faster) |
 | `--model` | `mistral:latest` | Ollama model name |
-
-The script rebuilds the results xlsx automatically after each successful retry.
-
-> **Note:** `run_failed.py` re-runs the full pipeline (`run_pipeline.py --clean`) for each failed combination. If the failure was only in the Q metric parsing (e.g. negative Q values), use `build_tune_params_results.py` instead — it's much faster.
 
 ---
 
@@ -308,34 +314,32 @@ The script rebuilds the results xlsx automatically after each successful retry.
 Open `ccm_output/tune_params_results.xlsx`.
 
 - **Valid result:** Q ≥ 0.3 (Newman & Girvan, 2004)
-- Pick the run with the **highest Q** and the most coherent domain labels
+- Pick the run with the **highest Q** and most coherent domain labels
 - The best run's output is in `ccm_output/tA<x>_tT<y>_r<z>/step5_report.txt`
 
-> **Small schemas (≤ 10 tables):** Q values are inherently low due to graph size constraints. Evaluate domain quality qualitatively through label coherence rather than relying solely on Q.
+> **Small schemas (≤ 10 tables):** Q is inherently lower due to graph size. Evaluate domain quality qualitatively through label coherence alongside Q.
 
 ---
 
 ## Running a Single Configuration
 
-To run one specific parameter combination without tuning:
-
 ```bash
 python run_pipeline.py \
   --dataset_dir <Dataset> \
   --knowledge knowledge.docx \
   --theta_a 0.65 \
-  --theta_t 0.70 \
+  --theta_t 0.75 \
   --resolution 1.2
 ```
 
-To re-run from a specific step (skipping earlier steps):
+To resume from a specific stage (skipping earlier steps):
 
 ```bash
 python run_pipeline.py \
   --dataset_dir <Dataset> \
   --knowledge knowledge.docx \
   --theta_a 0.65 \
-  --theta_t 0.70 \
+  --theta_t 0.75 \
   --resolution 1.2 \
   --start_from step5
 ```
@@ -344,9 +348,289 @@ python run_pipeline.py \
 
 ## Parameter Reference
 
-| Parameter | Values tested | Effect |
-|---|---|---|
-| `theta_a` | 0.60, 0.65, 0.70 | Column similarity threshold — higher = fewer column edges |
-| `theta_t` | 0.65, 0.70, 0.75 | Table similarity threshold — higher = fewer table edges |
-| `resolution` | 1.2, 1.5, 2.0 | Louvain resolution — higher = more, smaller domains |
+| Parameter | CLI flag | Values tested | Effect |
+|---|---|---|---|
+| Column similarity threshold | `--theta_a` | 0.60, 0.65, 0.70 | Higher = fewer column edges in G_C |
+| Table similarity threshold | `--theta_t` | 0.65, 0.70, 0.75 | Higher = fewer table edges in G_T |
+| Louvain resolution | `--resolution` | 1.2, 1.5, 2.0 | Higher = more, smaller domains |
 
+---
+
+## Analyzing Results
+
+### Reading `tune_params_results.xlsx`
+
+Each row is one parameter combination. Columns:
+
+| Column | Meaning |
+|---|---|
+| `theta_a` | Column similarity threshold (θ_C) |
+| `theta_t` | Table similarity threshold (θ_T) |
+| `resolution` | Louvain resolution γ |
+| `Q` | Modularity score (higher = better-separated communities) |
+| `n_domains` | Number of domains discovered |
+| `status` | `OK`, `FAILED`, or `NO_EDGES` |
+
+Rows are color-coded by Q: green (Q ≥ 0.5), yellow (0.3–0.5), red (Q < 0.3 or failed).
+
+### Reading `step5_report.txt`
+
+Located in each `tA<x>_tT<y>_r<z>/` folder. Contains:
+
+```
+Modularity Q      : 0.5526
+Domains discovered: 4
+Tables in graph   : 13
+
+Domain D0 — Film Rental Management
+  Tables : inventory, payment, rental
+  Top concept: Inventory Management (φ = 0.72)
+
+Domain D1 — Customer Address Management
+  Tables : address
+  Top concept: Customer Management (φ = 0.61)
+...
+```
+
+### Reading `step5_domains.json`
+
+Structured output per domain:
+
+```json
+[
+  {
+    "domain_id": "D0",
+    "domain_name": "Film Rental Management",
+    "definition": "Manages the lifecycle of film rentals...",
+    "tables": ["inventory", "payment", "rental"]
+  }
+]
+```
+
+### Reading `step5_table_domain.csv` and `step5_column_domain.csv`
+
+Flat mappings for downstream use:
+
+```
+table,domain_id,domain_name
+inventory,D0,Film Rental Management
+payment,D0,Film Rental Management
+...
+```
+
+```
+table,column,domain_id,domain_name
+inventory,inventory_id,D0,Film Rental Management
+...
+```
+
+### Reading `step4_report.txt`
+
+Shows which table pairs form edges in G_T and their Sim_table scores:
+
+```
+(actor, customer)  →  raw_sim=0.9248  CR=1.0  Sim_table=0.9248
+```
+
+### Reading `derived_weights.csv`
+
+Shows the variance-based weights assigned to each similarity measure:
+
+```
+measure,variance,weight
+P_stat,0.041,0.61
+P_name,0.018,0.27
+P_sem,0.008,0.12
+```
+
+Higher variance = more discriminative signal = higher weight in Sim_col.
+
+---
+
+## Validated Datasets
+
+| Dataset | Tables | Columns | Rows | Best Q | Domains | Notes |
+|---|---|---|---|---|---|---|
+| **Sakila** | 13 | 80 | 40,600+ | **0.5526** | 4 | Primary running example; full results in `Sakila/` |
+
+---
+
+## Sakila Walkthrough — Complete Running Example
+
+This section documents the complete pipeline run on the [Sakila](https://dev.mysql.com/doc/sakila/en/) MySQL sample database — a DVD rental store schema used as the primary running example in the paper.
+
+### Dataset Overview
+
+- **Source:** MySQL official sample database
+- **Tables:** 13 (after removing lookup-only tables)
+- **Columns:** 80
+- **Rows:** > 40,600
+- **External knowledge:** Official MySQL Sakila documentation (`https://dev.mysql.com/doc/sakila/en/`)
+
+### Step 1 — Extract schema
+
+```bash
+python extract_schema.py \
+  --dataset_dir Sakila \
+  --csv_dir csv \
+  --output schema.json \
+  --database Sakila \
+  --model mistral-ctx4k \
+  --ollama_timeout 600
+```
+
+**Output:** `Sakila/schema.json` — profiles all 80 columns across 13 tables with 17 statistical meta-features each.
+
+---
+
+### Step 2 — Crawl documentation
+
+```bash
+python crawl_to_pdf.py \
+  --dataset_dir Sakila \
+  --url https://dev.mysql.com/doc/sakila/en/ \
+  --depth 2
+
+python crawl_to_pdf.py \
+  --dataset_dir Sakila \
+  --url https://dev.mysql.com/doc/index-other.html \
+  --depth 1
+```
+
+**Output:** Multiple PDFs saved to `Sakila/knowledge/`
+
+---
+
+### Step 3 — Extract knowledge
+
+```bash
+python extract_knowledge.py \
+  --dataset_dir Sakila \
+  --database Sakila \
+  --schema schema.json \
+  --pdf_dir knowledge/ \
+  --backend ollama \
+  --model mistral-ctx4k \
+  --schema_max_chars 1000 \
+  --source_max_chars 5000 \
+  --max_tokens 2048 \
+  --pdf_chunk_size 5000 \
+  --num_ctx 4096 \
+  --timeout 1800 \
+  --output knowledge.docx \
+  --log_dir logs
+```
+
+**Output:** `Sakila/knowledge.docx` — structured business workflow document describing DVD rental operations.
+
+---
+
+### Step 4 — Tune parameters
+
+```bash
+python tune_params.py \
+  --dataset_dir Sakila \
+  --knowledge knowledge.docx \
+  --theta_a 0.60 0.65 0.70 \
+  --theta_t 0.65 0.70 0.75 \
+  --resolution 1.2 1.5 2.0
+```
+
+This produces 27 configurations (3 × 3 × 3 grid). All results are in `Sakila/ccm_output/tune_params_results.xlsx`.
+
+---
+
+### Step 5 — Concept Analysis results
+
+The LLM extracted **5 business concepts** from the Sakila tables and documentation:
+
+| Concept | Description |
+|---|---|
+| Customer Management | Managing customer accounts, profiles, and transactions |
+| Category Assignment | Assigning films to categories and genres |
+| Inventory Management | Tracking film copies across store locations |
+| Rental and Payment Processing | Processing rentals, returns, and payments |
+| Staff and Store Operations | Managing staff, store assignments, and addresses |
+
+Each concept is embedded using `sentence-transformers/all-mpnet-base-v2` (768 dimensions). The resulting φ-matrix (80 columns × 5 concepts) ties every column's content to the business vocabulary.
+
+---
+
+### Step 6 — Column similarity example
+
+For the pair **(customer.store_id, actor.actor_id)**:
+
+| Measure | Value | Interpretation |
+|---|---|---|
+| P_stat | 0.240 | Nearly identical value distributions (both small integers) |
+| P_name | 0.625 | Substantial lexical overlap (`_id` suffix + partial character match) |
+| P_sem | 0.059 | Low semantic alignment — stores and actors map to different concepts |
+
+This illustrates how the three measures can diverge: structurally similar columns that serve entirely different business purposes receive a low semantic score, which correctly reduces their overall Sim_col.
+
+---
+
+### Step 7 — Best configuration and results
+
+The grid search selects the configuration maximizing modularity Q:
+
+| Parameter | Best value |
+|---|---|
+| θ_C (column threshold) | 0.65 |
+| θ_T (table threshold) | 0.75 |
+| γ (Louvain resolution) | 1.2 |
+| **Q** | **0.5526** |
+| Domains discovered | **4** |
+
+Q = 0.5526 exceeds the Q ≥ 0.3 threshold (Newman & Girvan, 2004), indicating well-separated communities.
+
+---
+
+### Step 8 — Discovered domains
+
+| Domain | Tables | Interpretation |
+|---|---|---|
+| **D0** Film Rental Management | `inventory`, `payment`, `rental` | Core transactional tables tracking rentals and payments |
+| **D1** Customer Address Management | `address` | Singleton — address table did not accumulate sufficient column-level similarity edges to merge with other tables |
+| **D2** Film Catalog and Inventory Management | `category`, `city`, `film`, `film_category`, `language` | Film metadata, categorization, and associated geographic/language data |
+| **D3** Customer and Staff Management | `actor`, `customer`, `staff`, `store` | People and operational entities sharing structural and semantic similarity |
+
+> **Note on D1:** The singleton domain for `address` reflects the column graph structure, not a limitation of Louvain. Although `address` is referenced by foreign keys from `customer`, `staff`, and `store`, its columns did not accumulate enough similarity edges to be merged at θ_T = 0.75. This is a known boundary effect for tables that act as shared reference entities across multiple domains.
+
+---
+
+### Step 9 — Table similarity example
+
+For the pair **(actor, customer)**:
+
+```
+Columns in actor   : 4  (actor_id, first_name, last_name, last_update)
+Columns in customer: 9  (customer_id, store_id, first_name, ...)
+
+Greedy matching: 4 column pairs matched (all of actor's columns)
+raw_sim = 0.9248
+CR      = 4 / min(4, 9) = 1.0
+Sim_table(actor, customer) = 0.9248 × 1.0 = 0.9248
+```
+
+Both tables share personal name columns (`first_name`, `last_name`) and a timestamp column (`last_update`), producing high raw similarity at full coverage — which correctly places them in the same domain (D3).
+
+---
+
+### Output files for the best run (`tA0.65_tT0.75_r1.2/`)
+
+| File | Contents |
+|---|---|
+| `step3_Sim_attr.csv` | Full 80×80 Sim_col matrix |
+| `step3_graph_edges.csv` | Column graph G_C edges above θ_C = 0.65 |
+| `step3_sim_attr_report.txt` | Summary of column similarity distribution |
+| `step4_table_sim.csv` | Table-pair Sim_table scores |
+| `step4_graph_edges.csv` | Table graph G_T edges above θ_T = 0.75 |
+| `step4_report.txt` | Table-level similarity report |
+| `step5_domains.json` | 4 domain objects with names, definitions, tables |
+| `step5_table_domain.csv` | Table → domain mapping |
+| `step5_column_domain.csv` | Column → domain mapping |
+| `step5_report.txt` | Q = 0.5526, 4 domains, full domain listing |
+| `domains/D0_Film_Rental_Management.json` | Per-domain detail including top concepts and φ scores |
+
+Full results are available at: [https://github.com/armanalaa/DomainDiscover](https://github.com/armanalaa/DomainDiscover)
